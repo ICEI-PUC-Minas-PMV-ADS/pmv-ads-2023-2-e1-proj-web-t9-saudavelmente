@@ -1,25 +1,27 @@
-# Título do Projeto
+# SaudavelMente
 
-`CURSO`
+`Análise e Desenvolvimento de Sistemas - PUC Minas`
 
-`DISCIPLINA`
+`Desenvolvimento de Aplicação Web Front-end`
 
-`SEMESTRE`
+`2° Semestre/2023`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto desenvolvido.
+O projeto consiste na criação de uma plataforma virtual para a web, voluntária e gratuita, que possui como principal objetivo conectar os pacientes que necessitam de tratamentos a profissionais da saúde, sendo eles psicólogos, psiquiatras ou terapeutas.
+
+Através dessa conexão será possível marcar consultas, compartilhar experiências e acessar recursos educativos, e claro, fornecer um ambiente seguro e inclusivo, onde as pessoas possam encontrar informações confiáveis, ferramentas práticas e uma comunidade de apoio.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
+* William da Silva Rodrigues
+* Mariane Matoso Barzagli
+* Penélope Apolinário Ventura
+* Vinicius Simões dos Santos
+* Luan César Souza dos Santos
+* João Pedro Campos Carvalho dos Santos
 
 ## Orientador
 
-* Nome completo do professor
+* Marco Rodrigo Costa
 
 # Documentação
 
