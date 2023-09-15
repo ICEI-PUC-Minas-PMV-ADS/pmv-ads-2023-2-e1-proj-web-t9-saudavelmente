@@ -1,4 +1,4 @@
-# SaudavelMente
+# SaudávelMente
 
 `Análise e Desenvolvimento de Sistemas - PUC Minas`
 
@@ -39,7 +39,7 @@ Através dessa conexão será possível marcar consultas, compartilhar experiên
 
 # Hospedagem
 
-* Insira o endereço eletrônico público de acesso ao conteúdo publicado. 
+* A aplicação em HTML/CSS/JS é um projeto que pode ser utilizado tanto em servidores como em navegadores web. Clique [aqui](#todo) para acessá-lo.
 
 # Código-Fonte
 
