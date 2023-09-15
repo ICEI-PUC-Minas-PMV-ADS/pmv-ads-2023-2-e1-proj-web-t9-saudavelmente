@@ -58,8 +58,8 @@ Os artefatos do projeto são desenvolvidos a partir das plataformas [GitHub](htt
 
 | AMBIENTE | PLATAFORMA | LINK DE ACESSO |
 | --- | --- | --- |
-| Repositório de código fonte | GitHub | https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-e1-exemplo-vida-de-estudante/tree/main/codigo-fonte |
-| Documentos do projeto | GitHub | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t9-saudavelmente |
+| Repositório de código fonte | GitHub | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t9-saudavelmente/tree/main/codigo-fonte |
+| Documentos do projeto | GitHub | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t9-saudavelmente/tree/main/documentos |
 | Projeto de Interface e Wireframes | Figma | https://www.figma.com/file/qGbpPPBEY2diO4EH8Mtg6y/Projeto---Eixo-01%2FTurma-09---Saud%C3%A1velMente?type=design&node-id=0%3A1&mode=design&t=4sPXzrc9DZEby3MY-1 |
 | Gerenciamento do Projeto | GitHub Projects | https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/619 |
 | Hospedagem | GitHub Pages | http://.... |
