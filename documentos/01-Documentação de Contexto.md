@@ -10,17 +10,25 @@ Este link pode ajudar a equipe a entender mais sobre definição do problema: [O
 
 ## Objetivos
 
-[Aqui a equipe deve realizar uma descrição detalhada dos objetivos do trabalho, ressaltando quais as questões principais do problema a serem resolvidas pelo projeto, não é a hora de apresentar requisitos detalhados.]
- 
-Este link pode ajudar a equipe a entender mais sobre definição dos objetivos: [Objetivos, Problema de pesquisa e Justificativa.](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
+O objetivo geral é o desenvolvimento de uma solução para fornecer um ambiente seguro e inclusivo, onde as pessoas possam encontrar informações confiáveis, ferramentas práticas e uma comunidade de apoio.
+
+Os principais objetivos são:
+
+•	Proporcionar um meio acessível para que os pacientes possam se conectar com psicólogos, psiquiatras e outros profissionais da saúde mental, independentemente da localização geográfica.
+•	Permitir uma abordagem direcionada para o público fragilizado socioeconomicamente, ou seja, o projeto visa alcançar aqueles que não possuem condições de pagar pelo tratamento, abrindo espaço para o voluntariado.
+•	Oferecer uma chance para profissionais da saúde mental ganharem experiência prática, ao mesmo tempo em que contribuem para o bem-estar da comunidade.
+•	Contribuir para a melhoria da saúde mental, auxiliando os usuários a lidar com desafios emocionais e a desenvolver uma mentalidade equilibrada.
+
+
 
 ## Justificativa
 
-[Aqui a equipe deve descrever a importância ou a motivação para trabalhar com o problema definido. Indique as razões pelas quais a equipe escolheu o problema e definiu os objetivos.
+O caos social ocasionado por mudanças e instabilidades, têm atingido a sociedade de forma massiva, deixando-a cada vez mais doente e depressiva. É possível vivenciar quadros depressivos corriqueiramente dentro das famílias, sem restrições etárias.
 
-Devem ser apresentados dados de fontes relevantes e confiáveis sobre o problema, inserindo-o como alvo de estudo. Sugere-se que a equipe utilize questionários, entrevistas e dados estatísticos, que devem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pela equipe.]
+Segundo uma pesquisa da Universidade de Lund, os tratamentos psicológicos são diretamente afetados pela condição financeira das classes, ou seja, um tratamento de qualidade têm um impacto financeiro alto na vida de quem precisa utilizar o serviço de uma forma contínua. O aumento de casos notórios também trouxe a sobrecarga e escassez no serviço público oferecido pelo governo.
 
-Este link pode ajudar a equipe a formular a justificativa: [Como montar a justificativa.](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Diante dessa necessidade, a plataforma busca unir dois elos, oferecer um tratamento psicológico digno para quem precisa e realizar a interação entre profissionais formados na área que queiram praticar o trabalho social gratuito. O aplicativo visará assim, preencher a lacuna entre ambas as partes. 
+
 
 ## Público-Alvo
 
