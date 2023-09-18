@@ -15,8 +15,11 @@ O objetivo geral é o desenvolvimento de uma solução para fornecer um ambiente
 Os principais objetivos são:
 
 •	Proporcionar um meio acessível para que os pacientes possam se conectar com psicólogos, psiquiatras e outros profissionais da saúde mental, independentemente da localização geográfica.
+
 •	Permitir uma abordagem direcionada para o público fragilizado socioeconomicamente, ou seja, o projeto visa alcançar aqueles que não possuem condições de pagar pelo tratamento, abrindo espaço para o voluntariado.
+
 •	Oferecer uma chance para profissionais da saúde mental ganharem experiência prática, ao mesmo tempo em que contribuem para o bem-estar da comunidade.
+
 •	Contribuir para a melhoria da saúde mental, auxiliando os usuários a lidar com desafios emocionais e a desenvolver uma mentalidade equilibrada.
 
 
