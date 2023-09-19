@@ -6,19 +6,41 @@
 <table>
 <tbody>
 <tr align=center>
-<th colspan="2">Perfil Nome </th>
+<th colspan="2">Perfil 1: Paciente </th>
 </tr>
 <tr>
 <td width="150px"><b>Descrição</b></td>
-<td width="600px">...</td>
+<td width="600px"> Paciente à procura de apoio emocional.   </td>
 </tr>
 <tr>
 <td><b>Necessidades</b></td>
-<td>...</td>
+<td> 
+1 Acesso fácil e rápido para conversar com um profissional de saúde mental em busca de apoio emocional.
+2 Dicas e exercícios para relaxamento.
+3 Troca de experiências em um fórum aberto com outros pacientes e profissionais.
+</td>
 </tr>
 </tbody>
 </table>
 
+<table>
+<tbody>
+<tr align=center>
+<th colspan="2">Perfil 2 Profissional </th>
+</tr>
+<tr>
+<td width="150px"><b>Descrição</b></td>
+<td width="600px"> Profissional de saúde mental voluntário.   </td>
+</tr>
+<tr>
+<td><b>Necessidades</b></td>
+<td> 
+1 Plataforma para fazer um serviço voluntário de acompanhamento com pacientes que buscam apoio emocional.
+2 Ambiente aberto para publicar dicas e exercícios sobre saúde mental.
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Histórias de Usuários
 
