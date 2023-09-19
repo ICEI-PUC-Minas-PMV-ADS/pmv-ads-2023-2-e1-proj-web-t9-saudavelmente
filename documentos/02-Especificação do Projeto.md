@@ -32,9 +32,9 @@
 
 |EU COMO... `QUEM`   | QUERO/PRECISO ... `O QUE` |PARA ... `PORQUE`                 |
 |--------------------|---------------------------|----------------------------------|
-| ...                | ...                       | ...                              |
-| ...                | ...                       | ...                              |
-
+| Paciente           | Me cadastrar na plataforma| Ter uma conta na plataforma      |
+| Paciente           |Pesquisar profissionais de diferentes áreas da saúde mental | Ter um atendimento especializado de acordo com a minha necessidade|
+|Paciente|Ter uma consulta com um profissional|Ter um apoio em relação ao meu problema mental|
 ## Requisitos do Projeto
 
 [Com base nas Histórias de Usuários, enumere os requisitos da solução. Lembre-se que cada requisito deve corresponder a uma, e somente uma, característica alvo da solução. Além disso, certifique-se de que todos os aspectos capturados nas Histórias de Usuário foram cobertos.]
