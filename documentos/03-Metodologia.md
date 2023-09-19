@@ -1,6 +1,7 @@
 # Metodologia
 
 ## Gerenciamento de Projeto
+
 A metodologia ágil escolhida para o desenvolvimento deste projeto foi o SCRUM, pois como citam Amaral, Fleury e Isoni (2019, p. 68), seus benefícios são a
 
 “visão clara dos resultados a entregar; ritmo e disciplina necessários à execução; definição de papéis e responsabilidades dos integrantes do projeto (Scrum Owner, Scrum Master e Team); empoderamento dos membros da equipe de projetos para atingir o desafio; conhecimento distribuído e compartilhado de forma colaborativa; ambiência favorável para crítica às ideias e não às pessoas.”
@@ -12,7 +13,7 @@ Desta forma, a equipe está organizada da seguinte maneira:
 - Scrum Master: William Rodrigues
 - Product Owner: Penélope Ventura
 - Equipe de Desenvolvimento: William Rodrigues, Mariane Barzagli, Penélope Ventura, Vinicius Santos, Luan Santos, João Santos
-- Equipe de Design: William Rodrigues, Luan Santos
+- Equipe de Design: Mariane Barzagli, Luan Santos, William Rodrigues
 
 ### Processo
 
@@ -47,12 +48,12 @@ As tarefas são, ainda, etiquetadas em função da natureza da atividade e segue
 
 As ferramentas empregadas no projeto são:
 
-- Editor de código.
-- Ferramenta para versionamento de código.
-- Ferramentas de comunicação.
-- Ferramentas de desenho de tela (wireframing).
+- Editor de código (VS Code).
+- Ferramentas para versionamento de código (Git, GitHub Desktop).
+- Ferramentas de comunicação (Teams).
+- Ferramentas de desenho de tela (Figma).
 
-O editor de código foi escolhido porque ele possui uma integração com o sistema de versionamento de código escolhido. As ferramentas de comunicação utilizadas possuem integração semelhante e por isso foram selecionadas. Por fim, para criar diagramas utilizamos essa ferramenta por melhor captar as necessidades da nossa solução.
+O editor de código foi escolhido porque ele possui uma integração com o sistema de versionamento de código escolhido. As ferramentas de comunicação utilizadas possuem integração semelhante e por isso foram selecionadas. Por fim, para criar protótipos e wireframes utilizamos essa ferramenta por melhor captar as necessidades da nossa solução.
 
 Os artefatos do projeto são desenvolvidos a partir das plataformas [GitHub](https://github.com/) e o [Figma](https://www.figma.com/), apresentadas com seus respectivos propósitos na tabela que se segue.
 

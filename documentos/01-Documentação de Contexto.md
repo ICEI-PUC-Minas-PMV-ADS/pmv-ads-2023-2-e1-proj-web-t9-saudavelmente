@@ -8,6 +8,7 @@ O projeto reconhece a tecnologia não só como um catalisador, mas como parte da
 
 
 ## Problema
+
 A saúde mental se tornou uma preocupação crescente na sociedade moderna devido a fatores como estresse elevado, pressões sociais, mudanças de estilo de vida e acesso constante à tecnologia. Muitas pessoas enfrentam problemas como ansiedade, depressão, transtornos de humor, isolamento social, falta de sono, baixa autoestima e estresse crônico, muitas vezes sem acesso ou recursos para buscar ajuda profissional adequada. A estigmatização em torno das questões de saúde mental também pode dificultar a busca por tratamento.
 
 ## Objetivos
@@ -16,14 +17,13 @@ O objetivo geral é o desenvolvimento de uma solução para fornecer um ambiente
 
 Os principais objetivos são:
 
-•	Proporcionar um meio acessível para que os pacientes possam se conectar com psicólogos, psiquiatras e outros profissionais da saúde mental, independentemente da localização geográfica.
+- Proporcionar um meio acessível para que os pacientes possam se conectar com psicólogos, psiquiatras e outros profissionais da saúde mental, independentemente da localização geográfica.
 
-•	Permitir uma abordagem direcionada para o público fragilizado socioeconomicamente, ou seja, o projeto visa alcançar aqueles que não possuem condições de pagar pelo tratamento, abrindo espaço para o voluntariado.
+- Permitir uma abordagem direcionada para o público fragilizado socioeconomicamente, ou seja, o projeto visa alcançar aqueles que não possuem condições de pagar pelo tratamento, abrindo espaço para o voluntariado.
 
-•	Oferecer uma chance para profissionais da saúde mental ganharem experiência prática, ao mesmo tempo em que contribuem para o bem-estar da comunidade.
+- Oferecer uma chance para profissionais da saúde mental ganharem experiência prática, ao mesmo tempo em que contribuem para o bem-estar da comunidade.
 
-•	Contribuir para a melhoria da saúde mental, auxiliando os usuários a lidar com desafios emocionais e a desenvolver uma mentalidade equilibrada.
-
+- Contribuir para a melhoria da saúde mental, auxiliando os usuários a lidar com desafios emocionais e a desenvolver uma mentalidade equilibrada.
 
 
 ## Justificativa
@@ -45,4 +45,3 @@ Os links abaixo podem ajudar a equipe a conhecer um pouco mais sobre o público-
 
 > - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
 > - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-
