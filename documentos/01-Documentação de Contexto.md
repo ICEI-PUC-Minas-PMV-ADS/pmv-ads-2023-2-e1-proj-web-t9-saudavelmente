@@ -1,12 +1,14 @@
 # Introdução
 
-[Aqui a equipe deve criar um texto descritivo com a visão geral do problema abordado, apresentando o ambiente e as situações envolvidas no problema.]
+De acordo com a Organização Mundial da Saúde (OMS), o número de pessoas com transtornos mentais como a depressão e o transtorno de ansiedade tem crescido em todo o mundo. Os fatores podem estar relacionados à problemas socioeconômicos, genéticos, neurológicos ou pessoais.
+
+Tendo isso em vista, este projeto criará uma plataforma virtual que conecta os pacientes que necessitam de tratamentos à profissionais da saúde, sendo eles psicólogos, psiquiatras ou terapeutas. Através dessa conexão será possível marcar consultas, compartilhar experiências e acessar recursos educativos, capacitando os indivíduos a estabelecer um equilíbrio saudável entre a vida digital e o bem-estar mental.
+
+O projeto reconhece a tecnologia não só como um catalisador, mas como parte da solução. Com uma interface amigável, almeja guiar os usuários na jornada de adotar estratégias saudáveis para enfrentar os desafios da era digital enquanto preservam sua saúde emocional. Esta iniciativa visa ser um farol de apoio, promovendo uma relação harmoniosa com a tecnologia e o fortalecimento da saúde mental em nosso mundo conectado.
+
 
 ## Problema
-[Aqui a equipe deve fornecer uma descrição detalhada do problema a ser resolvido. Não é o momento adequado para abordar questões técnicas relacionadas ao desenvolvimento da aplicação. O objetivo é compreender e comunicar de maneira precisa qual é o desafio ou necessidade que motiva a criação da aplicação.]
-
-Este link pode ajudar a equipe a entender mais sobre definição do problema: [Objetivos, Problema de pesquisa e Justificativa.](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-
+A saúde mental se tornou uma preocupação crescente na sociedade moderna devido a fatores como estresse elevado, pressões sociais, mudanças de estilo de vida e acesso constante à tecnologia. Muitas pessoas enfrentam problemas como ansiedade, depressão, transtornos de humor, isolamento social, falta de sono, baixa autoestima e estresse crônico, muitas vezes sem acesso ou recursos para buscar ajuda profissional adequada. A estigmatização em torno das questões de saúde mental também pode dificultar a busca por tratamento.
 
 ## Objetivos
 
