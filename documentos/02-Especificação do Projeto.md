@@ -15,9 +15,9 @@
 <tr>
 <td><b>Necessidades</b></td>
 <td> 
-|1. Acesso fácil e rápido para conversar com um profissional de saúde mental em busca de apoio emocional;                            |
-|2. Dicas e exercícios para relaxamento;                                                                                             |
-|3.Troca de experiências em um fórum aberto com outros pacientes e profissionais;                                                    |
+1. Acesso fácil e rápido para conversar com um profissional de saúde mental em busca de apoio emocional;                            
+2. Dicas e exercícios para relaxamento;                                                                                             
+3.Troca de experiências em um fórum aberto com outros pacientes e profissionais;                                                    
 </td>
 </tr>
 </tbody>
@@ -35,8 +35,8 @@
 <tr>
 <td><b>Necessidades</b></td>
 <td> 
-|1. Plataforma para fazer um serviço voluntário de acompanhamento com pacientes que buscam apoio emocional;                             |
-|2. Ambiente aberto para publicar dicas e exercícios sobre saúde mental;                                                                |
+1. Plataforma para fazer um serviço voluntário de acompanhamento com pacientes que buscam apoio emocional;                             
+2. Ambiente aberto para publicar dicas e exercícios sobre saúde mental;                                                                
 </td>
 </tr>
 </tbody>
