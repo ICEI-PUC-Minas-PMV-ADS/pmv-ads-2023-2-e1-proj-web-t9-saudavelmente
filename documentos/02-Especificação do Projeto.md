@@ -56,7 +56,6 @@
 | Paciente | visualizar informações do meu perfil com a lista dos profissionais que já tive ou estou tendo consultas | organizar corretamente as consultas e visualizar minhas informações |
 | Paciente | visualizar informações relevantes do profissional que estou tendo consulta | conhecer melhor o perfil profissional |
 | Paciente | visualizar uma página inicial | entender melhor o objetivo da plataforma |
-| Paciente | criar tópicos no fórum na plataforma | compartilhar vivências, dicas, jogos, objetivos |
 | Paciente | visualizar o fórum listando todos tópicos criados |visualizar melhor os tópicos |
 | Paciente | pesquisar por palavras chaves no fórum | facilitar a busca por tópico do meu interesse |
 | Paciente | cadastrar na plataforma | ter uma conta na plataforma |
