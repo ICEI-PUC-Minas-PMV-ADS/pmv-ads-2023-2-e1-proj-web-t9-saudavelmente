@@ -25,8 +25,8 @@ As telas do sistema apresentam uma estrutura comum que é apresentada na **Figur
 - **Rodapé** - apresenta informações sobre os direitos autorais, entre outras informações relevantes.
 
 <figure> 
-  <img src="./img/wireframe-default-structure.jpg" alt="Estrutura padrão do site">
-	<figcaption>Figura 2 - Estrutura padrão do site</figcaption>
+  <img src="./img/wireframe-default-structure.jpg" alt="Estrutura padrão do site" width="80%">
+  <figcaption>Figura 2 - Estrutura padrão do site</figcaption>
 </figure>
 
 ### Telas
@@ -34,15 +34,15 @@ As telas do sistema apresentam uma estrutura comum que é apresentada na **Figur
 Em todas as telas o menu do cabeçalho irá sofrer uma pequena mudança quando o usuário estiver logado, ele ficará assim:
 
 <figure> 
-  <img src="./img/header-user-logged.jpg" alt="Header com o usuário logado">
-	<figcaption>Figura 3 - Header com o usuário logado</figcaption>
+  <img src="./img/header-user-logged.jpg" alt="Header com o usuário logado" width="80%">
+  <figcaption>Figura 3 - Header com o usuário logado</figcaption>
 </figure>
 
 ---
 
-#### Tela - Página inicial
+#### Tela - Página Inicial
 
-A tela de **Página inicial** será o ponto inicial de qualquer usuário da plataforma. Nela estará presente:
+A tela de **Página Inicial** será o ponto inicial de qualquer usuário da plataforma. Nela estará presente:
 
 - Um banner de boas vindas visando convidar o usuário à entender melhor o objetivo do projeto;
 - Uma breve seção sobre as serviços oferecidos e o que o usuário poderá encontrar na plataforma;
@@ -54,8 +54,23 @@ A tela de **Página inicial** será o ponto inicial de qualquer usuário da plat
   - Página do fórum.
 
 <figure> 
-  <img src="./img/prototype-homepage.jpg" alt="Tela Página Inicial">
-	<figcaption>Figura 4 - Tela Página Inicial</figcaption>
+  <img src="./img/prototype-homepage.jpg" alt="Tela Página Inicial" width="80%">
+  <figcaption>Figura 4 - Tela Página Inicial</figcaption>
+</figure>
+
+---
+
+#### Tela - Lista de Profissionais
+
+A tela de **Lista de Profissionais** exibirá todos os profissionais cadastrados na platafoma, com um campo de pesquisa para filtrar os profissionais. Ela estará disponível para acesso ao usuário logado em usa página de perfil. Nela estará presente:
+
+- Cards para cada profissional cadastrado, e detalhes como área de atuação, descrição, etc...;
+- Nos cards, você poderá adicionar o profissional à sua lista de profissionais que você gostaria de ter uma consulta via chat;
+- Terá uma forma do usuário voltar para a página de perfil do mesmo.
+
+<figure> 
+  <img src="./img/prototype-professional-list.jpg" alt="Tela Lista de Profissionais" width="80%">
+  <figcaption>Figura 4 - Tela Lista de Profissionais</figcaption>
 </figure>
 
 ---
