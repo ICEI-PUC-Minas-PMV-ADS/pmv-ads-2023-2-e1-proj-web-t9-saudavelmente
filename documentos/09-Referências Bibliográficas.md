@@ -7,13 +7,13 @@ ORGANIZAÇÃO MUNDIAL DA SAÚDE (OMS). **Saúde Mental e Uso de Substâncias**. 
 https://www.who.int/teams/mental-health-and-substance-use. Acesso em: 14 ago. 2023
 
 AMERICAN PSYCHOLOGICAL ASSOCIATION(APA). **Suicides rates are increasing among adolescents in the U.S**. Disponível em:  
-https://www.apa.org/. Acesso em 14 ago. 2023
+https://www.apa.org/. Acesso em: 14 ago. 2023
 
 MIND: MENTAL HEALTH CHARITY. **Mental health hospitals are broken. Help us Raise the Standard.** Disponível em:  
-https://www.mind.org.uk/. Acesso em 14 ago. 2023
+https://www.mind.org.uk/. Acesso em: 14 ago. 2023
 
 NATIONAL INSTITUTE OF MENTAL HEALTH (NIMH). **Transforming the understanding and treatment of mental illnesses**. Disponível em:  
-https://www.nimh.nih.gov/. Acesso em 15 ago. 2023
+https://www.nimh.nih.gov/. Acesso em: 15 ago. 2023
 
 MAD IN BRASIL. **Como a Classe Socioeconômica Afeta a Terapia?** Disponível em:  
 https://madinbrasil.org/2022/01 como-a-classe-socioeconomica-afeta-a-terapia/. Acesso em: 29 Jan. 2023
