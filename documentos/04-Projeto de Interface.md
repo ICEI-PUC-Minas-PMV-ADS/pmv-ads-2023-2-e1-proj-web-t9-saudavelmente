@@ -93,6 +93,7 @@ Além disso, haverá uma opção para os profissionais da área da saúde  clica
   <figcaption>Figura 5 - Tela de Cadastro</figcaption>
 </figure>
 
+ <br>
 
 <figure> 
   <img src="img/Informa%C3%A7%C3%A3o%20profissional.png" alt="Tela Lista de Profissionais" width="80%">
