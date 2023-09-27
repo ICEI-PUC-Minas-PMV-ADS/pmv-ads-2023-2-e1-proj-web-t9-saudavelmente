@@ -86,7 +86,7 @@ A tela de **CADASTRO**  apresentará os seguintes campos para a inserção das i
 
 Além disso, haverá uma opção para os profissionais da área da saúde  clicarem e, em seguida, inserirem mais duas informações para se cadastrem;
 - CRM;
-- Área de Atuação;
+- Área de Atuação.
 
 <figure> 
   <img src="img/Prot%C3%B3tipo%20-%20P%C3%A1gina%20de%20Cadastro.jpg" alt="Tela Lista de Profissionais" width="80%">
