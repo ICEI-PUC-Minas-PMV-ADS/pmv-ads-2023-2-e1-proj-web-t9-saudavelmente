@@ -72,21 +72,3 @@ A tela de **Lista de Profissionais** exibirá todos os profissionais cadastrados
 </figure>
 
 ---
-
-#### Tela - Login
-
-A tela de **Login** exibirá os campos para o usuário realizar o preenchimento dos dados anteriormente cadastrados.
-
-Na tela de Login estarão presentes as seguintes aplicabilidades:
-
-- Campo para preehcimento de Email;
-- Campo para preenchimento de Senha;
-- Opção para recuperar senha esquecida;
-- Função de manter-se conectado ao site;
-- Após o sistema realizar a validação das informações e efetuar o login, o usuário será redirecionado para a pagina de perfil;
-- A tela também irá conter a funcionalidade de retornar a pagina de cadastro para os usuários que ainda não o tiverem feito previamente.
-
-<figure> 
-  <img src="./img/prototype-login-page.jpg" alt="Tela Pagina de Login" width="80%">
-  <figcaption>Figura 4 - Tela Página de Login</figcaption>
-</figure>
