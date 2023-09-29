@@ -68,7 +68,50 @@ A tela de **Lista de Profissionais** exibirá todos os profissionais cadastrados
 
 <figure> 
   <img src="./img/prototype-professional-list.jpg" alt="Tela Lista de Profissionais" width="80%">
-  <figcaption>Figura 4 - Tela Lista de Profissionais</figcaption>
+  <figcaption>Figura 5 - Tela Lista de Profissionais</figcaption>
 </figure>
 
 ---
+### TELA - CADASTRO 
+A tela de **CADASTRO**  apresentará os seguintes campos para a inserção das informações pessoais do usuário: 
+- Nome Completo;
+- Data de Nascimento; 
+- E-mail;
+- Telefone; 
+- Senha; 
+- Confirmação de Senha;
+- Aceite dos Termos e Condições de Uso. 
+
+Além disso, haverá uma opção para os profissionais da área da saúde  clicarem e, em seguida, inserirem mais duas informações para se cadastrem;
+- CRM;
+- Área de Atuação;
+- Área de Atuação.
+
+<figure> 
+  <img src="img/Prot%C3%B3tipo%20-%20P%C3%A1gina%20de%20Cadastro.jpg" alt="Tela Lista de Profissionais" width="80%">
+  <figcaption>Figura 6 - Tela de Cadastro</figcaption>
+</figure>
+<figure> 
+  <img src="img/Informa%C3%A7%C3%A3o%20profissional.png" alt="Tela Lista de Profissionais" width="80%">
+  <figcaption>Figura 7 - Tela para Informação Profissional</figcaption>
+</figure>
+
+---
+
+#### Tela - Login
+
+A tela de **Login** exibirá os campos para o usuário realizar o preenchimento dos dados anteriormente cadastrados.
+
+Na tela de Login estarão presentes as seguintes aplicabilidades:
+
+- Campo para preehcimento de Email;
+- Campo para preenchimento de Senha;
+- Opção para recuperar senha esquecida;
+- Função de manter-se conectado ao site;
+- Após o sistema realizar a validação das informações e efetuar o login, o usuário será redirecionado para a pagina de perfil;
+- A tela também irá conter a funcionalidade de retornar a pagina de cadastro para os usuários que ainda não o tiverem feito previamente.
+
+<figure> 
+  <img src="./img/prototype-login-page.jpg" alt="Tela Pagina de Login" width="80%">
+  <figcaption>Figura 8 - Tela Página de Login</figcaption>
+</figure>
