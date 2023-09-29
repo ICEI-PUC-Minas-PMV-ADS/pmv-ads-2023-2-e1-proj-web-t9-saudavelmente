@@ -72,8 +72,8 @@ A tela de **Lista de Profissionais** exibirá todos os profissionais cadastrados
 </figure>
 
 ---
-### TELA - CADASTRO 
-A tela de **CADASTRO**  apresentará os seguintes campos para a inserção das informações pessoais do usuário: 
+### Tela - Cadastro 
+A tela de **Cadastro**  apresentará os seguintes campos para a inserção das informações pessoais do usuário: 
 - Nome Completo;
 - Data de Nascimento; 
 - E-mail;
@@ -84,7 +84,6 @@ A tela de **CADASTRO**  apresentará os seguintes campos para a inserção das i
 
 Além disso, haverá uma opção para os profissionais da área da saúde  clicarem e, em seguida, inserirem mais duas informações para se cadastrem;
 - CRM;
-- Área de Atuação;
 - Área de Atuação.
 
 <figure> 
