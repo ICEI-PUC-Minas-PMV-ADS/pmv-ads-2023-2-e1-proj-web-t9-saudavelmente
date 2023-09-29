@@ -73,9 +73,9 @@ A tela de **Lista de Profissionais** exibirá todos os profissionais cadastrados
 
 ---
 
-### TELA - CADASTRO 
+### Tela - Cadastro
 
-A tela de **CADASTRO**  apresentará os seguintes campos para a inserção das informações pessoais do usuário: 
+A tela de **Cadastro**  apresentará os seguintes campos para a inserção das informações pessoais do usuário: 
 - Nome Completo;
 - Data de Nascimento; 
 - E-mail;
