@@ -2,10 +2,10 @@
 
 ## User Flow
 
-O Fluxo de Usuário (User Flow) apresentado na **Figura 1** mostra o mapeamento do fluxo de navegação do usuário na aplicação entre as telas. Ela serve para alinhar os caminhos e as possíveis ações que o usuário pode fazer. Cada uma das telas descritas aqui está detalhada na seção de [Prótotipo de Baixa Fidelidade](#protótipo-de-baixa-fidelidade) que se segue.
+O Fluxo de Usuário (User Flow) apresentado na **Figura 1** mostra o mapeamento do fluxo de navegação do usuário na aplicação entre as telas. Ela serve para alinhar os caminhos e as possíveis ações que o usuário pode fazer. Cada uma das telas descritas aqui está detalhada na seção de [Prótotipo de Baixa Fidelidade](#protótipo-de-baixa-fidelidade) que se segue. Para visualizar o protótipo interativo, acesse [esse link](https://www.figma.com/proto/qGbpPPBEY2diO4EH8Mtg6y/Projeto---Eixo-01%2FTurma-09---Saud%C3%A1velMente?type=design&node-id=160-2&t=35jnyTSFn2OStKPg-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=160%3A2&mode=design) que levará para a protótipação feita no Figma.
 
 <figure> 
-  <img src="./img/simple-userflow.jpg" alt="Estrutura padrão do site" width="80%">
+  <img src="./img/simple-userflow.jpg" alt="Estrutura padrão do site" width="70%">
   <figcaption>Figura 1 - Fluxo de Telas do Usuário</figcaption>
 </figure>
 
@@ -23,7 +23,7 @@ As telas do sistema apresentam uma estrutura comum que é apresentada na **Figur
 - **Rodapé** - apresenta informações sobre os direitos autorais, entre outras informações relevantes.
 
 <figure> 
-  <img src="./img/wireframe-default-structure.jpg" alt="Estrutura padrão do site" width="80%">
+  <img src="./img/wireframe-default-structure.jpg" alt="Estrutura padrão do site" width="70%">
   <figcaption>Figura 2 - Estrutura padrão do site</figcaption>
 </figure>
 
@@ -32,7 +32,7 @@ As telas do sistema apresentam uma estrutura comum que é apresentada na **Figur
 Em todas as telas o menu do cabeçalho irá sofrer uma pequena mudança quando o usuário estiver logado, ele ficará assim:
 
 <figure> 
-  <img src="./img/header-user-logged.jpg" alt="Header com o usuário logado" width="80%">
+  <img src="./img/header-user-logged.jpg" alt="Header com o usuário logado" width="70%">
   <figcaption>Figura 3 - Header com o usuário logado</figcaption>
 </figure>
 
@@ -52,7 +52,7 @@ A tela de **Página Inicial** será o ponto inicial de qualquer usuário da plat
   - Página do fórum.
 
 <figure> 
-  <img src="./img/prototype-homepage.jpg" alt="Tela Página Inicial" width="80%">
+  <img src="./img/prototype-homepage.jpg" alt="Tela Página Inicial" width="70%">
   <figcaption>Figura 4 - Tela Página Inicial</figcaption>
 </figure>
 
@@ -67,13 +67,16 @@ A tela de **Lista de Profissionais** exibirá todos os profissionais cadastrados
 - Terá uma forma do usuário voltar para a página de perfil do mesmo.
 
 <figure> 
-  <img src="./img/prototype-professional-list.jpg" alt="Tela Lista de Profissionais" width="80%">
+  <img src="./img/prototype-professional-list.jpg" alt="Tela Lista de Profissionais" width="70%">
   <figcaption>Figura 5 - Tela Lista de Profissionais</figcaption>
 </figure>
 
 ---
-### Tela - Cadastro 
-A tela de **Cadastro**  apresentará os seguintes campos para a inserção das informações pessoais do usuário: 
+
+#### Tela - Cadastro
+
+A tela de **Cadastro**  apresentará os seguintes campos para a inserção das informações pessoais do usuário:
+
 - Nome Completo;
 - Data de Nascimento; 
 - E-mail;
@@ -82,17 +85,19 @@ A tela de **Cadastro**  apresentará os seguintes campos para a inserção das i
 - Confirmação de Senha;
 - Aceite dos Termos e Condições de Uso. 
 
-Além disso, haverá uma opção para os profissionais da área da saúde  clicarem e, em seguida, inserirem mais duas informações para se cadastrem;
+Além disso, haverá uma opção para os profissionais da área da saúde  clicarem e, em seguida, inserirem mais duas informações para se cadastrarem:
+
 - CRM;
 - Área de Atuação.
 
 <figure> 
-  <img src="img/Prot%C3%B3tipo%20-%20P%C3%A1gina%20de%20Cadastro.jpg" alt="Tela Lista de Profissionais" width="80%">
+  <img src="./img/prototype-register-page.jpg" alt="Tela Lista de Profissionais" width="70%">
   <figcaption>Figura 6 - Tela de Cadastro</figcaption>
 </figure>
+
 <figure> 
-  <img src="img/Informa%C3%A7%C3%A3o%20profissional.png" alt="Tela Lista de Profissionais" width="80%">
-  <figcaption>Figura 7 - Tela para Informação Profissional</figcaption>
+  <img src="./img/professional-fields.png" alt="Tela Lista de Profissionais" width="70%">
+  <figcaption>Figura 7 - Campos adicionais para Informação Profissional</figcaption>
 </figure>
 
 ---
@@ -111,6 +116,6 @@ Na tela de Login estarão presentes as seguintes aplicabilidades:
 - A tela também irá conter a funcionalidade de retornar a pagina de cadastro para os usuários que ainda não o tiverem feito previamente.
 
 <figure> 
-  <img src="./img/prototype-login-page.jpg" alt="Tela Pagina de Login" width="80%">
+  <img src="./img/prototype-login-page.jpg" alt="Tela Pagina de Login" width="70%">
   <figcaption>Figura 8 - Tela Página de Login</figcaption>
 </figure>
