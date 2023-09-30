@@ -119,3 +119,27 @@ Na tela de Login estarão presentes as seguintes aplicabilidades:
   <img src="./img/prototype-login-page.jpg" alt="Tela Pagina de Login" width="70%">
   <figcaption>Figura 8 - Tela Página de Login</figcaption>
 </figure>
+
+---
+
+#### Tela - Perfil de Usuário
+
+A tela de **Perfil de Usuário** exibirá informações do cadastro realizado pelo usuário.
+
+Na tela Perfil de Usuário estarão presentes as seguintes aplicabilidades:
+
+- Foto de Perfil;
+- Editar foto de perfil;
+- Nome completo;
+- Idade;
+- E-mail;
+- Telefone;
+- Consultas;
+- Lista de profissionais;
+- Detalhes específicos sobre as consultas, como especialidade, nome do especialista e data do último contato;
+- Opção para sair do site;
+
+<figure> 
+  <img src="./img/Protótipo (baixa fidelidade) - Perfil do Usuário (Paciente).jpg" alt="Tela Perfil de Usuário" width="70%">
+  <figcaption>Figura 9 - Tela Página de Perfil de Usuário</figcaption>
+</figure>
