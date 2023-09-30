@@ -67,8 +67,37 @@ A tela de **Lista de Profissionais** exibirá todos os profissionais cadastrados
 - Terá uma forma do usuário voltar para a página de perfil do mesmo.
 
 <figure> 
-  <img src="./img/prototype-professional-list.jpg" alt="Tela Lista de Profissionais" width="80%">
-  <figcaption>Figura 4 - Tela Lista de Profissionais</figcaption>
+  <img src="./img/prototype-professional-list.jpg" alt="Tela Lista de Profissionais" width="70%">
+  <figcaption>Figura 5 - Tela Lista de Profissionais</figcaption>
+</figure>
+
+---
+
+#### Tela - Cadastro
+
+A tela de **Cadastro**  apresentará os seguintes campos para a inserção das informações pessoais do usuário:
+
+- Nome Completo;
+- Data de Nascimento; 
+- E-mail;
+- Telefone; 
+- Senha; 
+- Confirmação de Senha;
+- Aceite dos Termos e Condições de Uso. 
+
+Além disso, haverá uma opção para os profissionais da área da saúde  clicarem e, em seguida, inserirem mais duas informações para se cadastrarem:
+
+- CRM;
+- Área de Atuação.
+
+<figure> 
+  <img src="./img/prototype-register-page.jpg" alt="Tela Lista de Profissionais" width="70%">
+  <figcaption>Figura 6 - Tela de Cadastro</figcaption>
+</figure>
+
+<figure> 
+  <img src="./img/professional-fields.png" alt="Tela Lista de Profissionais" width="70%">
+  <figcaption>Figura 7 - Campos adicionais para Informação Profissional</figcaption>
 </figure>
 
 ---
@@ -93,6 +122,48 @@ Na tela de Login estarão presentes as seguintes aplicabilidades:
 
 ---
 
+#### Tela - Perfil de Usuário
+
+A tela de **Perfil de Usuário** exibirá informações do perfil do usuário.
+
+Além disso, essa tela irá variar dependendo do usuário logado, segue então as telas para quando o paciente está logado, e logo em seguida a tela de quando o profissional está logado.
+
+Nessa tela, está contido as seguintes aplicabilidades:
+
+- Foto de Perfil do usuário para ele editar quando quiser;
+- Um botão para acesso de todos os profissionais da plataforma;
+- Opção para sair do site;
+- As informações do usuário;
+- Detalhes específicos sobre as consultas, como especialidade, nome do especialista e data do último contato;
+- A partir das consultas o usuário poderá também iniciar uma consulta rápida via chat com um profissional ou descartar essa consulta.
+
+<figure> 
+  <img src="./img/prototype-user-profile-pacient.jpg" alt="Tela Perfil do Usuário (Paciente)" width="70%">
+  <figcaption>Figura 9 - Tela Página de Perfil do Usuário (<b>Paciente</b>)</figcaption>
+</figure>
+
+<figure> 
+  <img src="./img/prototype-user-profile-professional.jpg" alt="Tela Perfil do Usuário (Profissional)" width="70%">
+  <figcaption>Figura 10 - Tela Página de Perfil do Usuário (<b>Profissional</b>)</figcaption>
+</figure>
+
+---
+
+#### Tela - Fórum
+
+A tela de **Fórum** exibirá os tópicos e posts já criados pelos usuários da plataforma.
+
+Nessa tela, está contido as seguintes aplicabilidades:
+
+- Pesquisa por tópicos e posts;
+- Os tópicos e os posts publicados.
+
+<figure> 
+  <img src="./img/prototype-forum-page.jpg" alt="Tela do Fórum" width="70%">
+  <figcaption>Figura 11 - Tela Página do Fórum</figcaption>
+</figure>
+
+
 #### Tela - Chat
 
 A tela de **Chat** permitirá comunicação em tempo real entre usuários. Com as seguintes funcionalidades:
@@ -105,6 +176,6 @@ A tela de **Chat** permitirá comunicação em tempo real entre usuários. Com a
 - Mostrar se um usuário está online, offline, ocupado, etc.
 
 <figure> 
-  <img src="./img/prototype-chat.jpg" alt="Tela Chat" width="80%">
-  <figcaption>Figura 9 - Tela Chat</figcaption>
+  <img src="./img/prototype-chat-page.jpg" alt="Tela Chat" width="70%">
+  <figcaption>Figura 12 - Tela Chat</figcaption>
 </figure>
