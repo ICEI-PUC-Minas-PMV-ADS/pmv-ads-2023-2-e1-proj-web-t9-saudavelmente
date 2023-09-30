@@ -68,7 +68,25 @@ A tela de **Lista de Profissionais** exibirá todos os profissionais cadastrados
 
 <figure> 
   <img src="./img/prototype-professional-list.jpg" alt="Tela Lista de Profissionais" width="80%">
-  <figcaption>Figura 4 - Tela Lista de Profissionais</figcaption>
+  <figcaption>Figura 5 - Tela Lista de Profissionais</figcaption>
+</figure>
+
+---
+
+#### Tela - Chat
+
+A tela de **Chat** permitirá comunicação em tempo real entre usuários. Com as seguintes funcionalidades :
+
+- Enviar e receber mensagens instantaneamente, texto ou voz;
+- Notificar os usuários sobre mensagens não lidas ou novas atividades;
+- Armazenar mensagens antigas e permitir que os usuários pesquisem no histórico do chat;
+- Mostrar se um usuário está online, offline, ocupado, etc;
+- Criptografia de ponta a ponta para garantir a privacidade e segurança das mensagens;
+- Anexarem imagens, vídeos, documentos e outros arquivos;
+
+<figure> 
+  <img src="./img/prototype-chat.jpg" alt="Tela Lista de Profissionais" width="80%">
+  <figcaption>Figura 6 - Tela Chat</figcaption>
 </figure>
 
 ---
