@@ -58,17 +58,18 @@ A tela de **Página Inicial** será o ponto inicial de qualquer usuário da plat
 
 ---
 
-#### Tela - Lista de Profissionais
+#### Tela - Fórum
 
-A tela de **Lista de Profissionais** exibirá todos os profissionais cadastrados na platafoma, com um campo de pesquisa para filtrar os profissionais. Ela estará disponível para acesso ao usuário logado em usa página de perfil. Nela estará presente:
+A tela de **Fórum** exibirá os tópicos e posts já criados pelos usuários da plataforma.
 
-- Cards para cada profissional cadastrado, e detalhes como área de atuação, descrição, etc...;
-- Nos cards, você poderá adicionar o profissional à sua lista de profissionais que você gostaria de ter uma consulta via chat;
-- Terá uma forma do usuário voltar para a página de perfil do mesmo.
+Nessa tela, está contido as seguintes aplicabilidades:
+
+- Pesquisa por tópicos e posts;
+- Os tópicos e os posts publicados.
 
 <figure> 
-  <img src="./img/prototype-professional-list.jpg" alt="Tela Lista de Profissionais" width="70%">
-  <figcaption>Figura 5 - Tela Lista de Profissionais</figcaption>
+  <img src="./img/prototype-forum-page.jpg" alt="Tela do Fórum" width="70%">
+  <figcaption>Figura 11 - Tela Página do Fórum</figcaption>
 </figure>
 
 ---
@@ -149,21 +150,6 @@ Nessa tela, está contido as seguintes aplicabilidades:
 
 ---
 
-#### Tela - Fórum
-
-A tela de **Fórum** exibirá os tópicos e posts já criados pelos usuários da plataforma.
-
-Nessa tela, está contido as seguintes aplicabilidades:
-
-- Pesquisa por tópicos e posts;
-- Os tópicos e os posts publicados.
-
-<figure> 
-  <img src="./img/prototype-forum-page.jpg" alt="Tela do Fórum" width="70%">
-  <figcaption>Figura 11 - Tela Página do Fórum</figcaption>
-</figure>
-
-
 #### Tela - Chat
 
 A tela de **Chat** permitirá comunicação em tempo real entre usuários. Com as seguintes funcionalidades:
@@ -178,4 +164,19 @@ A tela de **Chat** permitirá comunicação em tempo real entre usuários. Com a
 <figure> 
   <img src="./img/prototype-chat-page.jpg" alt="Tela Chat" width="70%">
   <figcaption>Figura 12 - Tela Chat</figcaption>
+</figure>
+
+---
+
+#### Tela - Lista de Profissionais
+
+A tela de **Lista de Profissionais** exibirá todos os profissionais cadastrados na platafoma, com um campo de pesquisa para filtrar os profissionais. Ela estará disponível para acesso ao usuário logado em usa página de perfil. Nela estará presente:
+
+- Cards para cada profissional cadastrado, e detalhes como área de atuação, descrição, etc...;
+- Nos cards, você poderá adicionar o profissional à sua lista de profissionais que você gostaria de ter uma consulta via chat;
+- Terá uma forma do usuário voltar para a página de perfil do mesmo.
+
+<figure> 
+  <img src="./img/prototype-professional-list.jpg" alt="Tela Lista de Profissionais" width="70%">
+  <figcaption>Figura 5 - Tela Lista de Profissionais</figcaption>
 </figure>
