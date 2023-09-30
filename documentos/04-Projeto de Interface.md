@@ -5,7 +5,7 @@
 O Fluxo de Usuário (User Flow) apresentado na **Figura 1** mostra o mapeamento do fluxo de navegação do usuário na aplicação entre as telas. Ela serve para alinhar os caminhos e as possíveis ações que o usuário pode fazer. Cada uma das telas descritas aqui está detalhada na seção de [Prótotipo de Baixa Fidelidade](#protótipo-de-baixa-fidelidade) que se segue. Para visualizar o protótipo interativo, acesse [esse link](https://www.figma.com/proto/qGbpPPBEY2diO4EH8Mtg6y/Projeto---Eixo-01%2FTurma-09---Saud%C3%A1velMente?type=design&node-id=160-2&t=35jnyTSFn2OStKPg-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=160%3A2&mode=design) que levará para a protótipação feita no Figma.
 
 <figure> 
-  <img src="./img/simple-userflow.jpg" alt="Estrutura padrão do site" width="70%">
+  <img src="./img/userflow.jpg" alt="Estrutura padrão do site" width="70%">
   <figcaption>Figura 1 - Fluxo de Telas do Usuário</figcaption>
 </figure>
 
