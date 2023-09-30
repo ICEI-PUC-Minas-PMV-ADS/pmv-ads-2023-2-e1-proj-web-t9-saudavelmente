@@ -69,7 +69,7 @@ Nessa tela, está contido as seguintes aplicabilidades:
 
 <figure> 
   <img src="./img/prototype-forum-page.jpg" alt="Tela do Fórum" width="70%">
-  <figcaption>Figura 11 - Tela Página do Fórum</figcaption>
+  <figcaption>Figura 5 - Tela Página do Fórum</figcaption>
 </figure>
 
 ---
@@ -163,7 +163,7 @@ A tela de **Chat** permitirá comunicação em tempo real entre usuários. Com a
 
 <figure> 
   <img src="./img/prototype-chat-page.jpg" alt="Tela Chat" width="70%">
-  <figcaption>Figura 12 - Tela Chat</figcaption>
+  <figcaption>Figura 11 - Tela Chat</figcaption>
 </figure>
 
 ---
@@ -178,5 +178,5 @@ A tela de **Lista de Profissionais** exibirá todos os profissionais cadastrados
 
 <figure> 
   <img src="./img/prototype-professional-list.jpg" alt="Tela Lista de Profissionais" width="70%">
-  <figcaption>Figura 5 - Tela Lista de Profissionais</figcaption>
+  <figcaption>Figura 12 - Tela Lista de Profissionais</figcaption>
 </figure>
