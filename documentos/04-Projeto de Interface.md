@@ -69,7 +69,7 @@ Nessa tela, está contido as seguintes aplicabilidades:
 
 <figure> 
   <img src="./img/prototype-forum-page.jpg" alt="Tela do Fórum" width="70%">
-  <figcaption>Figura 5 - Tela Página do Fórum</figcaption>
+  <figcaption>Figura 5 - Tela de Fórum</figcaption>
 </figure>
 
 ---
@@ -92,12 +92,12 @@ Além disso, haverá uma opção para os profissionais da área da saúde  clica
 - Área de Atuação.
 
 <figure> 
-  <img src="./img/prototype-register-page.jpg" alt="Tela Lista de Profissionais" width="70%">
+  <img src="./img/prototype-register-page.jpg" alt="Tela de Cadastro" width="70%">
   <figcaption>Figura 6 - Tela de Cadastro</figcaption>
 </figure>
 
 <figure> 
-  <img src="./img/professional-fields.png" alt="Tela Lista de Profissionais" width="70%">
+  <img src="./img/professional-fields.png" alt="Campos adicionais para Informação Profissional" width="70%">
   <figcaption>Figura 7 - Campos adicionais para Informação Profissional</figcaption>
 </figure>
 
@@ -117,8 +117,8 @@ Na tela de Login estarão presentes as seguintes aplicabilidades:
 - A tela também irá conter a funcionalidade de retornar a pagina de cadastro para os usuários que ainda não o tiverem feito previamente.
 
 <figure> 
-  <img src="./img/prototype-login-page.jpg" alt="Tela Pagina de Login" width="70%">
-  <figcaption>Figura 8 - Tela Página de Login</figcaption>
+  <img src="./img/prototype-login-page.jpg" alt="Tela de Login" width="70%">
+  <figcaption>Figura 8 - Tela de Login</figcaption>
 </figure>
 
 ---
@@ -140,12 +140,12 @@ Nessa tela, está contido as seguintes aplicabilidades:
 
 <figure> 
   <img src="./img/prototype-user-profile-pacient.jpg" alt="Tela Perfil do Usuário (Paciente)" width="70%">
-  <figcaption>Figura 9 - Tela Página de Perfil do Usuário (<b>Paciente</b>)</figcaption>
+  <figcaption>Figura 9 - Tela de Perfil do Usuário (<b>Paciente</b>)</figcaption>
 </figure>
 
 <figure> 
   <img src="./img/prototype-user-profile-professional.jpg" alt="Tela Perfil do Usuário (Profissional)" width="70%">
-  <figcaption>Figura 10 - Tela Página de Perfil do Usuário (<b>Profissional</b>)</figcaption>
+  <figcaption>Figura 10 - Tela de Perfil do Usuário (<b>Profissional</b>)</figcaption>
 </figure>
 
 ---
@@ -162,8 +162,8 @@ A tela de **Chat** permitirá comunicação em tempo real entre usuários. Com a
 - Mostrar se um usuário está online, offline, ocupado, etc.
 
 <figure> 
-  <img src="./img/prototype-chat-page.jpg" alt="Tela Chat" width="70%">
-  <figcaption>Figura 11 - Tela Chat</figcaption>
+  <img src="./img/prototype-chat-page.jpg" alt="Tela de Chat" width="70%">
+  <figcaption>Figura 11 - Tela de Chat</figcaption>
 </figure>
 
 ---
