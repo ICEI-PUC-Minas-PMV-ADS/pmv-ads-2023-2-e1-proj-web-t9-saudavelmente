@@ -1,0 +1,16 @@
+:root {
+  /* https://fonts.google.com/specimen/Varela+Round?query=Varela+Round */
+  --ff-varela-round-400: 'Varela Round', sans-serif;
+
+  /* https://coolors.co/0031b2-4eecc7-1f271b-787586-ffffff */
+  --clr-international-klein-blue: #0031b2;
+  --clr-aquamarine: #4eecc7;
+  --clr-black-olive: #1f271b;
+  --clr-taupe-gray: #787586;
+  --clr-white: #fff;
+}
+
+body {
+  font-family: var(--ff-varela-round-400);
+  background-color: var(--clr-white);
+}
