@@ -70,7 +70,7 @@ Os artefatos do projeto são desenvolvidos a partir das plataformas [GitHub](htt
 | Documentos do projeto | GitHub | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t9-saudavelmente/tree/main/documentos |
 | Projeto de Interface e Wireframes | Figma | https://www.figma.com/proto/qGbpPPBEY2diO4EH8Mtg6y/Projeto---Eixo-01%2FTurma-09---Saud%C3%A1velMente?type=design&node-id=160-2&t=35jnyTSFn2OStKPg-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=160%3A2&mode=design |
 | Gerenciamento do Projeto | GitHub Projects | https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/619 |
-| Hospedagem | GitHub Pages | Em andamento... |
+| Hospedagem | GitHub Pages | https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t9-saudavelmente/codigo-fonte/paginas/pagina-inicial/ |
 
 ### Estratégia de Organização de Codificação 
 
