@@ -18,3 +18,7 @@ Nesse primeiro eixo do curso, para simplificar a utilização do Git e a organiz
 - Template padrão para as páginas, com HTML, CSS e JS, e também o Bootstrap.
 - Favicon com a logo do projeto.
 - Hospedagem do site no GitHub Pages.
+
+### [0.1.0] - 20/10/2023
+#### Adicionado
+- Header e Footer em todas as páginas.

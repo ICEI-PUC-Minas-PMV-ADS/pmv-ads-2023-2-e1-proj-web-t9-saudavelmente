@@ -42,7 +42,63 @@
 </head>
 
 <body>
-  <header>Este é o header</header>
+  <header>
+    <nav class="navbar navbar-expand-md bg-light fixed-top bd-bottom-r10">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./">
+          SaudávelMente
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content"
+          aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbar-content">
+          <ul class="navbar-nav align-items-md-center mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-uppercase" aria-current="page" href="./">
+                <span class="bi bi-house"></span> Início
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="#sobre">
+                <span class="bi bi-book"></span> Sobre
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="../forum/">
+                <span class="bi bi-wechat"></span> Fórum
+              </a>
+            </li>
+            <li class="nav-item dropdown" id="auth">
+              <a class="nav-link dropdown-toggle fs-3" href="#" id="navbar-dropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false" title="Autenticação">
+                <span class="bi bi-person-circle"></span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbar-dropdown">
+                <li>
+                  <h6 class="dropdown-header">Autenticação</h6>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../login/">
+                    Entrar <span class="bi bi-person-fill"></span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../cadastro/">
+                    Cadastre-se <span class="bi bi-person-plus-fill"></span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item" id="auth-logout" title="Clique para Sair">
+              <span class="nav-link fs-3 bi bi-box-arrow-right"></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
   <main>
     <h1><a href="./"><i class="bi bi-house"></i>Página Inicial</a></h1>
@@ -50,13 +106,24 @@
       <li><a href="../forum/">Clique aqui para visitar a página de Fórum</a></li>
       <li><a href="../cadastro/">Clique aqui para visitar a página de Cadastro</a></li>
       <li><a href="../login/">Clique aqui para visitar a página de Login</a></li>
-      <li><a href="../perfil/">Clique aqui para visitar a página de Perfil</a></li>
+      <li><a href="../perfil/"> Clique aqui para visitar a página de Perfil</a></li>
       <li><a href="../chat/">Clique aqui para visitar a página de Chat</a></li>
       <li><a href="../profissionais/">Clique aqui para visitar a página de Profissionais</a></li>
     </ul>
   </main>
 
-  <footer>Este é o footer</footer>
+  <!-- O footer fica grudado no final da página e anda com o conteúdo. -->
+  <footer class="mt-auto bd-top-r10 bg-light">
+    <div class="p-3">
+      <p class="text-center m-0">
+        <a href="./">
+          SaudávelMente
+        </a>
+        <br>
+        Copyright &copy; <span id="current-year">2023</span> - Todos os direitos reservados.
+      </p>
+    </div>
+  </footer>
 </body>
 
 </html>
