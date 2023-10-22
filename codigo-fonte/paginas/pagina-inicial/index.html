@@ -102,34 +102,47 @@
 
   <main>
     <section class="px-4 py-5 my-5 text-center">
-      <img class="d-block mx-auto mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-      <h1 class="display-5 fw-bold text-body-emphasis">Centered hero</h1>
+      <img class="d-block mx-auto mb-4" src="https://placehold.co/100" alt="Placeholder">
+      <h1 class="display-3 fw-bold text-body-emphasis">Sua Jornada para o Bem-Estar Emocional Começa Aqui!</h1>
       <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most
-          popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive
-          prebuilt components, and powerful JavaScript plugins.</p>
+        <p class="lead mb-4">Descubra a plataforma SaudávelMente, onde pacientes encontram apoio em saúde mental,
+          profissionais oferecem voluntariado e a comunidade se reúne para aprender, compartilhar e crescer juntos.
+          Junte-se a nós e comece a sua jornada em direção a um equilíbrio emocional e bem-estar duradouros.</p>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-          <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+          <a href="../cadastro/" class="btn btn-primary btn-lg px-4 gap-3">Cadastre-se!</a>
+          <a href="#sobre" class="btn btn-outline-secondary btn-lg px-4">Quero conhecer!</a>
         </div>
       </div>
     </section>
 
     <div class="section-divider"></div>
 
+    <!-- Seção de Serviços -->
     <section class="container px-4 py-5">
-      <h2 class="pb-2 border-bottom">Columns with icons</h2>
+      <h2 class="pb-2 border-bottom">Serviços da Plataforma</h2>
       <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
         <div class="feature col">
           <div
             class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-            <span class="bi bi-collection"></span>
+            <span class="bi bi-chat-square-heart"></span>
           </div>
-          <h3 class="fs-2 text-body-emphasis">Featured title</h3>
-          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
-            probably just keep going until we run out of words.</p>
-          <a href="#" class="icon-link">
-            Call to action
+          <h3 class="fs-2 text-body-emphasis">Consultas via Chat!</h3>
+          <p>Acesse apoio emocional conveniente e seguro, agende consultas com profissionais de saúde mental.</p>
+          <!-- Se o usuário estiver logado mudar para ../perfil/ -->
+          <a href="../login/" class="icon-link" id="#chat-redirect">
+            Acessar
+            <span class="bi bi-chevron-right"></span>
+          </a>
+        </div>
+        <div class="feature col">
+          <div
+            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <span class="bi bi-wechat"></span>
+          </div>
+          <h3 class="fs-2 text-body-emphasis">Fórum de Discussões</h3>
+          <p>Compartilhe experiências, obtenha apoio e aprenda com nossa comunidade dedicada à saúde mental.</p>
+          <a href="../forum/" class="icon-link">
+            Acessar
             <span class="bi bi-chevron-right"></span>
           </a>
         </div>
@@ -138,24 +151,11 @@
             class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
             <span class="bi bi-person-circle"></span>
           </div>
-          <h3 class="fs-2 text-body-emphasis">Featured title</h3>
-          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
-            probably just keep going until we run out of words.</p>
-          <a href="#" class="icon-link">
-            Call to action
-            <span class="bi bi-chevron-right"></span>
-          </a>
-        </div>
-        <div class="feature col">
-          <div
-            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-            <span class="bi bi-toggles2"></span>
-          </div>
-          <h3 class="fs-2 text-body-emphasis">Featured title</h3>
-          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
-            probably just keep going until we run out of words.</p>
-          <a href="#" class="icon-link">
-            Call to action
+          <h3 class="fs-2 text-body-emphasis">Cadastre-se agora!</h3>
+          <p>Junte-se à comunidade de apoio em saúde mental. Cadastre-se agora e tenha acesso a todos os nossos
+            recursos.</p>
+          <a href="../cadastro/" class="icon-link">
+            Acessar
             <span class="bi bi-chevron-right"></span>
           </a>
         </div>
@@ -164,60 +164,71 @@
 
     <div class="section-divider"></div>
 
+    <!-- Seção de Depoimentos -->
     <section class="depositions container px-4 py-5">
-      <h2 class="pb-2 border-bottom">Columns with icons</h2>
+      <h2 class="pb-2 border-bottom">Depoimentos dos Usários</h2>
       <div class="row py-5">
         <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-          </svg>
-          <h3 class="fw-normal">Heading</h3>
-          <p>Some representative placeholder content for the three columns of text below the carousel. This is the
-            first
-            column.</p>
+          <img class="deposition-image rounded-circle img-thumbnail" src="./imagens/persona-joao.jpg"
+            alt="Imagem do João da Silva">
+          <figure class="text-end">
+            <blockquote class="blockquote">
+              <p>Esta plataforma mudou minha vida. Encontrei apoio quando mais precisava. Os profissionais
+                aqui me
+                ajudaram a superar a ansiedade acadêmica, e agora estou me sentindo mais forte e positivo.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+              João da Silva <cite title="Estudante Universitário">Estudante Universitário</cite>
+            </figcaption>
+          </figure>
         </div>
         <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-          </svg>
-          <h3 class="fw-normal">Heading</h3>
-          <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.
-          </p>
+          <img class="deposition-image rounded-circle img-thumbnail" src="./imagens/persona-ana.png"
+            alt="Imagem da Ana Rodrigues">
+          <figure class="text-end">
+            <blockquote class="blockquote">
+              <p>Trabalhar como voluntária nesta plataforma tem sido uma experiência incrível. Ajudar as pessoas a
+                enfrentar desafios emocionais e ver suas vidas melhorarem é incrivelmente gratificante. Estou feliz por
+                fazer parte deste projeto.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+              Ana Rodrigues <cite title="Source Title">Psicóloga</cite>
+            </figcaption>
+          </figure>
         </div>
         <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-          </svg>
-          <h3 class="fw-normal">Heading</h3>
-          <p>And lastly this, the third column of representative placeholder content.</p>
+          <img class="deposition-image rounded-circle img-thumbnail" src="./imagens/persona-maria.png"
+            alt="Imagem da Maria Santos">
+          <figure class="text-end">
+            <blockquote class="blockquote">
+              <p>Este lugar me trouxe esperança e apoio quando eu mais precisava. Compartilhar experiências com pessoas
+                que entendiam o que eu estava passando fez toda a diferença.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+              Maria Santos <cite title="Source Title">Professora</cite>
+            </figcaption>
+          </figure>
         </div>
       </div>
     </section>
 
     <div class="section-divider" id="sobre"></div>
 
+    <!-- Seção Sobre -->
     <section class="container px-4 py-5">
-      <h2 class="pb-2 border-bottom">Columns with icons</h2>
+      <h2 class="pb-2 border-bottom">Sobre o Projeto</h2>
       <div class="container my-5">
         <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
           <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-            <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Border hero with cropped image and shadows</h1>
-            <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most
-              popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system,
-              extensive prebuilt components, and powerful JavaScript plugins.</p>
+            <h2 class="display-4 fw-bold lh-1 text-body-emphasis">Nossa Missão e Compromisso</h2>
+            <p class="lead">Conectamos pacientes e voluntários profissionais em prol da saúde mental, proporcionando
+              tratamento
+              acessível e um ambiente seguro. Nosso objetivo é combater o estigma e preencher a lacuna entre necessidade
+              e recursos para promover a saúde emocional e o bem-estar de todos.</p>
           </div>
           <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg rounded">
-            <p class="p-3 mb-0"><span class="text-uppercase">Aviso legal:</span> Lorem, ipsum dolor sit amet
-              consectetur
-              adipisicing elit. Quibusdam expedita
-              reiciendis rem ipsa nulla, repellendus deserunt cupiditate similique delectus tempore. At, nam eligendi
-              eum quidem corrupti tempora. Ducimus, expedita suscipit.</p>
+            <p class="p-3 mb-0"><span class="text-uppercase">Aviso legal:</span> Este projeto é estritamente acadêmico,
+              sem vínculos com instituições de saúde. Não oferece aconselhamento ou tratamento médico.</p>
           </div>
         </div>
       </div>

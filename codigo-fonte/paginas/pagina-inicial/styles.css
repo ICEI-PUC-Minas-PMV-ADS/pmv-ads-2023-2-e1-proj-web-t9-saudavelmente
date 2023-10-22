@@ -18,7 +18,9 @@
   text-align: center;
 }
 
-.depositions .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
+.deposition-image {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  object-position: center;
 }
