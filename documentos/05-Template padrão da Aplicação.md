@@ -1,12 +1,20 @@
 # Template padrão da Aplicação
 
-Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
+- O layout padrão do site foi construído com as linguagens de marcação [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML) e [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS);
+- A responsividade é tratada usando o framework de CSS [Bootsrap](https://getbootstrap.com/) e também flexível para quem quiser lidar com a responsividade utilizando **media-queries**;
+- Os ícones são utilizados do próprio Bootstrap pelo [Bootstrap Icons](https://icons.getbootstrap.com/);
+- As páginas terão como elementos padrões o **menu de navegação** onde o mesmo será alterado apenas quando o usuário estiver "logado", o **header** e o **footer**;
+- Elementos de identidade visual:
+    - **Cores**: você pode visualizar as cores utilizadas com mais detalhes clicando [neste link](https://coolors.co/0031b2-4eecc7-1f271b-787586-ffffff);
+        ![Paleta de cores da SaudávelMente](./img/color-pallete.png)
+    - **Font-family**: você pode visualizar melho a font-family escolhida clicando [neste link](https://fonts.google.com/specimen/Varela+Round?query=Varela+Round);
+        ![Font-Family utilizada no SaudávelMente](./img/font-family.png)
+    - **Font-size**: a font-size pode variar, mas foram utilizadas as padrões do próprio Bootstrap.
+- O código utilizado para a construção dos elementos citados pode ser consultado [aqui](../codigo-fonte/): 
+    - Repare que a estruturação do **código-fonte** é bem flexível, sendo possível tanta a utilização de elementos globais, encontrados no diretório `compartilhado`, quanto elementos relativos a cada página, que ficam localizados dentro de seus respectivos diretórios de cada página;
+    - CSS, JS e imagens podem ser compartilhados, ou relativos a cada página.
 
-[Apresente a estrutura padrão da sua aplicação.]
 
-> **Links Úteis**:
->
-> - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
-> - [Website Page Layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
-> - [Perfect Liquid Layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
-> - [How and Why Icons Improve Your Web Design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
+## Estrutura padrão da aplicação
+
+[Apresente a estrutura padrão da aplicação.]

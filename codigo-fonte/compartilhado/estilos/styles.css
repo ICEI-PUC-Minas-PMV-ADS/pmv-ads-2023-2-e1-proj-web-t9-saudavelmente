@@ -10,9 +10,17 @@
   --clr-white: #fff;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--ff-varela-round-400);
+}
+
 body {
   font-family: var(--ff-varela-round-400);
   background-color: var(--clr-white);
+  overflow-x: hidden;
 }
 
 #auth-logout {

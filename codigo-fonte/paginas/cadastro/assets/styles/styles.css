@@ -1,0 +1,220 @@
+/* ESTILIZAÇÃO DO FORMULÁRIO */
+
+.section-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+form {
+  background-color: #fff;
+  margin: 69px auto;
+  padding: 20px;
+  height: 500px;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18px;
+  box-shadow: 0px 0px 12px #1f271baf;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.titleBar,
+.footerBar {
+  height: 2px;
+  width: 550px;
+  background-color: #4EECC7;
+  margin: 10px 0 20px 0;
+}
+
+.input {
+  width: 260px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #7875861a;
+  border: transparent 1px solid;
+  padding: 7px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  flex-direction: row;
+}
+
+input[type="date"] {
+  color: #787586;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.containerHalf label,
+.containerFull label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+span .detail {
+  color: #0031b2;
+}
+
+.containerHalf {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 550px;
+}
+
+.containerHalf div:first-child {
+  margin-right: 10px;
+}
+
+.containerHalf div:first-child input {
+  flex: 1;
+}
+
+.containerHalf .Date,
+.containerHalf .cPassword {
+  width: 280px;
+}
+
+.profissional label {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 550px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.profissional input {
+  margin-right: 8px;
+}
+
+
+.info_prof label {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 550px;
+  margin-top: 10px;
+}
+
+.info_prof input {
+  width: 260px;
+  height: 30px;
+  border-radius: 5px;
+  border: #787586 1px solid;
+  padding: 7px;
+
+  margin-bottom: 10px;
+  flex-direction: row;
+}
+
+.cpf {
+  text-align: center;
+}
+
+.area_atuacao {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.area_atuacao select {
+  margin-top: 5px;
+  width: 150px;
+  height: 30px;
+}
+
+.containerFull,
+.userName,
+.email,
+.tel,
+.profissional,
+.info_prof {
+  width: 550px;
+}
+
+form div:nth-child(6) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.terms {
+  width: fit-content;
+  margin-top: 30px;
+}
+
+.containerFull button a {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.containerFull .ab {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.registerButton {
+  display: block;
+  margin: 0 auto;
+}
+
+.terms a {
+  color: #1F271B;
+  text-decoration: none;
+}
+
+.terms a:hover {
+  text-decoration: none;
+  color: #0031B2;
+  transition: .5s all;
+}
+
+form div:nth-child(7) {
+  display: flex;
+  flex-direction: column;
+}
+
+.registerButton,
+.sign-in {
+  width: 260px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  margin-bottom: 80px;
+}
+
+.registerButton {
+  background-color: #0031B2;
+}
+
+
+.registerButton:hover {
+  background-color: #002788;
+  transition: .8s all;
+}
+
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Conecte-se a ajuda psicológica online e recursos educativos. Fortaleça sua saúde mental. Apoiamos pacientes e voluntários.">
+  <meta name="robots" content="noindex,follow">
+  <link rel="manifest" href="../../compartilhado/imagens/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../compartilhado/imagens/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../compartilhado/imagens/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../compartilhado/imagens/favicon-16x16.png">
+
+  <title>SaudávelMente | Cadastre-se</title>
+
+  <!-- Google Fonts - Varela Round -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons, documentação: https://icons.getbootstrap.com/ -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <!-- CSS local para sobrescrever o CSS do Bootstrap e também carregar componentes usados em todas as páginas -->
+  <link rel="stylesheet" href="../../compartilhado/estilos/styles.css">
+  <link rel="stylesheet" href="./assets/styles/styles.css">
+  <link rel="stylesheet" href="./assets/styles/media-query.css">
+
+  <!-- Bootstrap JS 5.3 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <!-- JS local -->
+  <script src="../../compartilhado/scripts/script.js"></script>
+  <script src="./assets/js/script.js" defer></script>
+  <script src="./assets/js/validation.js" defer></script>
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md bg-light fixed-top bd-bottom-r10">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../pagina-inicial/">
+          SaudávelMente
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content"
+          aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbar-content">
+          <ul class="navbar-nav align-items-md-center mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="../pagina-inicial/">
+                <span class="bi bi-house"></span> Início
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="../pagina-inicial/#sobre">
+                <span class="bi bi-book"></span> Sobre
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="../forum/">
+                <span class="bi bi-wechat"></span> Fórum
+              </a>
+            </li>
+            <li class="nav-item dropdown" id="auth">
+              <a class="nav-link dropdown-toggle fs-3" href="#" id="navbar-dropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false" title="Autenticação">
+                <span class="bi bi-person-circle"></span>
+              </a>
+
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbar-dropdown">
+                <li>
+                  <h6 class="dropdown-header">Autenticação</h6>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../login/">
+                    Entrar <span class="bi bi-person-fill"></span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item active" href="./" aria-current="page">
+                    Cadastre-se <span class="bi bi-person-plus-fill"></span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item" id="auth-logout" title="Clique para Sair">
+              <span class="nav-link fs-3 bi bi-box-arrow-right"></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="section-form">
+      <form id="myForm" action="#" method="post" class="validation">
+        <div class="container">
+          <h1 class="title">Cadastre-se</h1>
+          <div class="titleBar"></div>
+        </div>
+        <div class="containerHalf">
+          <div>
+            <label for="">Nome Completo <span class="detail">*</span></label>
+            <input class="name input" type="text" placeholder="Digite seu nome" minlength="4" required>
+          </div>
+          <div>
+            <label for="">Data de Nascimento <span class="detail">*</span></label>
+            <input class="Date input" type="date" required>
+          </div>
+        </div>
+        <div class="containerFull">
+          <div>
+            <label for="">E-mail <span class="detail">*</span></label>
+            <input class="email input" type="email" placeholder="Digite seu e-mail" required>
+          </div>
+        </div>
+        <div class="containerFull">
+          <label for="">Número do Celular <span class="detail">*</span></label>
+          <input class="tel input" type="number" placeholder="(99) 99999-9999" required maxlength="13">
+        </div>
+        <div class="containerHalf">
+          <div>
+            <label for="">Senha <span class="detail">*</span></label>
+            <input class="password input" type="password" placeholder="Digite sua Senha" minlength="6" required>
+          </div>
+          <div>
+            <label for="">Confirmar Senha <span class="detail">*</span></label>
+            <input class="cPassword input" type="password" placeholder="Confirme sua Senha" minlength="6" required>
+          </div>
+        </div>
+        <div class="profissional">
+          <label>
+            <input type="checkbox" name="profissional_saude" id="profissional_saude_checkbox">
+            Sou profissional da saúde
+          </label>
+        </div>
+
+        <!-- Campos adicionais para CRP e área de atuação (inicialmente ocultos) -->
+        <div class="info_prof">
+          <div class="cpf hidden">
+            <label for="crp"></label>
+            <input type="number" placeholder="Digite seu CPF" id="crp" name="cpf" maxlength="11" pattern="[0-9]*"
+              oninput="limitInputLength(this, 11)">
+          </div>
+
+          <div class="area_atuacao hidden">
+            <label for="area_atuacao">Área de Atuação:</label>
+            <select id="area_atuacao" name="area_atuacao">
+              <option value="psicologo">Psicólogo</option>
+              <option value="psiquiatra">Psiquiatra</option>
+              <option value="terapeuta">Terapeuta</option>
+            </select>
+          </div>
+        </div>
+        <div class="terms">
+          <label>
+            <input type="checkbox" name="aceito_termos" required><u>Li e aceito os termos e condições</u></a>
+          </label>
+        </div>
+
+        <div class="containerFull">
+          <div class="footerBar"></div>
+          <div class="containerFull">
+            <button class="registerButton">Cadastrar</button>
+            <!-- <button class="sign-in" type="submit">Fazer Login</button> -->
+          </div>
+          <div class="containerFull">
+            <div class="ab">Já possui conta? Faça seu <a href="../login/">Login</a></div>
+          </div>
+        </div>
+    </div>
+    </form>
+    </div>
+  </main>
+
+  <!-- O footer fica grudado no final da página e anda com o conteúdo. -->
+  <footer>
+    <div class="p-3">
+      <p class="text-center m-0">
+        <a href="../pagina-inicial/">
+          SaudávelMente
+        </a>
+        <br>
+        Copyright &copy; <span id="current-year">2023</span> - Todos os direitos reservados.
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>
