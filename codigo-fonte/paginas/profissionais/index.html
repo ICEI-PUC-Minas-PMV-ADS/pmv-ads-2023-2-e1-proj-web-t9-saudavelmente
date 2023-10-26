@@ -101,7 +101,147 @@
   </header>
 
   <main>
-    <h1><i class="bi bi-house"></i>Profissionais</h1>
+    <section class="container py-5 my-5">
+      <!-- Toast -->
+      <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <i class="bi bi-person-add me-2"></i>
+            <strong class="me-auto">Adicionado com sucesso!</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            Você adicionou Ana Rodrigues à sua <a href="../perfil/#consultas">lista de consultas</a>!
+          </div>
+        </div>
+      </div>
+
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-custom overflow-hidden text-center bg-body-tertiary border rounded-3">
+          <li class="breadcrumb-item">
+            <a class="link-body-emphasis fw-semibold text-decoration-none" href="../perfil/">
+              <span class="bi bi-person-fill-gear"></span>
+              Perfil
+            </a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Profissionais
+          </li>
+        </ol>
+      </nav>
+
+      <div class="p-5 text-center bg-body-tertiary rounded-3">
+        <h1 class="text-body-emphasis">Conheça Nossos Profissionais Voluntários</h1>
+        <p class="lead">
+          Conheça nossos profissionais voluntários em saúde mental na SaudávelMente. Eles estão comprometidos em
+          oferecer apoio emocional acessível e inclusivo. Explore seus perfis e encontre o especialista certo para você.
+          Sua jornada para o bem-estar emocional começa aqui!
+        </p>
+      </div>
+    </section>
+
+    <section class="container my-5">
+      <div class="input-group flex-nowrap input-group-lg">
+        <span class="input-group-text" id="addon-wrapping"><span class="bi bi-search"></span></span>
+        <input type="text" class="form-control" placeholder="Pesquise pelo nome ou a área do profissional..."
+          aria-label="Username" aria-describedby="addon-wrapping">
+      </div>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-5 py-5">
+        <div class="col">
+          <div class="card h-100">
+            <img src="./imagens/persona-ana.png" class="card-img-top rounded card-image" alt="Foto Perfil da Ana">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Ana Santos</h5>
+              <p class="card-text">Psicóloga apaixonada por ajudar os outros a superar desafios emocionais e alcançar
+                equilíbrio mental.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><strong>Área de atuação</strong>: Psicologia Clínica</li>
+              <li class="list-group-item"><strong>Idade</strong>: 38 anos</li>
+            </ul>
+            <div class="card-footer text-center">
+              <button type="button" class="btn btn-primary" id="toast-btn"
+                title="Adicionar à lista de profissionais para futuras consultas">Adicionar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./imagens/persona-pedro.png" class="card-img-top rounded card-image" alt="Foto Perfil do Pedro">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Pedro Fernandes</h5>
+              <p class="card-text">Psiquiatra dedicado a fornecer apoio a pessoas com transtornos de ansiedade e
+                depressão.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><strong>Área de atuação</strong>: Psiquiatria</li>
+              <li class="list-group-item"><strong>Idade</strong>: 45 anos</li>
+            </ul>
+            <div class="card-footer text-center">
+              <button type="button" class="btn btn-primary" id="toast-btn"
+                title="Adicionar à lista de profissionais para futuras consultas">Adicionar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./imagens/persona-maria.png" class="card-img-top rounded card-image" alt="Foto Perfil da Maria">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Maria Rodrigues</h5>
+              <p class="card-text">Terapeuta experiente, especializada em ajudar pacientes a desenvolver habilidades de
+                enfrentamento.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><strong>Área de atuação</strong>: Terapia Cognitivo-Comportamental</li>
+              <li class="list-group-item"><strong>Idade</strong>: 40 anos</li>
+            </ul>
+            <div class="card-footer text-center">
+              <button type="button" class="btn btn-primary" id="toast-btn"
+                title="Adicionar à lista de profissionais para futuras consultas">Adicionar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./imagens/persona-joao.png" class="card-img-top rounded card-image" alt="Foto Perfil do João">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">João Oliveira</h5>
+              <p class="card-text">Psicólogo dedicado a auxiliar jovens e adultos a lidar com questões de autoestima e
+                relacionamentos.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><strong>Área de atuação</strong>: Psicologia Clínica</li>
+              <li class="list-group-item"><strong>Idade</strong>: 34 anos</li>
+            </ul>
+            <div class="card-footer text-center">
+              <button type="button" class="btn btn-primary" id="toast-btn"
+                title="Adicionar à lista de profissionais para futuras consultas">Adicionar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./imagens/persona-clara.png" class="card-img-top rounded card-image" alt="Foto Perfil da Clara">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Clara Almeida</h5>
+              <p class="card-text">Psicóloga infantil apaixonada por ajudar crianças a desenvolver resiliência
+                emocional.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><strong>Área de atuação</strong>: Psicologia Infantil</li>
+              <li class="list-group-item"><strong>Idade</strong>: 31 anos</li>
+            </ul>
+            <div class="card-footer text-center">
+              <button type="button" class="btn btn-primary" id="toast-btn"
+                title="Adicionar à lista de profissionais para futuras consultas">Adicionar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
   </main>
 
   <!-- O footer fica grudado no final da página e anda com o conteúdo. -->
