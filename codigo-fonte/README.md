@@ -9,10 +9,16 @@ Nesse primeiro eixo do curso, para simplificar a utilização do Git e a organiz
 
 ## Instalação do Site
 
-O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um servidor web de sua preferência. Existem diversos servidores web gratuitos que podem ser utilizados, tal como GitHub Pages (GitHub.IO), Vercel, Render, Netlify, Surge.sh, entre outros. Nesse primeiro eixo, recomenda-se inclusive a utilização do GitHub Pages. [Insira o endereço eletrônico público para acessá-lo.] 
+* A aplicação em HTML/CSS/JS é um projeto que pode ser utilizado tanto em servidores como em navegadores web. Clique [aqui](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t9-saudavelmente/codigo-fonte/paginas/pagina-inicial/) para acessá-lo.
 
 ## Histórico de versões
 
-### [0.1.0] - DD/MM/AAAA
-#### Adicionado/Atualizado/Removido
-- Relação de artefatos ...
+### [0.1.0] - 19/10/2023
+#### Adicionado
+- Template padrão para as páginas, com HTML, CSS e JS, e também o Bootstrap.
+- Favicon com a logo do projeto.
+- Hospedagem do site no GitHub Pages.
+
+### [0.1.0] - 20/10/2023
+#### Adicionado
+- Header e Footer em todas as páginas.

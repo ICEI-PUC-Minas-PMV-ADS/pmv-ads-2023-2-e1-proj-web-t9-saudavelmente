@@ -2,10 +2,10 @@
 
 ## User Flow
 
-O Fluxo de Usuário (User Flow) apresentado na **Figura 1** mostra o mapeamento do fluxo de navegação do usuário na aplicação entre as telas. Ela serve para alinhar os caminhos e as possíveis ações que o usuário pode fazer. Cada uma das telas descritas aqui está detalhada na seção de [Prótotipo de Baixa Fidelidade](#protótipo-de-baixa-fidelidade) que se segue.
+O Fluxo de Usuário (User Flow) apresentado na **Figura 1** mostra o mapeamento do fluxo de navegação do usuário na aplicação entre as telas. Ela serve para alinhar os caminhos e as possíveis ações que o usuário pode fazer. Cada uma das telas descritas aqui está detalhada na seção de [Prótotipo de Baixa Fidelidade](#protótipo-de-baixa-fidelidade) que se segue. Para visualizar o protótipo interativo, acesse [esse link](https://www.figma.com/proto/qGbpPPBEY2diO4EH8Mtg6y/Projeto---Eixo-01%2FTurma-09---Saud%C3%A1velMente?type=design&node-id=160-2&t=35jnyTSFn2OStKPg-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=160%3A2&mode=design) que levará para a protótipação feita no Figma.
 
 <figure> 
-  <img src="./img/simple-userflow.jpg" alt="Estrutura padrão do site" width="80%">
+  <img src="./img/userflow.jpg" alt="Estrutura padrão do site" width="70%">
   <figcaption>Figura 1 - Fluxo de Telas do Usuário</figcaption>
 </figure>
 
@@ -23,7 +23,7 @@ As telas do sistema apresentam uma estrutura comum que é apresentada na **Figur
 - **Rodapé** - apresenta informações sobre os direitos autorais, entre outras informações relevantes.
 
 <figure> 
-  <img src="./img/wireframe-default-structure.jpg" alt="Estrutura padrão do site" width="80%">
+  <img src="./img/wireframe-default-structure.jpg" alt="Estrutura padrão do site" width="70%">
   <figcaption>Figura 2 - Estrutura padrão do site</figcaption>
 </figure>
 
@@ -32,7 +32,7 @@ As telas do sistema apresentam uma estrutura comum que é apresentada na **Figur
 Em todas as telas o menu do cabeçalho irá sofrer uma pequena mudança quando o usuário estiver logado, ele ficará assim:
 
 <figure> 
-  <img src="./img/header-user-logged.jpg" alt="Header com o usuário logado" width="80%">
+  <img src="./img/header-user-logged.jpg" alt="Header com o usuário logado" width="70%">
   <figcaption>Figura 3 - Header com o usuário logado</figcaption>
 </figure>
 
@@ -52,26 +52,28 @@ A tela de **Página Inicial** será o ponto inicial de qualquer usuário da plat
   - Página do fórum.
 
 <figure> 
-  <img src="./img/prototype-homepage.jpg" alt="Tela Página Inicial" width="80%">
+  <img src="./img/prototype-homepage.jpg" alt="Tela Página Inicial" width="70%">
   <figcaption>Figura 4 - Tela Página Inicial</figcaption>
 </figure>
 
 ---
 
-#### Tela - Lista de Profissionais
+#### Tela - Fórum
 
-A tela de **Lista de Profissionais** exibirá todos os profissionais cadastrados na platafoma, com um campo de pesquisa para filtrar os profissionais. Ela estará disponível para acesso ao usuário logado em usa página de perfil. Nela estará presente:
+A tela de **Fórum** exibirá os tópicos e posts já criados pelos usuários da plataforma.
 
-- Cards para cada profissional cadastrado, e detalhes como área de atuação, descrição, etc...;
-- Nos cards, você poderá adicionar o profissional à sua lista de profissionais que você gostaria de ter uma consulta via chat;
-- Terá uma forma do usuário voltar para a página de perfil do mesmo.
+Nessa tela, está contido as seguintes aplicabilidades:
+
+- Pesquisa por tópicos e posts;
+- Os tópicos e os posts publicados.
 
 <figure> 
-  <img src="./img/prototype-professional-list.jpg" alt="Tela Lista de Profissionais" width="80%">
-  <figcaption>Figura 5 - Tela Lista de Profissionais</figcaption>
+  <img src="./img/prototype-forum-page.jpg" alt="Tela do Fórum" width="70%">
+  <figcaption>Figura 5 - Tela de Fórum</figcaption>
 </figure>
 
 ---
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 ### Tela - Cadastro
@@ -81,6 +83,13 @@ A tela de **Cadastro**  apresentará os seguintes campos para a inserção das i
 ### TELA - CADASTRO 
 A tela de **CADASTRO**  apresentará os seguintes campos para a inserção das informações pessoais do usuário: 
 >>>>>>> be5d9bfe945fcf576598cc4cf4513c12a7e88744
+=======
+
+#### Tela - Cadastro
+
+A tela de **Cadastro**  apresentará os seguintes campos para a inserção das informações pessoais do usuário:
+
+>>>>>>> 9f6a1d7ecbe88083b177797f1fb5500fc535e5e8
 - Nome Completo;
 - Data de Nascimento; 
 - E-mail;
@@ -89,18 +98,19 @@ A tela de **CADASTRO**  apresentará os seguintes campos para a inserção das i
 - Confirmação de Senha;
 - Aceite dos Termos e Condições de Uso. 
 
-Além disso, haverá uma opção para os profissionais da área da saúde  clicarem e, em seguida, inserirem mais duas informações para se cadastrem;
+Além disso, haverá uma opção para os profissionais da área da saúde  clicarem e, em seguida, inserirem mais duas informações para se cadastrarem:
+
 - CRM;
-- Área de Atuação;
 - Área de Atuação.
 
 <figure> 
-  <img src="img/Prot%C3%B3tipo%20-%20P%C3%A1gina%20de%20Cadastro.jpg" alt="Tela Lista de Profissionais" width="80%">
+  <img src="./img/prototype-register-page.jpg" alt="Tela de Cadastro" width="70%">
   <figcaption>Figura 6 - Tela de Cadastro</figcaption>
 </figure>
+
 <figure> 
-  <img src="img/Informa%C3%A7%C3%A3o%20profissional.png" alt="Tela Lista de Profissionais" width="80%">
-  <figcaption>Figura 7 - Tela para Informação Profissional</figcaption>
+  <img src="./img/professional-fields.png" alt="Campos adicionais para Informação Profissional" width="70%">
+  <figcaption>Figura 7 - Campos adicionais para Informação Profissional</figcaption>
 </figure>
 
 ---
@@ -119,6 +129,66 @@ Na tela de Login estarão presentes as seguintes aplicabilidades:
 - A tela também irá conter a funcionalidade de retornar a pagina de cadastro para os usuários que ainda não o tiverem feito previamente.
 
 <figure> 
-  <img src="./img/prototype-login-page.jpg" alt="Tela Pagina de Login" width="80%">
-  <figcaption>Figura 8 - Tela Página de Login</figcaption>
+  <img src="./img/prototype-login-page.jpg" alt="Tela de Login" width="70%">
+  <figcaption>Figura 8 - Tela de Login</figcaption>
+</figure>
+
+---
+
+#### Tela - Perfil de Usuário
+
+A tela de **Perfil de Usuário** exibirá informações do perfil do usuário.
+
+Além disso, essa tela irá variar dependendo do usuário logado, segue então as telas para quando o paciente está logado, e logo em seguida a tela de quando o profissional está logado.
+
+Nessa tela, está contido as seguintes aplicabilidades:
+
+- Foto de Perfil do usuário para ele editar quando quiser;
+- Um botão para acesso de todos os profissionais da plataforma;
+- Opção para sair do site;
+- As informações do usuário;
+- Detalhes específicos sobre as consultas, como especialidade, nome do especialista e data do último contato;
+- A partir das consultas o usuário poderá também iniciar uma consulta rápida via chat com um profissional ou descartar essa consulta.
+
+<figure> 
+  <img src="./img/prototype-user-profile-pacient.jpg" alt="Tela Perfil do Usuário (Paciente)" width="70%">
+  <figcaption>Figura 9 - Tela de Perfil do Usuário (<b>Paciente</b>)</figcaption>
+</figure>
+
+<figure> 
+  <img src="./img/prototype-user-profile-professional.jpg" alt="Tela Perfil do Usuário (Profissional)" width="70%">
+  <figcaption>Figura 10 - Tela de Perfil do Usuário (<b>Profissional</b>)</figcaption>
+</figure>
+
+---
+
+#### Tela - Chat
+
+A tela de **Chat** permitirá comunicação em tempo real entre usuários. Com as seguintes funcionalidades:
+
+- Enviar e receber mensagens instantaneamente, texto e voz;
+- Anexarem imagens, vídeos, documentos e outros arquivos;
+- Notificar sobre mensagens não lidas ou novas atividades;
+- Criptografia de ponta a ponta para garantir a privacidade e segurança das mensagens;
+- Armazenar mensagens antigas e permitir que os usuários pesquisem no histórico do chat;
+- Mostrar se um usuário está online, offline, ocupado, etc.
+
+<figure> 
+  <img src="./img/prototype-chat-page.jpg" alt="Tela de Chat" width="70%">
+  <figcaption>Figura 11 - Tela de Chat</figcaption>
+</figure>
+
+---
+
+#### Tela - Lista de Profissionais
+
+A tela de **Lista de Profissionais** exibirá todos os profissionais cadastrados na platafoma, com um campo de pesquisa para filtrar os profissionais. Ela estará disponível para acesso ao usuário logado em usa página de perfil. Nela estará presente:
+
+- Cards para cada profissional cadastrado, e detalhes como área de atuação, descrição, etc...;
+- Nos cards, você poderá adicionar o profissional à sua lista de profissionais que você gostaria de ter uma consulta via chat;
+- Terá uma forma do usuário voltar para a página de perfil do mesmo.
+
+<figure> 
+  <img src="./img/prototype-professional-list.jpg" alt="Tela Lista de Profissionais" width="70%">
+  <figcaption>Figura 12 - Tela Lista de Profissionais</figcaption>
 </figure>
