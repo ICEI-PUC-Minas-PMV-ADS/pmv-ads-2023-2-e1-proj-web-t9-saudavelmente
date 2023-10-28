@@ -37,10 +37,6 @@ Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade
 - styles.css
 - script.js
 
-#### Estrutura de Dados
-
-[Caso exista estrutura de dados, adicione aqui]
-
 #### Instruções de acesso
 
 1. Abra um navegador de internet (em um computador ou em um celular);
