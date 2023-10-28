@@ -80,11 +80,16 @@ Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade
 
 ### Funcionalidade na Tela de Lista de Profissionais (RF-03)
 
-Responsável: **Nome Completo do Aluno**
+Responsável: **William da Silva Rodrigues**
 
 <figure> 
-  <img src="#adicionar-link" alt="Print da funcionalidade na Tela de Lista de Profissionais" width="70%">
-  <figcaption>Figura 3 - Print da funcionalidade na Tela de Lista de Profissionais</figcaption>
+  <img src="./img/funcionalidade-lista-de-profissionais.png" alt="Funcionalidade na Tela de Lista de Profissionais" width="70%">
+  <figcaption>Figura 3 - Funcionalidade na Tela de Lista de Profissionais</figcaption>
+</figure>
+
+<figure> 
+  <img src="./img/funcionalidade-lista-de-profissionais-mobile.png" alt="Funcionalidade na Tela de Lista de Profissionais Mobile">
+  <figcaption>Figura 3.1 - Funcionalidade na Tela de Lista de Profissionais Mobile</figcaption>
 </figure>
 
 #### Requisito atendido
@@ -93,20 +98,14 @@ Responsável: **Nome Completo do Aluno**
 
 #### Artefatos da funcionalidade
 
-Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade no seguinte formato:
-
 - index.html
 - styles.css
 - script.js
 
-#### Estrutura de Dados
-
-[Caso exista estrutura de dados, adicione aqui]
-
 #### Instruções de acesso
 
 1. Abra um navegador de internet (em um computador ou em um celular);
-2. Acesse a [página de login](#link-site-hospedado) da aplicação;
+2. Acesse a [página de login](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t9-saudavelmente/codigo-fonte/paginas/login/) da aplicação;
 3. Forneça as informações necessárias no formulário de login;
 4. Ao fornecer as informações corretas de sua conta, a autenticação deverá ser feita e o usuário estará logado e será redirecionado para a página de perfil;
 5. No canto esquerdo do dashboard, o usuário poderá acessar a página de lista de profissionais ao clicar em "Profissionais".
@@ -186,11 +185,16 @@ Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade
 
 ### Funcionalidade na Tela de Página Inicial (RF-06)
 
-Responsável: **Nome Completo do Aluno**
+Responsável: **William da Silva Rodrigues**
 
 <figure> 
-  <img src="#adicionar-link" alt="Print da funcionalidade na Tela de Página Inicial" width="70%">
-  <figcaption>Figura 6 - Print da funcionalidade na Tela de Página Inicial</figcaption>
+  <img src="./img/funcionalidade-pagina-inicial-valores.png" alt="Funcionalidade na Tela de Página Inicial" width="70%">
+  <figcaption>Figura 6 - Funcionalidade na Tela de Página Inicial</figcaption>
+</figure>
+
+<figure> 
+  <img src="./img/funcionalidade-pagina-inicial-valores-mobile.png" alt="Funcionalidade na Tela de Página Inicial Mobile">
+  <figcaption>Figura 6.1 - Funcionalidade na Tela de Página Inicial Mobile</figcaption>
 </figure>
 
 #### Requisito atendido
@@ -199,20 +203,14 @@ Responsável: **Nome Completo do Aluno**
 
 #### Artefatos da funcionalidade
 
-Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade no seguinte formato:
-
 - index.html
 - styles.css
 - script.js
 
-#### Estrutura de Dados
-
-[Caso exista estrutura de dados, adicione aqui]
-
 #### Instruções de acesso
 
 1. Abra um navegador de internet (em um computador ou em um celular);
-2. Acesse a [página inicial](#link-site-hospedado) da aplicação.
+2. Acesse a [página inicial](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t9-saudavelmente/codigo-fonte/paginas/pagina-inicial/) da aplicação.
    
 ---
 
