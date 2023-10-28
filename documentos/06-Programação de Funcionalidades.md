@@ -12,11 +12,17 @@ Pré requisitos:
 
 ### Funcionalidade na Tela de Cadastro (RF-01)
 
-Responsável: **Nome Completo do Aluno**
+Responsável: **João Pedro Campos Carvalho dos Santos**
 
 <figure> 
-  <img src="#adicionar-link" alt="Print da funcionalidade na Tela de Cadastro" width="70%">
+  <img src="../documentos/img/image-tela-cadastro.png" alt="Print da funcionalidade na Tela de Cadastro" width="70%">
   <figcaption>Figura 1 - Print da funcionalidade na Tela de Cadastro</figcaption>
+</figure>
+
+<figure> 
+  <img src="../documentos/img/image-tela-cadastro-mobile.png" alt="Funcionalidade na Tela Tela de Cadastro Mobile">
+  <img src="../documentos/img/image-tela-cadastro-mobile2.png" alt="Funcionalidade na Tela Tela de Cadastro Mobile">
+  <figcaption>Figura 1.2 - Funcionalidade na Tela de Cadastro Mobile</figcaption>
 </figure>
 
 #### Requisito atendido
@@ -38,7 +44,7 @@ Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade
 #### Instruções de acesso
 
 1. Abra um navegador de internet (em um computador ou em um celular);
-2. Acesse a [página de cadastro](#link-site-hospedado) da aplicação;
+2. Acesse a [página de cadastro](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t9-saudavelmente/codigo-fonte/paginas/cadastro/) da aplicação;
 3. Forneça as informações necessárias no formulário de cadastro;
 4. O usuário terá sua conta criada.
 
