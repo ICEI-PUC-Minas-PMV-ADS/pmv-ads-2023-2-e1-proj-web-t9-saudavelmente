@@ -102,6 +102,145 @@
 
   <main>
     <h1><i class="bi bi-house"></i>Perfil</h1>
+    <html>
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil do Usuário</title>
+    <style>
+        /* Fonte, cores e margens */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .profile-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            position: relative;
+        }
+
+        #left-column {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        #edit-profile-picture,
+        #professionals,
+        #logout-button {
+            background-color: #333; /* Cinza escuro */
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        #right-column {
+            flex: 2;
+        }
+
+        /* Mensagem de boas-vindas */
+        #message {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        #user-info {
+            margin: 20px 0;
+        }
+
+        #user-info p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+
+        /* Consultas */
+        #appointments {
+            margin: 20px 0;
+        }
+
+        .appointment {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #f9f9f9;
+        }
+
+        .appointment-buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .appointment-button {
+            background-color: #333; /* Cinza escuro */
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        #edit-profile {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <div id="left-column">
+            <img id="profile-picture" src="profile_picture.jpg" alt="Foto de Perfil">
+            <p id="message">Olá, José</p>
+            <button id="edit-profile-picture">Editar</button>
+            <button id="professionals">Profissionais</button>
+            <button id="logout-button">Sair</button>
+        </div>
+        <div id="right-column">
+            <div id="user-info">
+                <p>Nome: José</p>
+                <p>Idade: 25</p>
+                <p>Email: jose25@email.com</p>
+                <p>Telefone: (97) 010-052-055</p>
+            </div>
+            <div id="appointments">
+                <div class="appointment">
+                    <p>Nome do(a) Profissional: Maria</p>
+                    <p>Área de Atuação: Psicologia</p>
+                    <p>Último contato: 31/02/2023</p>
+                    <div class="appointment-buttons">
+                        <button class="appointment-button">Marcar Consulta</button>
+                        <button class="appointment-button">Cancelar Consulta</button>
+                    </div>
+                </div>
+                <div class="appointment">
+                    <p>Nome do(a) Profissional: João</p>
+                    <p>Área de Atuação: Psiquiatria</p>
+                    <p>Último contato: 30/02/2028 </p>
+                    <div class="appointment-buttons">
+                        <button class="appointment-button">Marcar Consulta</button>
+                        <button class="appointment-button">Cancelar Consulta</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
   </main>
 
   <!-- O footer fica grudado no final da página e anda com o conteúdo. -->
