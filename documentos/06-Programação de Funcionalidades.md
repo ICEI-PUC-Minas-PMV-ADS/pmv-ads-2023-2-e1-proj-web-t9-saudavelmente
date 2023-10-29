@@ -15,8 +15,8 @@ Pré requisitos:
 Responsável: **João Pedro Campos Carvalho dos Santos**
 
 <figure> 
-  <img src="../documentos/img/image-tela-cadastro.png" alt="Print da funcionalidade na Tela de Cadastro" width="70%">
-  <figcaption>Figura 1 - Print da funcionalidade na Tela de Cadastro</figcaption>
+  <img src="../documentos/img/image-tela-cadastro.png" alt="Funcionalidade na Tela de Cadastro" width="70%">
+  <figcaption>Figura 1 - Funcionalidade na Tela de Cadastro</figcaption>
 </figure>
 
 <figure> 
@@ -35,7 +35,9 @@ Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade
 
 - index.html
 - styles.css
+- media-query.css
 - script.js
+- validation.js
 
 #### Instruções de acesso
 
@@ -48,11 +50,11 @@ Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade
 
 ### Funcionalidade na Tela de Login (RF-02)
 
-Responsável: **Nome Completo do Aluno**
+Responsável: **William da Silva Rodrigues**
 
 <figure> 
-  <img src="#adicionar-link" alt="Print da funcionalidade na Tela de Login" width="70%">
-  <figcaption>Figura 2 - Print da funcionalidade na Tela de Login</figcaption>
+  <img src="./img/funcionalidade-login.png" alt="Funcionalidade na Tela de Login" width="70%">
+  <figcaption>Figura 2 - Funcionalidade na Tela de Login</figcaption>
 </figure>
 
 #### Requisito atendido
@@ -65,16 +67,13 @@ Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade
 
 - index.html
 - styles.css
+- media-query.css
 - script.js
-
-#### Estrutura de Dados
-
-[Caso exista estrutura de dados, adicione aqui]
 
 #### Instruções de acesso
 
 1. Abra um navegador de internet (em um computador ou em um celular);
-2. Acesse a [página de login](#link-site-hospedado) da aplicação;
+2. Acesse a [página de login](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t9-saudavelmente/codigo-fonte/paginas/login/) da aplicação;
 3. Forneça as informações necessárias no formulário de login;
 4. Ao fornecer as informações corretas de sua conta, a autenticação deverá ser feita e o usuário estará logado.
 

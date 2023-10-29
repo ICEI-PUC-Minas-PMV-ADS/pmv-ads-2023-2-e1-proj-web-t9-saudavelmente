@@ -28,6 +28,7 @@
 
   <!-- CSS local para sobrescrever o CSS do Bootstrap e também carregar componentes usados em todas as páginas -->
   <link rel="stylesheet" href="../../compartilhado/estilos/styles.css">
+  <link rel="stylesheet" href="./media-query.css">
   <link rel="stylesheet" href="./styles.css">
 
   <!-- Bootstrap JS 5.3 -->
@@ -101,7 +102,43 @@
   </header>
 
   <main>
-    <h1><i class="bi bi-house"></i>Login</h1>
+    <section class="section-form">
+      <form id="myForm" class="validation">
+        <div class="container">
+          <h1 class="title">Login</h1>
+          <div class="titleBar"></div>
+        </div>
+        <div class="containerFull">
+          <div>
+            <label for="">E-mail <span class="detail">*</span></label>
+            <input class="email input" type="email" placeholder="Digite seu e-mail" required>
+          </div>
+          <div>
+            <label for="">Senha <span class="detail">*</span></label>
+            <input class="email input" type="password" placeholder="Digite sua senha" required>
+          </div>
+        </div>
+
+        <div class="profissional">
+          <label for="stay-connected">
+            <input type="checkbox" name="stay-connected" id="stay-connected">
+            Manter-me conectado
+          </label>
+        </div>
+
+        <div class="containerFull">
+          <div class="footerBar"></div>
+          <div class="containerFull">
+            <button type="submit" class="registerButton">Entrar</button>
+          </div>
+          <div class="containerFull">
+            <div class="ab">Ainda não tem conta? <a href="../cadastro/">Cadastre-se</a></div>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <div class="section-divider"></div>
   </main>
 
   <!-- O footer fica grudado no final da página e anda com o conteúdo. -->
