@@ -70,18 +70,16 @@
 | --- | --- | --- |
 | RF-01 | A plataforma deve permitir ao usuário cadastrar uma conta. | ALTA | 
 | RF-02 | A plataforma deve permitir ao usuário fazer login na sua conta.  | ALTA |
-| RF-03 |  A plataforma deve fornecer uma lista de profissionais com possibilidade de filtragem, permitindo que os usuários escolham um profissional alinhado com suas necessidades. | ALTA  |
+| RF-03 |  A plataforma deve fornecer uma lista de profissionais com possibilidade de pesquisa, permitindo que os usuários escolham um profissional alinhado com suas necessidades. | ALTA  |
 | RF-04 | A plataforma deve permitir que os usuários tenham suas consultas. | ALTA |
 | RF-05 | Os usuários devem ter acesso a uma seção em sua conta para exibir informações do seu perfil. | ALTA  |
-| RF-06 | Os usuários devem ser capazes de visualizar uma página do perfil do profissional. | MÉDIA |
-| RF-07 | A plataforma deve ter uma página inicial com informações claras sobre sua missão, valores e funcionalidades oferecidas. | ALTA |
-| RF-08 | Os usuários devem ter acesso a uma seção do fórum onde possam criar novos tópicos. Eles devem poder inserir um título, conteúdo do tópico e adicionar tags relevantes para categorizar o tópico. | BAIXA |
-| RF-09 | A plataforma deve apresentar uma página principal do fórum onde os tópicos são listados. Caso haja muitos tópicos, eles devem ser divididos em páginas para facilitar a navegação | MÉDIA |
-| RF-10 | Os usuários devem ter acesso a uma barra de pesquisa no fórum onde podem digitar palavras-chave. Ao realizar a pesquisa, os resultados relevantes devem ser exibidos | ALTA |
+| RF-06 | A plataforma deve ter uma página inicial com informações claras sobre sua missão, valores e funcionalidades oferecidas. | ALTA |
+| RF-07 | A plataforma deve apresentar uma página principal do fórum onde os tópicos são listados. Caso haja muitos tópicos, eles devem ser divididos em páginas para facilitar a navegação. | ALTA |
+| RF-08 | Os usuários devem ter acesso a uma barra de pesquisa no fórum onde podem digitar palavras-chave. Ao realizar a pesquisa, os resultados relevantes devem ser exibidos. | MÉDIA |
 
 > **Prioridade: Alta / Média / Baixa. 
 
-### Requisitos não Funcionais
+### Requisitos Não Funcionais
 
 | ID | Descrição | Prioridade |
 | --- | --- | --- |
