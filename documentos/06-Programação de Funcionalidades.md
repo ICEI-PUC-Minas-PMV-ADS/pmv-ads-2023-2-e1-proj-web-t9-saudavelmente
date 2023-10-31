@@ -115,11 +115,11 @@ Responsável: **William da Silva Rodrigues**
 
 ### Funcionalidade na Tela de Chat (RF-04)
 
-Responsável: **Nome Completo do Aluno**
+Responsável: **Luan César Souza dos Santos**
 
 <figure> 
-  <img src="#adicionar-link" alt="Print da funcionalidade na Tela de Chat" width="70%">
-  <figcaption>Figura 4 - Print da funcionalidade na Tela de Chat</figcaption>
+  <img src="/documentos/img/funcionalidade-tela-chat.PNG" alt="Print da funcionalidade na Tela de Chat" width="70%">
+  <figcaption>Figura 4 - Funcionalidade na Tela de Chat</figcaption>
 </figure>
 
 #### Requisito atendido
