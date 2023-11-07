@@ -118,7 +118,7 @@ Responsável: **William da Silva Rodrigues**
 Responsável: **Luan César Souza dos Santos**
 
 <figure> 
-  <img src="/documentos/img/funcionalidade-tela-chat.PNG" alt="Print da funcionalidade na Tela de Chat" width="70%">
+  <img src="./img/funcionalidade-tela-chat.png" alt="Funcionalidade na Tela de Chat" width="70%">
   <figcaption>Figura 4 - Funcionalidade na Tela de Chat</figcaption>
 </figure>
 
@@ -134,14 +134,10 @@ Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade
 - styles.css
 - script.js
 
-#### Estrutura de Dados
-
-[Caso exista estrutura de dados, adicione aqui]
-
 #### Instruções de acesso
 
 1. Abra um navegador de internet (em um computador ou em um celular);
-2. Acesse a [página de login](#link-site-hospedado) da aplicação;
+2. Acesse a [página de login](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t9-saudavelmente/codigo-fonte/paginas/login/) da aplicação;
 3. Forneça as informações necessárias no formulário de login;
 4. Ao fornecer as informações corretas de sua conta, a autenticação deverá ser feita e o usuário estará logado e será redirecionado para a página de perfil;
 5. O usuário poderá visualizar uma lista de consultas na página de perfil;
@@ -151,11 +147,11 @@ Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade
 
 ### Funcionalidade na Tela Perfil do Usuário (RF-05)
 
-Responsável: **Nome Completo do Aluno**
+Responsável: **Vinicius Simões dos Santos**
 
 <figure> 
-  <img src="#adicionar-link" alt="Print da funcionalidade na Tela de Perfil do Usuário" width="70%">
-  <figcaption>Figura 5 - Print da funcionalidade na Tela de Perfil do Usuário</figcaption>
+  <img src="./img/funcionalidade-perfil.png" alt="Funcionalidade na Tela de Perfil do Usuário" width="70%">
+  <figcaption>Figura 5 - Funcionalidade na Tela de Perfil do Usuário</figcaption>
 </figure>
 
 #### Requisito atendido
@@ -170,14 +166,10 @@ Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade
 - styles.css
 - script.js
 
-#### Estrutura de Dados
-
-[Caso exista estrutura de dados, adicione aqui]
-
 #### Instruções de acesso
 
 1. Abra um navegador de internet (em um computador ou em um celular);
-2. Acesse a [página de login](#link-site-hospedado) da aplicação;
+2. Acesse a [página de login](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t9-saudavelmente/codigo-fonte/paginas/login/) da aplicação;
 3. Forneça as informações necessárias no formulário de login;
 4. Ao fornecer as informações corretas de sua conta, a autenticação deverá ser feita e o usuário estará logado e será redirecionado para a página de perfil;
 5. O usuário poderá visualizar suas informações.
