@@ -73,23 +73,11 @@ Nessa tela, está contido as seguintes aplicabilidades:
 </figure>
 
 ---
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-### Tela - Cadastro
-
-A tela de **Cadastro**  apresentará os seguintes campos para a inserção das informações pessoais do usuário: 
-=======
-### TELA - CADASTRO 
-A tela de **CADASTRO**  apresentará os seguintes campos para a inserção das informações pessoais do usuário: 
->>>>>>> be5d9bfe945fcf576598cc4cf4513c12a7e88744
-=======
 
 #### Tela - Cadastro
 
 A tela de **Cadastro**  apresentará os seguintes campos para a inserção das informações pessoais do usuário:
 
->>>>>>> 9f6a1d7ecbe88083b177797f1fb5500fc535e5e8
 - Nome Completo;
 - Data de Nascimento; 
 - E-mail;

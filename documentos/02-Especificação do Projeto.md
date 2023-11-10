@@ -75,7 +75,7 @@
 | RF-05 | Os usuários devem ter acesso a uma seção em sua conta para exibir informações do seu perfil. | ALTA  |
 | RF-06 | A plataforma deve ter uma página inicial com informações claras sobre sua missão, valores e funcionalidades oferecidas. | ALTA |
 | RF-07 | A plataforma deve apresentar uma página principal do fórum onde os tópicos são listados. Caso haja muitos tópicos, eles devem ser divididos em páginas para facilitar a navegação. | ALTA |
-| RF-08 | Os usuários devem ter acesso a uma barra de pesquisa no fórum onde podem digitar palavras-chave. Ao realizar a pesquisa, os resultados relevantes devem ser exibidos. | MÉDIA |
+| RF-08 | Os usuários devem ter acesso a uma barra de pesquisa no fórum onde podem digitar palavras-chave. Ao realizar a pesquisa, os resultados relevantes dos posts devem ser exibidos. | MÉDIA |
 
 > **Prioridade: Alta / Média / Baixa. 
 
