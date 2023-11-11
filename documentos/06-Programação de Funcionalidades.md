@@ -209,11 +209,16 @@ Responsável: **William da Silva Rodrigues**
 
 ### Funcionalidade na Tela de Fórum (RF-07)
 
-Responsável: **Nome Completo do Aluno**
+Responsável: **William da Silva Rodrigues**
 
 <figure> 
-  <img src="#adicionar-link" alt="Print da funcionalidade na Tela de Fórum" width="70%">
-  <figcaption>Figura 7 - Print da funcionalidade na Tela de Fórum</figcaption>
+  <img src="./img/funcionalidade-pagina-forum.png" alt="Funcionalidade na Tela de Fórum" width="70%">
+  <figcaption>Figura 7 - Funcionalidade na Tela de Fórum</figcaption>
+</figure>
+
+<figure> 
+  <img src="./img/funcionalidade-pagina-forum-mobile.png" alt="Funcionalidade na Tela de Fórum Mobile">
+  <figcaption>Figura 7.1 - Funcionalidade na Tela de Fórum Mobile</figcaption>
 </figure>
 
 #### Requisito atendido
@@ -228,15 +233,11 @@ Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade
 - styles.css
 - script.js
 
-#### Estrutura de Dados
-
-[Caso exista estrutura de dados, adicione aqui]
-
 #### Instruções de acesso
 
 1. Abra um navegador de internet (em um computador ou em um celular);
-2. Acesse a [página do fórum](#link-site-hospedado) da aplicação;
-3. O usuário irá visualizar os tópicos e posts já criados.
+2. Acesse a [página do fórum](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t9-saudavelmente/codigo-fonte/paginas/forum/) da aplicação;
+3. O usuário irá visualizar os posts já criados.
 
 ---
 
