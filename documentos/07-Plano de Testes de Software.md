@@ -70,7 +70,39 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
                 <li>Digitar palavras-chave de acordo com o título ou nome do dono do post</li>
             </ol>
         </td>
-        <td>Apenas os posts com as palavras-chaves digitadas devem aparecer, se e não tiver nenhum post com as palavras-chave, então nada deverá ser exibido.</td>
+        <td>Apenas os posts com as palavras-chaves digitadas devem aparecer, se não tiver nenhum post com as palavras-chave, então nada deverá ser exibido.</td>
+        <td>William da Silva Rodrigues</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>Caso de Teste</th>
+        <th>Requisitos Associados</th>
+        <th>Objetivo do Teste</th>
+        <th>Passos</th>
+        <th>Critérios de êxito</th>
+        <th>Responsável</th>
+    </tr>
+    <tr>
+        <td>CT-03: Verificar o funcionamento do filtro de pesquisa da página de Profissionais</td>
+        <td>
+            <ul>
+                <li>RF-03: A plataforma deve fornecer uma lista de profissionais com possibilidade de pesquisa, permitindo que os usuários escolham um profissional alinhado com suas necessidades.</li>
+                <li>RF-04: A plataforma deve permitir que os usuários tenham suas consultas.</li>
+            </ul>
+        </td>
+        <td>Vefificar se o filtro está funcionando corretamente ao pesquisar parte do nome ou área do profissional.</td>
+        <td>
+            <ol>
+                <li>Acessar o navegador.</li>
+                <li>Fazer login.</li>
+                <li>Acessar área de profissionais, em "Profissionais".</li>
+                <li>Visualizar a Página de Profissionais.</li>
+                <li>Digitar palavras-chave de acordo com o nome ou área do profissional.</li>
+            </ol>
+        </td>
+        <td>Apenas os profissionais com as palavras-chaves digitadas devem aparecer, se não tiver nenhum profissional com as palavras-chave, então nada deverá ser exibido.</td>
         <td>William da Silva Rodrigues</td>
     </tr>
 </table>

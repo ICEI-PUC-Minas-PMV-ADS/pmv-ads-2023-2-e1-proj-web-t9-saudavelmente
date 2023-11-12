@@ -86,4 +86,4 @@ function simulateResponse(message) {
   }
 }
 
-authGuard();
+// authGuard();

@@ -3,13 +3,51 @@
  * Trata o clique ao adicionar o profissional na lista de consultas.
  */
 function handleAddProfessional() {
-  const toastsTriggers = Array.from(document.querySelectorAll('#toast-btn'));
+  const toastsTriggers = Array.from(document.querySelectorAll('button'))
+    .filter((element) => element.textContent === 'Adicionar');
   const toast = document.getElementById('toast');
 
   if (toastsTriggers.length) {
     const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toast)
     toastsTriggers.forEach((toastTrigger) => {
       toastTrigger.addEventListener('click', () => {
+        const targetCardElement = toastTrigger.parentElement.parentElement;
+        const professionalName = targetCardElement.querySelector('.card-title').textContent;
+        const professionalArea = targetCardElement.querySelector('.list-group > li').textContent.split(':')[1].trim();
+        let consultations = localStorage.getItem('consultations');
+        if (!consultations) {
+          localStorage.setItem('consultations', JSON.stringify([]));
+          consultations = localStorage.getItem('consultations');
+        }
+        const consultationsObj = Array.from(JSON.parse(consultations));
+        const professionalAlreadyAdded = consultationsObj
+          .find((consultation) => consultation.professionalName === professionalName);
+        if (professionalAlreadyAdded) {
+          toast.querySelector('.toast-header').innerHTML = `
+            <span class="bi bi-person-fill-x"></span> 
+            <strong class="me-auto">Não foi possível adicionar</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          `;
+          toast.querySelector('.toast-body').innerHTML = `
+            Profissional ${professionalName} já está na sua lista de consultas!
+          `;
+        } else {
+          consultationsObj.push({
+            professionalName,
+            professionalArea,
+            consultationTime: null
+          });
+          localStorage.setItem('consultations', JSON.stringify(consultationsObj));
+          toast.querySelector('.toast-header').innerHTML = `
+            <span class="bi bi-person-add me-2"></span> 
+            <strong class="me-auto">Adicionado com sucesso!</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          `;
+          toast.querySelector('.toast-body').innerHTML = `
+            Você adicionou ${professionalName} à sua <a href="../perfil/">lista de
+            consultas</a>!
+          `;
+        }
         toastBootstrap.show()
       })
     })
@@ -38,6 +76,6 @@ function handleSearchProfissional() {
   });
 }
 
-authGuard();
+// authGuard();
 handleAddProfessional();
 handleSearchProfissional();
