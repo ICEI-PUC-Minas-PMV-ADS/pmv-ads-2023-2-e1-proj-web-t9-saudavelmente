@@ -38,5 +38,6 @@ function handleSearchProfissional() {
   });
 }
 
-handleAddProfessional()
-handleSearchProfissional()
+authGuard();
+handleAddProfessional();
+handleSearchProfissional();
