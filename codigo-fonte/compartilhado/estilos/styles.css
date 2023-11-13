@@ -20,7 +20,7 @@
 body {
   font-family: var(--ff-varela-round-400);
   background-color: var(--clr-white);
-  overflow-x: hidden;
+  overflow: scroll;
 }
 
 #auth-logout {
