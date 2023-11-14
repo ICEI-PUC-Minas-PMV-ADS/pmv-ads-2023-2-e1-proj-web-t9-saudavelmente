@@ -37,6 +37,10 @@ document.addEventListener('DOMContentLoaded', function () {
       alert('Você deve aceitar os termos e condições');
       return;
     }
+
+    const existingData = localStorage.getItem('userList');
+    const userList = existingData ? JSON.parse(existingData) : [];
+
     const areaAtuacao = profissionalSaude.checked ? areaAtuacaoSelect.value : '';
 
     const userData = {
@@ -48,14 +52,15 @@ document.addEventListener('DOMContentLoaded', function () {
       profissionalSaude: profissionalSaude.checked
     };
 
-    const userDataJSON = JSON.stringify(userData);
-    localStorage.setItem('userData', userDataJSON);
+    userList.push(userData);
+
+    localStorage.setItem('userList', JSON.stringify(userList));
 
     alert('Cadastro realizado com sucesso!');
     form.reset(); // Limpa o formulário após o cadastro
 
     // Redireciona o usuário para a página principal
-    window.location.href = 'https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t9-saudavelmente/codigo-fonte/paginas/login/index.html';
+    window.location.href = 'https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t9-saudavelmente/codigo-fonte/paginas/login/';
   });
 
   function isValidEmail(email) {
