@@ -87,7 +87,7 @@ span .detail {
   flex: 1;
 }
 
-.containerHalf .Date,
+.containerHalf .date,
 .containerHalf .cPassword {
   width: 280px;
 }

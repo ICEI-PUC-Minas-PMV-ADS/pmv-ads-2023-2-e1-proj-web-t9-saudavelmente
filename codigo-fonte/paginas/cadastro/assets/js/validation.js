@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const aceitoTermos = form.querySelector('input[name="aceito_termos"]');
     const profissionalSaude = form.querySelector('input[name="profissional_saude"]');
     const areaAtuacaoSelect = form.querySelector('select[name="area_atuacao"]');
-    const cpf = form.querySelector('.cpf');
+    const cpf = form.querySelector('#cpf');
 
     if (name.value.length < 4) {
       alert('Nome deve ter pelo menos 4 caracteres');
