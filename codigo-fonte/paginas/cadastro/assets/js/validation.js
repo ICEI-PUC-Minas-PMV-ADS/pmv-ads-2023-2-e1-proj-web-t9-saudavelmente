@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const aceitoTermos = form.querySelector('input[name="aceito_termos"]');
     const profissionalSaude = form.querySelector('input[name="profissional_saude"]');
     const areaAtuacaoSelect = form.querySelector('select[name="area_atuacao"]');
+    const cpf = form.querySelector('.cpf');
 
     if (name.value.length < 4) {
       alert('Nome deve ter pelo menos 4 caracteres');
@@ -38,6 +39,11 @@ document.addEventListener('DOMContentLoaded', function () {
       alert('Você deve aceitar os termos e condições');
       return;
     }
+    if (profissionalSaude.checked && cpf.value.length === 0) {
+      alert('CPF é obrigatório para profissionais da saúde');
+      cpf.focus();
+      return;
+    }
 
     const existingData = localStorage.getItem('userList');
     const userList = existingData ? JSON.parse(existingData) : [];
@@ -51,7 +57,8 @@ document.addEventListener('DOMContentLoaded', function () {
       tel: tel.value,
       password: password.value,
       areaAtuacao: areaAtuacao,
-      profissionalSaude: profissionalSaude.checked
+      profissionalSaude: profissionalSaude.checked,
+      cpf: cpf.value
     };
 
     userList.push(userData);
