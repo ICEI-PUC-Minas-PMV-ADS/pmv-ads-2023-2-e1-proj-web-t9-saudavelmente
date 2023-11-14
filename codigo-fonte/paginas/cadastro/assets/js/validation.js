@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     event.preventDefault();
 
     const name = form.querySelector('.name');
+    const date = form.querySelector('.date');
     const email = form.querySelector('.email');
     const tel = form.querySelector('.tel');
     const password = form.querySelector('.password');
@@ -29,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     if (password.value !== cPassword.value) {
-      alert('As senhas não coincidem');
+      alert('As senhas não correspondem');
       return;
     }
 
@@ -45,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const userData = {
       name: name.value,
+      date: date.value,
       email: email.value,
       tel: tel.value,
       password: password.value,
