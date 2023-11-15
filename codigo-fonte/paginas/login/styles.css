@@ -33,8 +33,8 @@ form {
   font-weight: bold;
 }
 
-.titleBar,
-.footerBar {
+.title-bar,
+.footer-bar {
   height: 2px;
   width: 550px;
   background-color: #4EECC7;
@@ -61,8 +61,8 @@ input[type="date"] {
   outline: none;
 }
 
-.containerHalf label,
-.containerFull label {
+label,
+.container-full label {
   font-weight: bold;
   font-size: 14px;
 }
@@ -71,27 +71,7 @@ span .detail {
   color: #0031b2;
 }
 
-.containerHalf {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 550px;
-}
-
-.containerHalf div:first-child {
-  margin-right: 10px;
-}
-
-.containerHalf div:first-child input {
-  flex: 1;
-}
-
-.containerHalf .Date,
-.containerHalf .cPassword {
-  width: 280px;
-}
-
-.profissional label {
+.checkbox label {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -100,99 +80,27 @@ span .detail {
   margin-bottom: 20px;
 }
 
-.profissional input {
+.checkbox input {
   margin-right: 8px;
 }
 
-
-.info_prof label {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 550px;
-  margin-top: 10px;
-}
-
-.info_prof input {
-  width: 260px;
-  height: 30px;
-  border-radius: 5px;
-  border: #787586 1px solid;
-  padding: 7px;
-
-  margin-bottom: 10px;
-  flex-direction: row;
-}
-
-.cpf {
-  text-align: center;
-}
-
-.area_atuacao {
-  text-align: center;
-  margin-top: 5px;
-}
-
-.area_atuacao select {
-  margin-top: 5px;
-  width: 150px;
-  height: 30px;
-}
-
-.containerFull,
-.userName,
+.container-full,
 .email,
-.tel,
-.profissional,
-.info_prof {
+.checkbox {
   width: 550px;
 }
 
-form div:nth-child(6) {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.terms {
-  width: fit-content;
-  margin-top: 30px;
-}
-
-.containerFull button a {
+.container-full .ab {
   text-align: center;
   margin-top: 20px;
 }
 
-.containerFull .ab {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.registerButton {
+.login-button {
   display: block;
   margin: 0 auto;
 }
 
-.terms a {
-  color: #1F271B;
-  text-decoration: none;
-}
-
-.terms a:hover {
-  text-decoration: none;
-  color: #0031B2;
-  transition: .5s all;
-}
-
-form div:nth-child(7) {
-  display: flex;
-  flex-direction: column;
-}
-
-.registerButton,
-.sign-in {
+.login-button {
   width: 260px;
   padding: 10px;
   border: none;
@@ -202,15 +110,11 @@ form div:nth-child(7) {
   margin-bottom: 80px;
 }
 
-.registerButton {
+.login-button {
   background-color: #0031B2;
 }
 
-.registerButton:hover {
+.login-button:hover {
   background-color: #002788;
   transition: .8s all;
-}
-
-.hidden {
-  display: none;
 }

@@ -103,35 +103,34 @@
 
   <main>
     <section class="section-form">
-      <form id="myForm" class="validation">
+      <form id="login-form" class="validation">
         <div class="container">
-          <h1 class="title">Login</h1>
-          <div class="titleBar"></div>
+          <h1 class="title">Entre com a sua conta!</h1>
+          <div class="title-bar"></div>
         </div>
-        <div class="containerFull">
+        <div class="container-full">
           <div>
-            <label for="">E-mail <span class="detail">*</span></label>
-            <input class="email input" type="email" placeholder="Digite seu e-mail" required>
+            <label for="user-email">E-mail <span class="detail">*</span></label>
+            <input name="user-email" class="email input" type="email" placeholder="Digite seu e-mail" required>
           </div>
           <div>
-            <label for="">Senha <span class="detail">*</span></label>
-            <input class="email input" type="password" placeholder="Digite sua senha" required>
+            <label for="user-password">Senha <span class="detail">*</span></label>
+            <input name="user-password" class="email input" type="password" placeholder="Digite sua senha" required>
           </div>
         </div>
-
-        <div class="profissional">
-          <label for="stay-connected">
-            <input type="checkbox" name="stay-connected" id="stay-connected">
+        <div class="checkbox">
+          <label for="user-connected">
+            <input type="checkbox" name="user-connected">
             Manter-me conectado
           </label>
         </div>
 
-        <div class="containerFull">
-          <div class="footerBar"></div>
-          <div class="containerFull">
-            <button type="submit" class="registerButton">Entrar</button>
+        <div class="container-full">
+          <div class="footer-bar"></div>
+          <div class="container-full">
+            <button type="submit" class="login-button">Entrar</button>
           </div>
-          <div class="containerFull">
+          <div class="container-full">
             <div class="ab">Ainda não tem conta? <a href="../cadastro/">Cadastre-se</a></div>
           </div>
         </div>

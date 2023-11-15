@@ -14,12 +14,12 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 
 - Filtro com resultados:
     <div>
-        <img src="./img/teste1.png" alt="Registro de teste do filtro do fórum com resultados" width="70%">
+        <img src="./img/teste-filtro-posts-1.png" alt="Registro de teste do filtro do fórum com resultados" width="70%">
     </div>
 
 - Filtro sem resultados:
     <div>
-        <img src="./img/teste2.png" alt="Registro de teste do filtro do fórum sem resultados" width="70%">
+        <img src="./img/teste-filtro-posts-2.png" alt="Registro de teste do filtro do fórum sem resultados" width="70%">
     </div>
 
 ---
@@ -40,7 +40,7 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 
 ---
 
-### CT-04: Verificar o cadastro de usuários.
+### CT-04: Verificar o cadastro de usuários
 
 **Responsável**: João Pedro Campos Carvalho dos Santos
 
@@ -57,6 +57,28 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 - Informações armazenadas no LocalStorage após usuário se cadastrar.
      <div>
         <img src="img/localstorage_img.png" alt="Imagem das informações do usuário armazenadas no LocalStorage " width="70%">
+    </div>
+
+---
+
+### CT-05: Verificar o funcionamento de autorização e autenticação
+
+**Responsável**: William da Silva Rodrigues
+
+- Usuário existe no "banco de dados", e o email e a senha são corretamente digitados.
+    <div>
+        <img src="./img/teste-login-1.png" alt="Registro de teste de login bem sucedido" width="70%">
+    </div>
+
+---
+
+### CT-06: Verificar o funcionamento de autorização e autenticação em caso de falha
+
+**Responsável**: William da Silva Rodrigues
+
+- Usuário não existe no "banco de dados".
+    <div>
+        <img src="./img/teste-login-2.png" alt="Registro de teste de login mal sucedido" width="70%">
     </div>
 
 ---

@@ -106,3 +106,65 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
         <td>William da Silva Rodrigues</td>
     </tr>
 </table>
+
+<table>
+    <tr>
+        <th>Caso de Teste</th>
+        <th>Requisitos Associados</th>
+        <th>Objetivo do Teste</th>
+        <th>Passos</th>
+        <th>Critérios de êxito</th>
+        <th>Responsável</th>
+    </tr>
+    <tr>
+        <td>CT-05: Verificar o funcionamento de autorização e autenticação</td>
+        <td>
+            <ul>
+                <li>RF-01: A plataforma deve permitir ao usuário cadastrar uma conta.</li>
+                <li>RF-02: A plataforma deve permitir ao usuário fazer login na sua conta.</li>
+                <li>RF-05: Os usuários devem ter acesso a uma seção em sua conta para exibir informações do seu perfil.</li>
+            </ul>
+        </td>
+        <td>Verificar se o usuário que possui conta consegue acessar sua conta, e caso contrário ele não conseguirá acesso na plataforma.</td>
+        <td>
+            <ol>
+                <li>Acessar o navegador.</li>
+                <li>Ir para página de login.</li>
+                <li>Tentar fazer login com conta já existente.</li>
+            </ol>
+        </td>
+        <td>O usuário será devidamente autenticado e será redirecionado para a página de perfil do mesmo.</td>
+        <td>William da Silva Rodrigues</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>Caso de Teste</th>
+        <th>Requisitos Associados</th>
+        <th>Objetivo do Teste</th>
+        <th>Passos</th>
+        <th>Critérios de êxito</th>
+        <th>Responsável</th>
+    </tr>
+    <tr>
+        <td>CT-06: Verificar o funcionamento de autorização e autenticação em caso de falha</td>
+        <td>
+            <ul>
+                <li>RF-01: A plataforma deve permitir ao usuário cadastrar uma conta.</li>
+                <li>RF-02: A plataforma deve permitir ao usuário fazer login na sua conta.</li>
+                <li>RF-05: Os usuários devem ter acesso a uma seção em sua conta para exibir informações do seu perfil.</li>
+            </ul>
+        </td>
+        <td>Verificar se um usuário inexistente não consegue se autenticar.</td>
+        <td>
+            <ol>
+                <li>Acessar o navegador.</li>
+                <li>Ir para página de login.</li>
+                <li>Tentar fazer login com uma conta aleatória.</li>
+            </ol>
+        </td>
+        <td>O usuário não será autenticado e uma mensagem para tentar novamente será exibida.</td>
+        <td>William da Silva Rodrigues</td>
+    </tr>
+</table>
