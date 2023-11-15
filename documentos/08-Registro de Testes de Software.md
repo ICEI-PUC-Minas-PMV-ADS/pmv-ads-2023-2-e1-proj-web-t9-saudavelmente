@@ -8,6 +8,22 @@ Relatório com as evidências dos testes de software realizados na aplicação p
 
 Os resultados dos testes funcionais realizados na aplicação são descritos a seguir.
 
+### CT-02: Verificar o funcionamento do filtro de pesquisa da página do Fórum
+
+**Responsável**: Vinícius Simões dos Santos
+
+- Filtro com resultados:
+    <div>
+        <img src="./img/teste1.png" alt="Registro de teste do filtro do fórum com resultados" width="70%">
+    </div>
+
+- Filtro sem resultados:
+    <div>
+        <img src="./img/teste2.png" alt="Registro de teste do filtro do fórum sem resultados" width="70%">
+    </div>
+
+---
+
 ### CT-03: Verificar o funcionamento do filtro de pesquisa da página de Profissionais
 
 **Responsável**: William da Silva Rodrigues
