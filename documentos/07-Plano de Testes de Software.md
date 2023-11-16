@@ -106,6 +106,36 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
         <td>William da Silva Rodrigues</td>
     </tr>
 </table>
+<table>
+    <tr>
+        <th>Caso de Teste</th>
+        <th>Requisitos Associados</th>
+        <th>Objetivo do Teste</th>
+        <th>Passos</th>
+        <th>Critérios de êxito</th>
+        <th>Responsável</th>
+    </tr>
+    <tr>
+        <td>CT-04: Verificar o cadastro de usuários</td>
+        <td>
+            <ul>
+                <li>RF-03: A plataforma deve permitir ao usuário cadastrar uma conta.</li>
+            </ul>
+        </td>
+        <td>Verificar se o cadastro está sendo feito corretamente.</td>
+        <td>
+            <ol>
+                <li>Acessar o navegador.</li>
+                <li>Informar o endereço do site.</li>
+                <li>Visualizar a página Home.</li>
+                <li>Clicar no ícone que se encontra no menu superior e em seguida clicar em "Cadastre-se".</li>
+                <li>Preencher o formulário e clicar em “Cadastrar”.</li>
+            </ol>
+        </td>
+        <td>Deve ocorrer uma validação das informações fornecidas pelo usuário, e ao clicar em "Cadastrar", deve aparecer a mensagem "Cadastrado realizado com sucesso".</td>
+        <td>João Pedro Campos Carvalho dos Santos</td>
+    </tr>
+</table>
 
 <table>
     <tr>
