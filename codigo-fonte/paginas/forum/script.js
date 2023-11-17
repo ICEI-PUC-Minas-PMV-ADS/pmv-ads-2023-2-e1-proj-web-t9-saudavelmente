@@ -22,3 +22,5 @@ function handleSearchPosts() {
 }
 
 handleSearchPosts();
+changePageHeader();
+handleLogout();

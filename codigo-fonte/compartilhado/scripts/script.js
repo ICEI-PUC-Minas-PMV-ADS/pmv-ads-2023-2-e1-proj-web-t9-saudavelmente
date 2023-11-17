@@ -80,6 +80,37 @@ function authGuard() {
   if (!Auth.isLogged() && !Auth.isRegistered()) {
     redirectTo('../cadastro/');
     return;
+  } else if (!Auth.isLogged()) {
+    redirectTo('../login/');
   }
-  redirectTo('../login/');
+  // Otherwise can access page.
+}
+
+/**
+ * Muda o header da página que a função for chamada.
+ * Se o usuário estiver logado, o botão de sair estará amostra, para o usuário deslogar.
+ * Caso contrário, o botão de cadastro e login estará visível.
+ */
+function changePageHeader() {
+  if (!Auth.isLogged()) {
+    document.getElementById('auth').style.display = 'block';
+    document.getElementById('auth-logout').style.display = 'none';
+  } else {
+    document.getElementById('auth').style.display = 'none';
+    document.getElementById('auth-logout').style.display = 'block';
+  }
+}
+
+/**
+ * Lida com os eventos de logout.
+ * Desloga o usuário e redireciona para a página inicial.
+ * Apenas para usuários logados.
+ */
+function handleLogout() {
+  if (Auth.isLogged()) {
+    document.getElementById('auth-logout').addEventListener('click', () => {
+      Auth.logout();
+      redirectTo('../pagina-inicial/');
+    });
+  }
 }

@@ -1,11 +1,3 @@
-#auth-logout {
-  display: block;
-}
-
-#auth {
-  display: none;
-}
-
 .breadcrumb-custom .breadcrumb-item {
   position: relative;
   flex-grow: 1;

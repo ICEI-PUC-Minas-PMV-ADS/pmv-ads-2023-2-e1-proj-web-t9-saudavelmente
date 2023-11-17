@@ -1,1 +1,3 @@
-// authGuard();
+authGuard();
+changePageHeader();
+handleLogout();

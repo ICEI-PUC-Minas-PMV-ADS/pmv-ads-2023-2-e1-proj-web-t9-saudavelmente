@@ -86,4 +86,6 @@ function simulateResponse(message) {
   }
 }
 
-// authGuard();
+authGuard();
+changePageHeader();
+handleLogout();

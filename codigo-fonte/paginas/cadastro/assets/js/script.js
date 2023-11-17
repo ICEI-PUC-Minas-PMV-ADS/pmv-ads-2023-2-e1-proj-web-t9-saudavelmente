@@ -22,3 +22,6 @@ function limitInputLength(input, maxLength) {
     input.value = input.value.slice(0, maxLength);
   }
 }
+
+changePageHeader();
+handleLogout();

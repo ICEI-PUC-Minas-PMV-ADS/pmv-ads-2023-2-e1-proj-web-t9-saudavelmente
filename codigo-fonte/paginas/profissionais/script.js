@@ -76,6 +76,8 @@ function handleSearchProfissional() {
   });
 }
 
-// authGuard();
+authGuard();
+changePageHeader();
+handleLogout();
 handleAddProfessional();
 handleSearchProfissional();

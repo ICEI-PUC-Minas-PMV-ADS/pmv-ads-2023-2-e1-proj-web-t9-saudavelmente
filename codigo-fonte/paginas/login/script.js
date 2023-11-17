@@ -19,4 +19,6 @@ function verifyLoginHandler() {
   });
 }
 
-verifyLoginHandler()
+verifyLoginHandler();
+changePageHeader();
+handleLogout();
