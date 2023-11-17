@@ -191,10 +191,41 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
             <ol>
                 <li>Acessar o navegador.</li>
                 <li>Ir para página de login.</li>
-                <li>Tentar fazer login com uma conta aleatória.</li>
+                <li>Tentar fazer login com uma conta aleatória não existente.</li>
             </ol>
         </td>
         <td>O usuário não será autenticado e uma mensagem para tentar novamente será exibida.</td>
+        <td>William da Silva Rodrigues</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>Caso de Teste</th>
+        <th>Requisitos Associados</th>
+        <th>Objetivo do Teste</th>
+        <th>Passos</th>
+        <th>Critérios de êxito</th>
+        <th>Responsável</th>
+    </tr>
+    <tr>
+        <td>CT-07: Verificar adição de profissional na lista de consultas</td>
+        <td>
+            <ul>
+                <li>RF-03: A plataforma deve fornecer uma lista de profissionais com possibilidade de pesquisa, permitindo que os usuários escolham um profissional alinhado com suas necessidades.</li>
+                <li>RF-04: A plataforma deve permitir que os usuários tenham suas consultas.</li>
+            </ul>
+        </td>
+        <td>Verificar se o usuário consegue adicionar um profissional em sua lista de consultas e caso já tenha adicionado, o usuário não poderá adicionar mais aquele profissional.</td>
+        <td>
+            <ol>
+                <li>Acessar o navegador.</li>
+                <li>Fazer login em sua conta.</li>
+                <li>Acessar seu perfil, e ir em "Profissionais".</li>
+                <li>Clicar em "Adicionar" embaixo do profissional selecionado.</li>
+            </ol>
+        </td>
+        <td>Ao adicionar, o profissional deverá constar na lista de consultas do usuário e uma mensagem de sucesso será exibida, caso contrário o profissional não constará na lista de consulta e uma mensagem de erro será exibida.</td>
         <td>William da Silva Rodrigues</td>
     </tr>
 </table>

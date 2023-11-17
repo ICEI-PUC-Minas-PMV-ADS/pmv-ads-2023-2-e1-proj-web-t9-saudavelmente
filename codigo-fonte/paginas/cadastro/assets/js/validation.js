@@ -55,7 +55,8 @@ document.addEventListener('DOMContentLoaded', function () {
       password: password.value,
       areaAtuacao: areaAtuacao,
       profissionalSaude: profissionalSaude.checked,
-      cpf: cpf.value
+      cpf: cpf.value,
+      urlProfilePhoto: null
     };
 
     if (Auth.checkEmail(userData.email)) {

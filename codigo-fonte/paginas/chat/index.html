@@ -116,35 +116,39 @@
         </ol>
       </nav>
     </div>
-  </main>
-  <div class="chat-container">
-    <div class="header-chat">
+    <div class="chat-container">
+      <div class="header-chat">
         <a href="#">
-            <img src="imagens/seta_voltar.png" alt="Voltar" width="30" height="30">
+          <img src="imagens/seta_voltar.png" alt="Voltar" width="30" height="30">
         </a>
         <img src="imagens/persona-ana.png" alt="User Avatar" class="avatar">
         <span class="username">Ana</span>
+      </div>
+      <div class="chat-container1">
+        <div class="chat-messages">
+        </div>
+        <div class="chat-input">
+          <input type="file" id="fileInput" style="display: none;">
+          <input type="text" id="messageInput" placeholder="Mensagem...">
+          <button onclick="sendMessage()">Enviar</button>
+        </div>
+      </div>
     </div>
-<div class="chat-container1">
-    <div class="chat-messages">
-    </div>
-    <div class="chat-input">
-        <input type="file" id="fileInput" style="display: none;">
-        <input type="text" id="messageInput" placeholder="Mensagem...">
-        <button onclick="sendMessage()">Enviar</button>
-    </div>
-</div>
-</html>
 
-<!-- O footer fica grudado no final da página e anda com o conteúdo. -->
-<footer class="mt-auto bd-top-r10 bg-light">
-  <div class="p-3">
-    <p class="text-center m-0">
-      <a href="../pagina-inicial/">
-        SaudávelMente
-      </a>
-      <br>
-      Copyright &copy; <span id="current-year">2023</span> - Todos os direitos reservados.
-    </p>
-  </div>
-</footer>
+    <div class="section-divider"></div>
+  </main>
+
+  <!-- O footer fica grudado no final da página e anda com o conteúdo. -->
+  <footer class="mt-auto bd-top-r10 bg-light">
+    <div class="p-3">
+      <p class="text-center m-0">
+        <a href="../pagina-inicial/">
+          SaudávelMente
+        </a>
+        <br>
+        Copyright &copy; <span id="current-year">2023</span> - Todos os direitos reservados.
+      </p>
+    </div>
+  </footer>
+
+</html>

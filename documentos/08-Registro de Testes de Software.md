@@ -13,7 +13,7 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 **Responsável**: William da Silva Rodrigues
 
 - Navegação entre as páginas a partir da página inicial, como descrito no [Projeto de Interface](./04-Projeto%20de%20Interface.md):
-[Teste dos links da Página Inicial](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t9-saudavelmente/assets/47596121/c0668e1a-9da1-439c-aea6-f839f4e6b2f6)
+![Teste dos links da Página Inicial](./img/teste-pagina-inicial-links.gif)
 
 ---
 
@@ -88,6 +88,22 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 - Usuário não existe no "banco de dados".
     <div>
         <img src="./img/teste-login-2.png" alt="Registro de teste de login mal sucedido" width="70%">
+    </div>
+
+---
+
+### CT-07: Verificar adição de profissional na lista de consultas
+
+**Responsável**: William da Silva Rodrigues
+
+- Sucesso ao adicionar um profissional.
+    <div>
+        <img src="./img/teste-add-profissional-1.png" alt="Registro de teste de adição de profissional na lista de consultas sucesso" width="70%">
+    </div>
+
+- Erro ao adicionar o profissional, pois já existe.
+    <div>
+        <img src="./img/teste-add-profissional-2.png" alt="Registro de teste de adição de profissional na lista de consultas erro" width="70%">
     </div>
 
 ---
