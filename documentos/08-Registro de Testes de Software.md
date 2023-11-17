@@ -55,17 +55,17 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 
 - Usuário preenche os campos "Senha" e "Confirmaçāo de Senha" com valores diferentes.
     <div>
-        <img src="img/senhasnc_img.png" alt="Imagem da tela de cadastro com valores das senhas diferentes" width="70%">
+        <img src="img/img_senhasnaocorrespondem.png" alt="Imagem da tela de cadastro com valores das senhas diferentes" width="70%">
     </div>
 
 - Verificar se o usuário foi cadastrado.
     <div>
-        <img src="img/cadastrorealizado_img.png" alt="Imagem da tela de um cadastro realizado" width="70%">
+        <img src="img/img_cadastrorealizado.png" alt="Imagem da tela de um cadastro realizado" width="70%">
     </div>
 
 - Informações armazenadas no LocalStorage após usuário se cadastrar.
      <div>
-        <img src="img/localstorage_img.png" alt="Imagem das informações do usuário armazenadas no LocalStorage " width="70%">
+        <img src="img/img_localstorage.png" alt="Imagem das informações do usuário armazenadas no LocalStorage " width="70%">
     </div>
 
 ---
