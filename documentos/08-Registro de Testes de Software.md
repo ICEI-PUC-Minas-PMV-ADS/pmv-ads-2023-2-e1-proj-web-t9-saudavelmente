@@ -13,7 +13,7 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 **Responsável**: William da Silva Rodrigues
 
 - Navegação entre as páginas a partir da página inicial, como descrito no [Projeto de Interface](./04-Projeto%20de%20Interface.md):
-[![Video do teste](./img/funcionalidade-pagina-inicial-valores.png)](./img/teste-pagina-inicial-links.webm)
+[Teste dos links da Página Inicial](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t9-saudavelmente/assets/47596121/c0668e1a-9da1-439c-aea6-f839f4e6b2f6)
 
 ---
 
