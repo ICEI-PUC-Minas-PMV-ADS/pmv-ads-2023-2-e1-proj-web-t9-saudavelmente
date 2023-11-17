@@ -45,9 +45,6 @@ document.addEventListener('DOMContentLoaded', function () {
       return;
     }
 
-    const existingData = localStorage.getItem('userList');
-    const userList = existingData ? JSON.parse(existingData) : [];
-
     const areaAtuacao = profissionalSaude.checked ? areaAtuacaoSelect.value : '';
 
     const userData = {
@@ -61,15 +58,17 @@ document.addEventListener('DOMContentLoaded', function () {
       cpf: cpf.value
     };
 
-    userList.push(userData);
-
-    localStorage.setItem('userList', JSON.stringify(userList));
-
-    alert('Cadastro realizado com sucesso!');
-    form.reset(); // Limpa o formulário após o cadastro
-
-    // Redireciona o usuário para a página principal
-    window.location.href = 'https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t9-saudavelmente/codigo-fonte/paginas/login/';
+    if (Auth.checkEmail(userData.email)) {
+      const response = confirm('Email já está cadastrado, gostaria de tentar logar?');
+      if (response) {
+        redirectTo('../login/');
+      }
+    } else {
+      Auth.register(userData);
+      alert('Cadastro realizado com sucesso!');
+      // Redireciona o usuário para a página de login.
+      redirectTo('../login/');
+    }
   });
 
   function isValidEmail(email) {

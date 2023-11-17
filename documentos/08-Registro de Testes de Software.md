@@ -6,7 +6,16 @@ Pré-requisitos:
 
 Relatório com as evidências dos testes de software realizados na aplicação pela equipe, baseado no plano de testes pré-definido.
 
-Os resultados dos testes funcionais realizados na aplicação são descritos a seguir.
+Os resultados dos testes funcionais realizados na aplicação são descritos a seguir:
+
+### CT-01: Verificar o funcionamento dos links da Página Inicial
+
+**Responsável**: William da Silva Rodrigues
+
+- Navegação entre as páginas a partir da página inicial, como descrito no [Projeto de Interface](./04-Projeto%20de%20Interface.md):
+[![Video do teste](./img/funcionalidade-pagina-inicial-valores.png)](./img/teste-pagina-inicial-links.webm)
+
+---
 
 ### CT-02: Verificar o funcionamento do filtro de pesquisa da página do Fórum
 

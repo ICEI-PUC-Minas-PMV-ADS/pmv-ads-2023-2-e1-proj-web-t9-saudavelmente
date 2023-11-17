@@ -103,7 +103,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
             </ol>
         </td>
         <td>Apenas os profissionais com as palavras-chaves digitadas devem aparecer, se não tiver nenhum profissional com as palavras-chave, então nada deverá ser exibido.</td>
-        <td>William da Silva Rodrigues</td>
+        <td>Vinícius Simões dos Santos</td>
     </tr>
 </table>
 <table>

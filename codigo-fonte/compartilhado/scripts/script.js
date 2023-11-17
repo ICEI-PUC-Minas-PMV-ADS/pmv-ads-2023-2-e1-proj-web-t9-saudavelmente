@@ -33,6 +33,14 @@ class Auth {
     const userObj = JSON.parse(localStorage.getItem('user'));
     return email == userObj.email && password == decodePassword(userObj.hashedPassword)
   }
+
+  static checkEmail(email) {
+    if (!Auth.isRegistered()) {
+      return false;
+    }
+    const userObj = JSON.parse(localStorage.getItem('user'));
+    return userObj.email == email;
+  }
 }
 
 /**
