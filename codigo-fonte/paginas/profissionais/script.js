@@ -12,6 +12,7 @@ function handleAddProfessional() {
     toastsTriggers.forEach((toastTrigger) => {
       toastTrigger.addEventListener('click', () => {
         const targetCardElement = toastTrigger.parentElement.parentElement;
+        const professionalId = targetCardElement.id;
         const professionalName = targetCardElement.querySelector('.card-title').textContent;
         const professionalArea = targetCardElement.querySelector('.list-group > li').textContent.split(':')[1].trim();
         const professionalImage = targetCardElement.querySelector('img').src.split('/').at(-1);
@@ -22,7 +23,7 @@ function handleAddProfessional() {
         }
         const consultationsObj = Array.from(JSON.parse(consultations));
         const professionalAlreadyAdded = consultationsObj
-          .find((consultation) => consultation.professionalName === professionalName);
+          .find((consultation) => consultation.id === professionalId);
         if (professionalAlreadyAdded) {
           toast.querySelector('.toast-header').innerHTML = `
             <span class="bi bi-person-fill-x"></span> 
@@ -34,10 +35,11 @@ function handleAddProfessional() {
           `;
         } else {
           consultationsObj.push({
+            id: professionalId,
+            lastConsultationTime: null,
             professionalName,
             professionalArea,
             professionalImage,
-            lastConsultationTime: null
           });
           localStorage.setItem('consultations', JSON.stringify(consultationsObj));
           toast.querySelector('.toast-header').innerHTML = `

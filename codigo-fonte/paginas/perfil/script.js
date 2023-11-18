@@ -76,15 +76,15 @@ function handleLoadConsultations() {
     consultationsPagination.style.display = 'none';
     consultationsWrapper.innerHTML += `
       <div class="alert alert-light" role="alert">
-        Você ainda não possui consultas, vocẽ poderá adiciona consultas na <a href="../profissionais/">área dos profissionais</a>!
+        Você ainda não possui consultas, você poderá adiciona consultas na <a href="../profissionais/">área dos profissionais</a>!
       </div>
     `;
   } else {
     consultationsPagination.style.display = 'block';
     const consultations = JSON.parse(userConsultations);
-    consultations.forEach((consultation, index) => {
+    consultations.forEach((consultation) => {
       consultationsWrapper.innerHTML += `
-        <div class="card mb-3" id="consultation-${index}">
+        <div class="card mb-3" id="${consultation.id}">
           <div class="row g-0">
             <div class="col-md-4">
               <img src="${getProfessionalImagePath(consultation.professionalImage)}" class="img-fluid rounded-start consultation-card-image"
