@@ -107,16 +107,16 @@
           <div class="col-lg-4">
             <div class="card mb-4">
               <div class="card-body text-center">
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar"
+                <img src="./imagens/profile-image-default.webp" alt="Avatar padrão"
                   class="rounded-circle img-fluid img-thumbnail" style="width: 150px;">
                 <h5 class="my-3">Olá, José!</h5>
                 <div class="d-flex justify-content-center mb-2 gap-1 flex-wrap">
-                  <button type="button" class="btn btn-primary"><span
-                      class="bi bi-pencil-square me-1"></span>Editar</button>
-                  <a href="../profissionais/" class="btn btn-primary"><span
-                      class="bi bi-person-check-fill me-1"></span>Profissionais</a>
+                  <button type="button" class="btn btn-primary"><span class="bi bi-pencil-square"></span>
+                    Editar</button>
+                  <a href="../profissionais/" class="btn btn-primary"><span class="bi bi-person-check-fill"></span>
+                    Profissionais</a>
                   <button type="button" class="btn btn-outline-primary" id="auth-profile-logout"><span
-                      class="bi bi-box-arrow-left me-1"></span>Sair</button>
+                      class="bi bi-box-arrow-left"></span> Sair</button>
                 </div>
               </div>
             </div>
@@ -165,72 +165,20 @@
             <div class="row">
               <div class="col">
                 <div class="card mb-4 mb-md-0">
-                  <div class="card-body">
+                  <div class="card-body" id="user-consultations">
                     <h2 class="mb-4 fs-4">Suas Consultas</h2>
-                    <div class="card mb-3">
-                      <div class="row g-0">
-                        <div class="col-md-4">
-                          <img src="./imagens/persona-jose.jpg" class="img-fluid rounded-start consultation-card-image"
-                            alt="...">
-                        </div>
-                        <div class="col-md-8">
-                          <div class="card-body">
-                            <h5 class="card-title">João Pedro</h5>
-                            <p class="card-text">Àrea: <span class="fw-bold">Psiquiatra</span></p>
-                            <p class="card-text"><small class="text-body-secondary">Último contato: <span
-                                  class="fw-bold">17/11/2023 às 21:24</span></small></p>
-                            <div
-                              class="card-footer d-flex justify-content-center justify-content-sm-evenly gap-2 flex-wrap">
-                              <a href="#" class="btn btn-primary">Iniciar Consulta</a>
-                              <a href="#" class="btn btn-outline-primary">Cancelar Consulta</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card mb-3">
-                      <div class="row g-0">
-                        <div class="col-md-4">
-                          <img src="./imagens/persona-jose.jpg" class="img-fluid rounded-start consultation-card-image"
-                            alt="...">
-                        </div>
-                        <div class="col-md-8">
-                          <div class="card-body">
-                            <h5 class="card-title">João Pedro</h5>
-                            <p class="card-text">Àrea: <span class="fw-bold">Psiquiatra</span></p>
-                            <p class="card-text"><small class="text-body-secondary">Último contato: <span
-                                  class="fw-bold">17/11/2023 às 21:24</span></small></p>
-                            <div
-                              class="card-footer d-flex justify-content-center justify-content-sm-evenly gap-2 flex-wrap">
-                              <a href="#" class="btn btn-primary">Iniciar Consulta</a>
-                              <a href="#" class="btn btn-outline-primary">Cancelar Consulta</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card mb-3">
-                      <div class="row g-0">
-                        <div class="col-md-4">
-                          <img src="./imagens/persona-jose.jpg" class="img-fluid rounded-start consultation-card-image"
-                            alt="...">
-                        </div>
-                        <div class="col-md-8">
-                          <div class="card-body">
-                            <h5 class="card-title">João Pedro</h5>
-                            <p class="card-text">Àrea: <span class="fw-bold">Psiquiatra</span></p>
-                            <p class="card-text"><small class="text-body-secondary">Último contato: <span
-                                  class="fw-bold">17/11/2023 às 21:24</span></small></p>
-                            <div
-                              class="card-footer d-flex justify-content-center justify-content-sm-evenly gap-2 flex-wrap">
-                              <a href="#" class="btn btn-primary">Iniciar Consulta</a>
-                              <a href="#" class="btn btn-outline-primary">Cancelar Consulta</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                   </div>
+                  <nav aria-label="Page navigation example" id="consutations-pagination">
+                    <ul class="pagination justify-content-center">
+                      <li class="page-item disabled">
+                        <a class="page-link">Previous</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item">
+                        <a class="page-link disabled" href="#">Next</a>
+                      </li>
+                    </ul>
+                  </nav>
                 </div>
               </div>
             </div>
@@ -238,45 +186,6 @@
         </div>
       </div>
     </section>
-    <div class="section-divider" id="sobre"></div>
-    <!-- <h1><i class="bi bi-house"></i>Perfil</h1>
-    <div class="profile-container">
-      <div id="left-column">
-        <img id="profile-picture" src="./imagens/persona-jose.jpg" alt="Foto de Perfil do José">
-        <p id="message">Olá, José</p>
-        <button id="edit-profile-picture">Editar</button>
-        <button id="professionals">Profissionais</button>
-        <button id="logout-button">Sair</button>
-      </div>
-      <div id="right-column">
-        <div id="user-info">
-          <p>Nome: José</p>
-          <p>Idade: 25</p>
-          <p>Email: jose25@email.com</p>
-          <p>Telefone: (97) 010-052-055</p>
-        </div>
-        <div id="appointments">
-          <div class="appointment">
-            <p>Nome do(a) Profissional: Maria</p>
-            <p>Área de Atuação: Psicologia</p>
-            <p>Último contato: 31/02/2023</p>
-            <div class="appointment-buttons">
-              <button class="appointment-button">Marcar Consulta</button>
-              <button class="appointment-button">Cancelar Consulta</button>
-            </div>
-          </div>
-          <div class="appointment">
-            <p>Nome do(a) Profissional: João</p>
-            <p>Área de Atuação: Psiquiatria</p>
-            <p>Último contato: 30/02/2028 </p>
-            <div class="appointment-buttons">
-              <button class="appointment-button">Marcar Consulta</button>
-              <button class="appointment-button">Cancelar Consulta</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
   </main>
 
   <!-- O footer fica grudado no final da página e anda com o conteúdo. -->
