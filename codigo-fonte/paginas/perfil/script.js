@@ -15,14 +15,14 @@ function handleProfileLogout() {
 /**
  * Formata a data e horário da última consulta, caso não seja null. 
  * 
- * @param {Date | null} lastConsultationTime data e horário da última consulta
+ * @param {String | null} lastConsultationTime data e horário da última consulta
  * @returns {String} a data formatada ou uma mensagem caso lastConsultationTime seja null
  */
 function getLastConsultationTime(lastConsultationTime) {
   if (!lastConsultationTime) {
     return 'Você ainda não iniciou uma consulta';
   } else {
-    return lastConsultationTime.toLocaleString('pt-BR', {
+    return new Date(lastConsultationTime).toLocaleString('pt-BR', {
       day: '2-digit',
       month: '2-digit',
       year: 'numeric',
@@ -49,8 +49,17 @@ function getProfessionalImagePath(professionalImage) {
  * @param {Event} event evento do clique do botão de iniciar consulta
  */
 function handleStartConsultation(event) {
-  // Lógica aqui.
-  console.log('test');
+  const startButton = event.target;
+  const cardElement = startButton.parentElement.parentElement.parentElement.parentElement;
+  const consultationId = cardElement.id;
+  const consultations = JSON.parse(localStorage.getItem('consultations'));
+  const currentConsultationIndex = consultations.findIndex((consultation) => consultation.id === consultationId);
+  const consultation = consultations[currentConsultationIndex];
+  consultation.lastConsultationTime = new Date();
+  consultations[currentConsultationIndex] = consultation;
+  localStorage.setItem('consultations', JSON.stringify(consultations));
+  localStorage.setItem('currentConsultation', JSON.stringify(consultation));
+  redirectTo('../chat/');
 }
 
 
@@ -84,8 +93,8 @@ function handleLoadConsultations() {
     const consultations = JSON.parse(userConsultations);
     consultations.forEach((consultation) => {
       consultationsWrapper.innerHTML += `
-        <div class="card mb-3" id="${consultation.id}">
-          <div class="row g-0">
+        <div class="card mb-3">
+          <div class="row g-0" id="${consultation.id}">
             <div class="col-md-4">
               <img src="${getProfessionalImagePath(consultation.professionalImage)}" class="img-fluid rounded-start consultation-card-image"
                 alt="Imagem do profissional ${consultation.professionalName}">
@@ -99,10 +108,10 @@ function handleLoadConsultations() {
                 </p>
                 <div
                   class="card-footer d-flex justify-content-center justify-content-sm-evenly gap-2 flex-wrap">
-                  <button type="button" class="btn btn-primary" onclick="handleStartConsultation()">
+                  <button type="button" class="btn btn-primary" onclick="handleStartConsultation(event)">
                     Iniciar Consulta <span class="bi bi-box-arrow-up-right"></span>
                   </button>
-                  <button type="button" class="btn btn-outline-primary" onclick="handleCancelConsultation()">
+                  <button type="button" class="btn btn-outline-primary" onclick="handleCancelConsultation(event)">
                     Cancelar Consulta <span class="bi bi-x-square-fill"></span>
                   </button>
                 </div>
