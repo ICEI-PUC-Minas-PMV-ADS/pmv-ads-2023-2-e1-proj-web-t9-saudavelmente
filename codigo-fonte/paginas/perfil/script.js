@@ -50,7 +50,7 @@ function getProfessionalImagePath(professionalImage) {
  */
 function handleStartConsultation(event) {
   const startButton = event.target;
-  const cardElement = startButton.parentElement.parentElement.parentElement.parentElement;
+  const cardElement = startButton.parentElement.parentElement.parentElement.parentElement.parentElement;
   const consultationId = cardElement.id;
   const consultations = JSON.parse(localStorage.getItem('consultations'));
   const currentConsultationIndex = consultations.findIndex((consultation) => consultation.id === consultationId);
@@ -69,8 +69,29 @@ function handleStartConsultation(event) {
  * @param {Event} event evento do clique do botão de cancelar consulta
  */
 function handleCancelConsultation(event) {
-  // Lógica aqui.
-  console.log('test');
+  const cancelButton = event.target;
+  const cardElement = cancelButton.parentElement.parentElement.parentElement.parentElement.parentElement;
+  const consultationId = cardElement.id;
+  const consultations = JSON.parse(localStorage.getItem('consultations'));
+  const currentConsultationIndex = consultations.findIndex((consultation) => consultation.id === consultationId);
+  const consultation = consultations[currentConsultationIndex];
+  const cancelConsultationConfirm = confirm(`Você realmente gostaria de remover a sua consulta com ${consultation.professionalName}?`);
+  if (cancelConsultationConfirm) {
+    const consultationsWrapper = document.getElementById('user-consultations');
+    const consultationsPagination = document.getElementById('consutations-pagination');
+    consultations.splice(currentConsultationIndex, 1);
+    consultationsWrapper.removeChild(cardElement);
+    localStorage.setItem('consultations', JSON.stringify(consultations));
+    if (consultations.length === 0) {
+      consultationsPagination.style.display = 'none';
+      consultationsWrapper.innerHTML += `
+        <div class="alert alert-light" role="alert">
+          Você ainda não possui consultas, você poderá adicionar consultas na <a href="../profissionais/">área dos profissionais</a>!
+        </div>
+      `;
+    }
+    alert('Consulta cancelada com sucesso!');
+  }
 }
 
 /**
@@ -85,42 +106,51 @@ function handleLoadConsultations() {
     consultationsPagination.style.display = 'none';
     consultationsWrapper.innerHTML += `
       <div class="alert alert-light" role="alert">
-        Você ainda não possui consultas, você poderá adiciona consultas na <a href="../profissionais/">área dos profissionais</a>!
+        Você ainda não possui consultas, você poderá adicionar consultas na <a href="../profissionais/">área dos profissionais</a>!
       </div>
     `;
   } else {
-    consultationsPagination.style.display = 'block';
     const consultations = JSON.parse(userConsultations);
-    consultations.forEach((consultation) => {
+    if (consultations.length === 0) {
+      consultationsPagination.style.display = 'none';
       consultationsWrapper.innerHTML += `
-        <div class="card mb-3">
-          <div class="row g-0" id="${consultation.id}">
-            <div class="col-md-4">
-              <img src="${getProfessionalImagePath(consultation.professionalImage)}" class="img-fluid rounded-start consultation-card-image"
-                alt="Imagem do profissional ${consultation.professionalName}">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">${consultation.professionalName}</h5>
-                <p class="card-text">Àrea de Atuação: <span class="fw-bold">${consultation.professionalArea}</span></p>
-                <p class="card-text">
-                  <small class="text-body-secondary">Último contato: <span class="fw-bold">${getLastConsultationTime(consultation.lastConsultationTime)}</span></small>
-                </p>
-                <div
-                  class="card-footer d-flex justify-content-center justify-content-sm-evenly gap-2 flex-wrap">
-                  <button type="button" class="btn btn-primary" onclick="handleStartConsultation(event)">
-                    Iniciar Consulta <span class="bi bi-box-arrow-up-right"></span>
-                  </button>
-                  <button type="button" class="btn btn-outline-primary" onclick="handleCancelConsultation(event)">
-                    Cancelar Consulta <span class="bi bi-x-square-fill"></span>
-                  </button>
+        <div class="alert alert-light" role="alert">
+          Você ainda não possui consultas, você poderá adicionar consultas na <a href="../profissionais/">área dos profissionais</a>!
+        </div>
+      `;
+    } else {
+      consultationsPagination.style.display = 'block';
+      consultations.forEach((consultation) => {
+        consultationsWrapper.innerHTML += `
+          <div class="card mb-3" id="${consultation.id}">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="${getProfessionalImagePath(consultation.professionalImage)}" class="img-fluid rounded-start consultation-card-image"
+                  alt="Imagem do profissional ${consultation.professionalName}">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">${consultation.professionalName}</h5>
+                  <p class="card-text">Àrea de Atuação: <span class="fw-bold">${consultation.professionalArea}</span></p>
+                  <p class="card-text">
+                    <small class="text-body-secondary">Último contato: <span class="fw-bold">${getLastConsultationTime(consultation.lastConsultationTime)}</span></small>
+                  </p>
+                  <div
+                    class="card-footer d-flex justify-content-center justify-content-sm-evenly gap-2 flex-wrap">
+                    <button type="button" class="btn btn-primary" onclick="handleStartConsultation(event)">
+                      Iniciar Consulta <span class="bi bi-box-arrow-up-right"></span>
+                    </button>
+                    <button type="button" class="btn btn-outline-primary" onclick="handleCancelConsultation(event)">
+                      Cancelar Consulta <span class="bi bi-x-square-fill"></span>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      `;
-    });
+        `;
+      });
+    };
   }
 }
 
