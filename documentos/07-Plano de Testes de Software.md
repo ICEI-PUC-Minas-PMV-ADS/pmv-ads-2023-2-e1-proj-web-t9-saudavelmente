@@ -229,3 +229,33 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
         <td>William da Silva Rodrigues</td>
     </tr>
 </table>
+
+<table>
+    <tr>
+        <th>Caso de Teste</th>
+        <th>Requisitos Associados</th>
+        <th>Objetivo do Teste</th>
+        <th>Passos</th>
+        <th>Critérios de êxito</th>
+        <th>Responsável</th>
+    </tr>
+    <tr>
+        <td>CT-08: Verificar inicio e cancelamento de consultas</td>
+        <td>
+            <ul>
+                <li>RF-04: A plataforma deve permitir que os usuários tenham suas consultas.</li>
+            </ul>
+        </td>
+        <td>Verificar se o usuário consegue iniciar e cancelar uma consulta com um profissional já adicionado em sua lista de consulta.</td>
+        <td>
+            <ol>
+                <li>Acessar o navegador.</li>
+                <li>Fazer login em sua conta.</li>
+                <li>Acessar seu perfil, ir em "Suas Consultas".</li>
+                <li>Clicar em "Iniciar Consulta" ou "Cancelar Consulta".</li>
+            </ol>
+        </td>
+        <td>Ao iniciar sua consulta com o profissional, o usuário deverá ser redirecionado para a página de chat e também a data de último contato será atualizada. Ao cancelar, a consulta deverá ser apagada e uma mensagem será exibida.</td>
+        <td>William da Silva Rodrigues</td>
+    </tr>
+</table>

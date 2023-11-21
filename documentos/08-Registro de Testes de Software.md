@@ -107,3 +107,28 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
     </div>
 
 ---
+
+### CT-08: Verificar inicio e cancelamento de consultas
+
+**Responsável**: William da Silva Rodrigues
+
+- Ao Iniciar Consulta usuário deverá ser redirecionado para o chat da consulta e também a data de Último contato será atualizada.
+    <div>
+        <img src="./img/teste-iniciar-consulta-1.png" alt="Registro de teste de inicio de consulta com um profissional" width="70%">
+    </div>
+    <div>
+        <img src="./img/teste-iniciar-consulta-2.png" alt="Registro de teste de inicio de consulta com um profissional" width="70%">
+    </div>
+    <div>
+        <img src="./img/teste-iniciar-consulta-3.png" alt="Registro de teste de inicio de consulta com um profissional" width="70%">
+    </div>
+
+- Ao cancelar uma consulta, a consulta será removida e uma mensagem será exibida.
+    <div>
+        <img src="./img/teste-cancelar-consulta-1.png" alt="Registro de teste para cancelar consulta com um profissional" width="70%">
+    </div>
+    <div>
+        <img src="./img/teste-cancelar-consulta-2.png" alt="Registro de teste para cancelar consulta com um profissional" width="70%">
+    </div>
+
+---
