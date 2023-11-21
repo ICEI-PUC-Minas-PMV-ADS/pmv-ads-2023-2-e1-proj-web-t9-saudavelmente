@@ -68,10 +68,6 @@ function sendMessage() {
   }
 }
 
-setTimeout(() => {
-  receiveMessage("Olá!");
-}, 2000);
-
 function simulateResponse(message) {
   const lowercaseMessage = message.toLowerCase();
 
@@ -86,6 +82,24 @@ function simulateResponse(message) {
   }
 }
 
+/**
+ * Lida com o header do chat carregando informações importantes
+ * do profissional.
+ */
+function handleChatHeader() {
+  const currentConsultation = JSON.parse(localStorage.getItem('currentConsultation'));
+  const headerChatWrapper = document.getElementById('header-chat');
+  headerChatWrapper.innerHTML += `
+    <img src="${getProfessionalImagePath(currentConsultation.professionalImage)}" alt="Imagem da profissional ${currentConsultation.professionalName}" class="avatar">
+    <span class="username">${currentConsultation.professionalName}</span>
+  `;
+}
+
+setTimeout(() => {
+  receiveMessage("Olá!");
+}, 2000);
+
 authGuard();
 changePageHeader();
 handleLogout();
+handleChatHeader();

@@ -34,16 +34,6 @@ function getLastConsultationTime(lastConsultationTime) {
 }
 
 /**
- * Retorna o caminho relativo completo da imagem do profissional.
- * 
- * @param {String} professionalImage nome da imagem do profissional
- * @returns {String} o caminho relativo completo da imagem do profissional
- */
-function getProfessionalImagePath(professionalImage) {
-  return `../profissionais/imagens/${professionalImage}`;
-}
-
-/**
  * Lida com o evento de clicar em iniciar a consulta.
  * 
  * @param {Event} event evento do clique do botão de iniciar consulta

@@ -114,3 +114,13 @@ function handleLogout() {
     });
   }
 }
+
+/**
+ * Retorna o caminho relativo completo da imagem do profissional.
+ * 
+ * @param {String} professionalImage nome da imagem do profissional
+ * @returns {String} o caminho relativo completo da imagem do profissional
+ */
+function getProfessionalImagePath(professionalImage) {
+  return `../profissionais/imagens/${professionalImage}`;
+}
