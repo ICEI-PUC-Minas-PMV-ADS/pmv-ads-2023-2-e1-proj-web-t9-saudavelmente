@@ -95,12 +95,13 @@ function changePageHeader() {
   if (!Auth.isLogged()) {
     document.getElementById('auth').style.display = 'block';
     document.getElementById('auth-logout').style.display = 'none';
+    document.getElementById('perfil').style.display = 'none';
   } else {
     document.getElementById('auth').style.display = 'none';
     document.getElementById('auth-logout').style.display = 'block';
+    document.getElementById('perfil').style.display = 'block';
   }
 }
-
 /**
  * Lida com os eventos de logout.
  * Desloga o usuário e redireciona para a página inicial.
