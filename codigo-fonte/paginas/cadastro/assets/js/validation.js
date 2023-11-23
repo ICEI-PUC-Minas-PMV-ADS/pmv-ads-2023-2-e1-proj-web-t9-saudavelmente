@@ -71,8 +71,8 @@ document.addEventListener('DOMContentLoaded', function () {
       redirectTo('../login/');
     }
   });
-
-  function isValidEmail(email) {
-    return /\S+@\S+\.\S+/.test(email);
-  }
 });
+
+function isValidEmail(email) {
+  return /\S+@\S+\.\S+/.test(email);
+}

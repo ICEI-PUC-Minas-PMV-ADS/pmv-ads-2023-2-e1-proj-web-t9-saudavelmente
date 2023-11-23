@@ -144,8 +144,174 @@ function handleLoadConsultations() {
   }
 }
 
+/**
+ * Retorna a idade baseando-se na data passada.
+ * 
+ * @param {String} dateString data no formato ISO 
+ * @returns {Number} idade
+ */
+function getAge(dateString) {
+  var today = new Date();
+  var birthDate = new Date(dateString);
+  var age = today.getFullYear() - birthDate.getFullYear();
+  var m = today.getMonth() - birthDate.getMonth();
+  if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+    age--;
+  }
+  return age;
+}
+
+/**
+ * Formata o CPF passado borrando os últimos números.
+ * 
+ * @param {String} cpf cpf passado com 11 números
+ * @returns {String} cpf formatado com pontuações e últimos números borrados
+ */
+function formattedCpf(cpf) {
+  return cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/g, '\$1.\$2.\*\*\*\-\*\*');
+}
+
+/**
+ * Formata o número de telefone.
+ * 
+ * @param {String} cellPhoneNumber número de telefone com DDD
+ * @returns {String} número de telefone formatado com pontuações
+ */
+function formattedCellPhoneNumber(cellPhoneNumber) {
+  return cellPhoneNumber.replace(/^(\d\d)(\d{5})(\d{4}).*/, "($1) $2-$3");
+}
+
+/**
+ * Faz o parse das informações que serão exibidas em "Suas informações"
+ * na página de perfil do usuário.
+ * 
+ * @param {Object} userInfo objeto representando as informações armazenadas no localStorage do usuário 
+ * @returns {Object} objeto com informações já formatadas para serem exibidas do usuário
+ */
+function parseUserInfo(userInfo) {
+  const professionalAreaMap = {
+    psicologiaGeral: 'Psicologia Geral',
+    psiquiatriaGeral: 'Psiquiatria Geral',
+    terapiaCongnitivoComportamental: 'Terapia Cognitivo-Comportamental',
+    psicologiaClinica: 'Psicologia Clínica',
+    psicologiaInfantil: 'Psicologia Infantil',
+  }
+  const parsedUserInfo = {
+    fullName: userInfo.name,
+    email: userInfo.email,
+    cellPhoneNumber: formattedCellPhoneNumber(userInfo.tel),
+    age: getAge(userInfo.date),
+  };
+  if (userInfo.profissionalSaude) {
+    parsedUserInfo['cpf'] = formattedCpf(userInfo.cpf);
+    parsedUserInfo['professionalArea'] = professionalAreaMap[userInfo.areaAtuacao];
+  }
+  return parsedUserInfo;
+}
+
+/**
+ * Carrega as informações do usuário e exibe no elemento passado.
+ * 
+ * @param {Object} parsedUserInfo objeto com informações já formatadas para serem exibidas do usuário
+ * @param {Element} userInfoWrapper elemento wrapper que serão exibidas as informações do usuário
+ */
+function loadUserInfo(parsedUserInfo, userInfoWrapper) {
+  const fieldsMap = {
+    fullName: 'Nome Completo',
+    email: 'E-mail',
+    cellPhoneNumber: 'Celular',
+    age: 'Idade',
+    cpf: 'CPF',
+    professionalArea: 'Área de Atuação',
+  };
+  const userInfoEntries = Object.entries(parsedUserInfo);
+  userInfoEntries.forEach(([key, value], index) => {
+    const addHr = index !== (userInfoEntries.length - 1) ? '<hr>' : '';
+    userInfoWrapper.innerHTML += `
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="mb-0">${fieldsMap[key]}</p>
+        </div>
+        <div class="col-sm-9">
+          <p class="text-muted mb-0">${value}</p>
+        </div>
+      </div>
+      ${addHr}
+    `;
+  });
+}
+
+/**
+ * Retorna o caminho ou url da imagem da foto de perfil do usuário,
+ * se a foto de perfil for null, então carregará a foto padrão.
+ * Caso contrário a URL passada será retornada.
+ * 
+ * @param {String} urlProfilePhoto caminho ou url da foto de perfil do usuário 
+ * @returns {String} o caminho para a foto de perfil do usuário
+ */
+function getUrlProfilePhoto(urlProfilePhoto) {
+  if (urlProfilePhoto === null) {
+    return './imagens/profile-image-default.webp';
+  }
+  return urlProfilePhoto;
+}
+
+/**
+ * Retorna o primeiro nome do usuário.
+ * 
+ * @param {String} fullName nome completo do usuário 
+ * @returns {String} primeiro nome do usuário
+ */
+function getUserFirstName(fullName) {
+  const firstName = fullName.split(' ')[0];
+  return firstName.at(0).toUpperCase() + firstName.slice(1).toLowerCase();
+}
+
+/**
+ * Faz o parse das informações restantes do usuário,
+ * como a imagem e o primeiro nome para serem exibidos
+ * no perfil.
+ * 
+ * @param {Object} userInfo objeto representando as informações armazenadas no localStorage do usuário 
+ * @returns {Object} objeto com informações já formatadas para serem exibidas do usuário
+ */
+function parseUserImageAndFirstName(userInfo) {
+  return {
+    imageUrl: getUrlProfilePhoto(userInfo.urlProfilePhoto),
+    firstName: getUserFirstName(userInfo.name),
+  }
+}
+
+/**
+ * Carrega as informações do usuário e exibe no elemento passado.
+ * 
+ * @param {Object} parsedUserInfo objeto com informações já formatadas para serem exibidas do usuário
+ * @param {Element} userImageAndFirstNameWrapper elemento wrapper que serão exibidas as informações do usuário
+ */
+function loadUserImageAndFirstName(parsedUserImageAndFirstName, userImageAndFirstNameWrapper) {
+  userImageAndFirstNameWrapper.innerHTML += `
+    <img src="${parsedUserImageAndFirstName.imageUrl}" alt="Imagem de perfil de ${parsedUserImageAndFirstName.firstName}"
+      class="rounded-circle img-fluid img-thumbnail" style="width: 150px;">
+    <h5 class="my-3">Olá, ${parsedUserImageAndFirstName.firstName}!</h5>
+  `;
+}
+
+/**
+ * Lida com o carregamento das informações do usuário logado na página de perfil.
+ */
+function handleLoadUserInfo() {
+  const userInfo = JSON.parse(localStorage.getItem('user'));
+  const parsedUserInfo = parseUserInfo(userInfo);
+  const parsedUserImageAndFirstName = parseUserImageAndFirstName(userInfo);
+  const userInfoWrapper = document.getElementById('user-info');
+  const userImageAndFirstNameWrapper = document.getElementById('user-image-firstname');
+  loadUserInfo(parsedUserInfo, userInfoWrapper);
+  loadUserImageAndFirstName(parsedUserImageAndFirstName, userImageAndFirstNameWrapper);
+}
+
 authGuard();
 changePageHeader();
 handleLogout();
 handleProfileLogout();
 handleLoadConsultations();
+handleLoadUserInfo();
