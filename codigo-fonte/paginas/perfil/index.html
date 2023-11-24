@@ -71,7 +71,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-uppercase" id="perfil" href="../perfil/">
+              <a class="nav-link active text-uppercase" id="perfil" href="../perfil/">
                 <span class="bi bi-person-fill"></span> Perfil
               </a>
             </li>
@@ -106,16 +106,53 @@
   </header>
 
   <main>
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
+    <!-- Modal Editar Informações -->
+    <div class="modal fade" id="editInfoModal" tabindex="-1" aria-labelledby="editInfoModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Editar Informações</h5>
+            <h5 class="modal-title" id="editInfoModalLabel">Edite Suas Informações</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <form id="editInfoForm">
+            <div class="form-signin w-100 m-auto">
+              <form id="edit-form">
+                <div class="form-floating mb-2">
+                  <input type="text" class="form-control form-control-sm" name="full-name" placeholder="José Rodrigues"
+                    required>
+                  <label for="full-name">Nome Completo</label>
+                </div>
+                <div class="form-floating mb-2">
+                  <input type="email" class="form-control" name="email" placeholder="name@example.com" required>
+                  <label for="email">E-mail</label>
+                </div>
+                <div class="form-floating mb-2">
+                  <input type="date" class="form-control" name="birthDate" required>
+                  <label for="birthDate">Data de Nascimento</label>
+                </div>
+                <div class="form-floating mb-2">
+                  <input type="number" class="form-control" name="cellPhone" placeholder="Apenas números com DDD"
+                    required>
+                  <label for="cellPhone">Número do Celular</label>
+                </div>
+                <div class="form-floating mb-2">
+                  <input type="number" class="form-control" name="cpf" placeholder="Digite seu CPF" required>
+                  <label for="cpf">Número do CPF</label>
+                </div>
+                <div class="form-floating">
+                  <select class="form-select" aria-label="Default select example" name="professionalArea" required>
+                    <option selected>Abra o menu abaixo</option>
+                    <option value="psicologiaGeral">Psicologia Geral</option>
+                    <option value="psiquiatriaGeral">Psiquiatria Geral</option>
+                    <option value="terapiaCongnitivoComportamental">Terapia Cognitivo-Comportamental</option>
+                    <option value="psicologiaClinica">Psicologia Clínica</option>
+                    <option value="psicologiaInfantil">Psicologia Infantil</option>
+                  </select>
+                  <label for="professionalArea">Área de Atuação</label>
+                </div>
+              </form>
+            </div>
+            <!-- <form id="editInfoForm">
               <div>
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" placeholder="Seu Nome">
@@ -132,11 +169,11 @@
                 <label for="idade">Idade:</label>
                 <input type="number" id="idade" name="idade" placeholder="Sua Idade">
               </div>
-            </form>
+            </form> -->
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            <button type="submit" class="btn btn-primary" form="edit-form">Salvar Alterações</button>
           </div>
         </div>
       </div>
@@ -151,7 +188,7 @@
                 </div>
                 <div class="d-flex justify-content-center mb-2 gap-1 flex-wrap">
                   <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"><span class="bi bi-pencil-square"></span>
+                    data-bs-target="#editInfoModal"><span class="bi bi-pencil-square"></span>
                     Editar</button>
                   <a href="../profissionais/" class="btn btn-primary"><span class="bi bi-person-check-fill"></span>
                     Profissionais</a>
