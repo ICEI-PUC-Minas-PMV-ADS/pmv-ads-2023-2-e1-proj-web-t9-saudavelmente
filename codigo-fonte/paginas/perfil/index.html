@@ -118,29 +118,36 @@
             <div class="form-signin w-100 m-auto">
               <form id="edit-form">
                 <div class="form-floating mb-2">
-                  <input type="text" class="form-control form-control-sm" name="full-name" placeholder="José Rodrigues"
-                    required>
+                  <input type="text" class="form-control form-control-sm" name="full-name" id="full-name"
+                    placeholder="José Rodrigues" required>
                   <label for="full-name">Nome Completo</label>
                 </div>
                 <div class="form-floating mb-2">
-                  <input type="email" class="form-control" name="email" placeholder="name@example.com" required>
+                  <input type="text" class="form-control form-control-sm" name="photo-url" id="photo-url"
+                    placeholder="José Rodrigues" required>
+                  <label for="photo-url">Imagem de Perfil</label>
+                </div>
+                <div class="form-floating mb-2">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com"
+                    required>
                   <label for="email">E-mail</label>
                 </div>
                 <div class="form-floating mb-2">
-                  <input type="date" class="form-control" name="birthDate" required>
-                  <label for="birthDate">Data de Nascimento</label>
+                  <input type="date" class="form-control" name="birth-date" id="birth-date" required>
+                  <label for="birth-date">Data de Nascimento</label>
                 </div>
                 <div class="form-floating mb-2">
-                  <input type="number" class="form-control" name="cellPhone" placeholder="Apenas números com DDD"
-                    required>
-                  <label for="cellPhone">Número do Celular</label>
+                  <input type="number" class="form-control" name="cell-phone" id="cell-phone"
+                    placeholder="Apenas números com DDD" required>
+                  <label for="cell-phone">Número do Celular</label>
                 </div>
                 <div class="form-floating mb-2">
-                  <input type="number" class="form-control" name="cpf" placeholder="Digite seu CPF" required>
+                  <input type="number" class="form-control" name="cpf" id="cpf" placeholder="Digite seu CPF" required>
                   <label for="cpf">Número do CPF</label>
                 </div>
                 <div class="form-floating">
-                  <select class="form-select" aria-label="Default select example" name="professionalArea" required>
+                  <select class="form-select" aria-label="Default select example" name="professional-area"
+                    id="professional-area" required>
                     <option selected>Abra o menu abaixo</option>
                     <option value="psicologiaGeral">Psicologia Geral</option>
                     <option value="psiquiatriaGeral">Psiquiatria Geral</option>
@@ -148,28 +155,10 @@
                     <option value="psicologiaClinica">Psicologia Clínica</option>
                     <option value="psicologiaInfantil">Psicologia Infantil</option>
                   </select>
-                  <label for="professionalArea">Área de Atuação</label>
+                  <label for="professional-area">Área de Atuação</label>
                 </div>
               </form>
             </div>
-            <!-- <form id="editInfoForm">
-              <div>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" placeholder="Seu Nome">
-              </div>
-              <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Seu Email">
-              </div>
-              <div>
-                <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" placeholder="Seu Telefone">
-              </div>
-              <div>
-                <label for="idade">Idade:</label>
-                <input type="number" id="idade" name="idade" placeholder="Sua Idade">
-              </div>
-            </form> -->
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
@@ -187,8 +176,8 @@
                 <div id="user-image-firstname">
                 </div>
                 <div class="d-flex justify-content-center mb-2 gap-1 flex-wrap">
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                    data-bs-target="#editInfoModal"><span class="bi bi-pencil-square"></span>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editInfoModal"
+                    id="edit-info-button"><span class="bi bi-pencil-square"></span>
                     Editar</button>
                   <a href="../profissionais/" class="btn btn-primary"><span class="bi bi-person-check-fill"></span>
                     Profissionais</a>

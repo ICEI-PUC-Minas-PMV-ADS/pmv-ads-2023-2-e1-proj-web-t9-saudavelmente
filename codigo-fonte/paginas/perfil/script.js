@@ -242,21 +242,6 @@ function loadUserInfo(parsedUserInfo, userInfoWrapper) {
 }
 
 /**
- * Retorna o caminho ou url da imagem da foto de perfil do usuário,
- * se a foto de perfil for null, então carregará a foto padrão.
- * Caso contrário a URL passada será retornada.
- * 
- * @param {String} urlProfilePhoto caminho ou url da foto de perfil do usuário 
- * @returns {String} o caminho para a foto de perfil do usuário
- */
-function getUrlProfilePhoto(urlProfilePhoto) {
-  if (urlProfilePhoto === null) {
-    return './imagens/profile-image-default.webp';
-  }
-  return urlProfilePhoto;
-}
-
-/**
  * Retorna o primeiro nome do usuário.
  * 
  * @param {String} fullName nome completo do usuário 
@@ -277,7 +262,7 @@ function getUserFirstName(fullName) {
  */
 function parseUserImageAndFirstName(userInfo) {
   return {
-    imageUrl: getUrlProfilePhoto(userInfo.urlProfilePhoto),
+    imageUrl: userInfo.urlProfilePhoto,
     firstName: getUserFirstName(userInfo.name),
   }
 }
@@ -309,9 +294,29 @@ function handleLoadUserInfo() {
   loadUserImageAndFirstName(parsedUserImageAndFirstName, userImageAndFirstNameWrapper);
 }
 
+function handleLoadUserInfoOnEditForm() {
+  const editInfoButton = document.getElementById('edit-info-button');
+  const userInfo = JSON.parse(localStorage.getItem('user'));
+  editInfoButton.addEventListener('click', () => {
+    if (userInfo.profissionalSaude) {
+      document.getElementById('cpf').value = userInfo.cpf;
+      document.getElementById('professional-area').value = userInfo.areaAtuacao;
+    } else {
+      document.getElementById('cpf').parentElement.style.display = 'none';
+      document.getElementById('professional-area').parentElement.style.display = 'none';
+    }
+    document.getElementById('full-name').value = userInfo.name;
+    document.getElementById('photo-url').value = userInfo.urlProfilePhoto;
+    document.getElementById('email').value = userInfo.email;
+    document.getElementById('birth-date').value = userInfo.date;
+    document.getElementById('cell-phone').value = userInfo.tel;
+  });
+}
+
 authGuard();
 changePageHeader();
 handleLogout();
 handleProfileLogout();
 handleLoadConsultations();
 handleLoadUserInfo();
+handleLoadUserInfoOnEditForm();

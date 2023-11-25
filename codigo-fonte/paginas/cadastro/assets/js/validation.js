@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
       areaAtuacao: areaAtuacao,
       profissionalSaude: profissionalSaude.checked,
       cpf: cpf.value,
-      urlProfilePhoto: null
+      urlProfilePhoto: './imagens/profile-image-default.webp',
     };
 
     if (Auth.checkEmail(userData.email)) {
