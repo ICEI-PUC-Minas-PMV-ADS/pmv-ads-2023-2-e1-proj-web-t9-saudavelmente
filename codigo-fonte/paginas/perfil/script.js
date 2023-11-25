@@ -225,6 +225,7 @@ function loadUserInfo(parsedUserInfo, userInfoWrapper) {
     professionalArea: 'Área de Atuação',
   };
   const userInfoEntries = Object.entries(parsedUserInfo);
+  userInfoWrapper.innerHTML = '';
   userInfoEntries.forEach(([key, value], index) => {
     const addHr = index !== (userInfoEntries.length - 1) ? '<hr>' : '';
     userInfoWrapper.innerHTML += `
@@ -274,6 +275,7 @@ function parseUserImageAndFirstName(userInfo) {
  * @param {Element} userImageAndFirstNameWrapper elemento wrapper que serão exibidas as informações do usuário
  */
 function loadUserImageAndFirstName(parsedUserImageAndFirstName, userImageAndFirstNameWrapper) {
+  userImageAndFirstNameWrapper.innerHTML = '';
   userImageAndFirstNameWrapper.innerHTML += `
     <img src="${parsedUserImageAndFirstName.imageUrl}" alt="Imagem de perfil de ${parsedUserImageAndFirstName.firstName}"
       class="rounded-circle img-fluid img-thumbnail" style="width: 150px;">
@@ -294,6 +296,10 @@ function handleLoadUserInfo() {
   loadUserImageAndFirstName(parsedUserImageAndFirstName, userImageAndFirstNameWrapper);
 }
 
+/**
+ * Carrega e exibe as informações do usuário logado no formulário
+ * de edição das informações do usuário.
+ */
 function handleLoadUserInfoOnEditForm() {
   const editInfoButton = document.getElementById('edit-info-button');
   const userInfo = JSON.parse(localStorage.getItem('user'));
@@ -313,6 +319,32 @@ function handleLoadUserInfoOnEditForm() {
   });
 }
 
+/**
+ * Lida com o evento de submit do formulário de edição
+ * das informações do usuário.
+ */
+function handleEditFormSubmit() {
+  const editForm = document.getElementById('edit-form');
+  editForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const formTarget = event.target;
+    const formData = new FormData(formTarget);
+    const currentUserData = JSON.parse(localStorage.getItem('user'));
+    currentUserData['name'] = formData.get('full-name');
+    currentUserData['email'] = formData.get('email');
+    currentUserData['date'] = formData.get('birth-date');
+    currentUserData['tel'] = formData.get('cell-phone');
+    currentUserData['urlProfilePhoto'] = formData.get('photo-url');
+    if (currentUserData.professionalSaude) {
+      currentUserData['cpf'] = formData.get('cpf');
+      currentUserData['areaAtuacao'] = formData.get('professional-area');
+    }
+    localStorage.setItem('user', JSON.stringify(currentUserData));
+    alert('Suas informações foram atualizadas!');
+    handleLoadUserInfo();
+  });
+}
+
 authGuard();
 changePageHeader();
 handleLogout();
@@ -320,3 +352,4 @@ handleProfileLogout();
 handleLoadConsultations();
 handleLoadUserInfo();
 handleLoadUserInfoOnEditForm();
+handleEditFormSubmit();
