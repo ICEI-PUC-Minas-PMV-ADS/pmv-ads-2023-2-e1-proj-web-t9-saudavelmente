@@ -43,7 +43,7 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-md bg-light fixed-top bd-bottom-r10">
+    <nav class="navbar navbar-expand-md bg-light fixed-top bd-bottom-r10 header-bgc">
       <div class="container-fluid">
         <a class="navbar-brand" href="./">
           SaudávelMente
@@ -80,7 +80,7 @@
                 data-bs-toggle="dropdown" aria-expanded="false" title="Autenticação">
                 <span class="bi bi-person-circle"></span>
               </a>
-              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbar-dropdown">
+              <ul class="dropdown-menu dropdown-menu-end header-bgc" aria-labelledby="navbar-dropdown">
                 <li>
                   <h6 class="dropdown-header">Autenticação</h6>
                 </li>
@@ -107,14 +107,16 @@
 
   <main>
     <section class="px-4 py-5 my-5 text-center">
-      <img class="d-block mx-auto mb-4" src="https://placehold.co/100" alt="Placeholder">
-      <h1 class="display-3 fw-bold text-body-emphasis">Sua Jornada para o Bem-Estar Emocional Começa Aqui!</h1>
+      <img class="d-block mx-auto mb-4 rounded-4" src="./imagens/logo-image.png" alt="Placeholder" width="150"
+        height="150">
+      <h1 class="display-3 fw-bold text-body-emphasis">Sua Jornada para o <span class="text-highlight">Bem-Estar
+          Emocional</span> Começa Aqui!</h1>
       <div class="col-lg-6 mx-auto">
         <p class="lead mb-4">Descubra a plataforma SaudávelMente, onde pacientes encontram apoio em saúde mental,
           profissionais oferecem voluntariado e a comunidade se reúne para aprender, compartilhar e crescer juntos.
           Junte-se a nós e comece a sua jornada em direção a um equilíbrio emocional e bem-estar duradouros.</p>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-          <a href="../cadastro/" class="btn btn-primary btn-lg px-4 gap-3">Cadastre-se!</a>
+          <a href="../cadastro/" class="btn btn-primary btn-lg px-4 gap-3 btn-primary-bgc">Cadastre-se!</a>
           <a href="#sobre" class="btn btn-outline-secondary btn-lg px-4">Quero conhecer!</a>
         </div>
       </div>
@@ -128,37 +130,37 @@
       <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
         <div class="feature col">
           <div
-            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3 services-icon-bgc">
             <span class="bi bi-chat-square-heart"></span>
           </div>
           <h3 class="fs-2 text-body-emphasis">Consultas via Chat!</h3>
           <p>Acesse apoio emocional conveniente e seguro, agende consultas com profissionais de saúde mental.</p>
-          <a href="../login/" class="icon-link" id="chat-redirect">
+          <a href="../login/" class="icon-link primary-link-c" id="chat-redirect">
             Acessar
             <span class="bi bi-chevron-right"></span>
           </a>
         </div>
         <div class="feature col">
           <div
-            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3 services-icon-bgc">
             <span class="bi bi-wechat"></span>
           </div>
           <h3 class="fs-2 text-body-emphasis">Fórum de Discussões</h3>
           <p>Compartilhe experiências, obtenha apoio e aprenda com nossa comunidade dedicada à saúde mental.</p>
-          <a href="../forum/" class="icon-link">
+          <a href="../forum/" class="icon-link primary-link-c">
             Acessar
             <span class="bi bi-chevron-right"></span>
           </a>
         </div>
         <div class="feature col">
           <div
-            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3 services-icon-bgc">
             <span class="bi bi-person-circle"></span>
           </div>
           <h3 class="fs-2 text-body-emphasis">Cadastre-se agora!</h3>
           <p>Junte-se à comunidade de apoio em saúde mental. Cadastre-se agora e tenha acesso a todos os nossos
             recursos.</p>
-          <a href="../cadastro/" class="icon-link">
+          <a href="../cadastro/" class="icon-link primary-link-c">
             Acessar
             <span class="bi bi-chevron-right"></span>
           </a>
@@ -170,7 +172,7 @@
 
     <!-- Seção de Depoimentos -->
     <section class="depositions container px-4 py-5">
-      <h2 class="pb-2 border-bottom">Depoimentos dos Usários</h2>
+      <h2 class="pb-2 border-bottom">Depoimentos dos Usuários</h2>
       <div class="row py-5">
         <div class="col-lg-4">
           <img class="deposition-image rounded-circle img-thumbnail" src="./imagens/persona-joao.jpg"
@@ -222,16 +224,17 @@
     <section class="container px-4 py-5">
       <h2 class="pb-2 border-bottom">Sobre o Projeto</h2>
       <div class="container my-5">
-        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg about-bgc">
           <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-            <h2 class="display-4 fw-bold lh-1 text-body-emphasis">Nossa Missão e Compromisso</h2>
+            <h2 class="display-4 fw-bold lh-1 text-body-emphasis text-highlight-white">Nossa Missão e Compromisso</h2>
             <p class="lead">Conectamos pacientes e voluntários profissionais em prol da saúde mental, proporcionando
               tratamento
               acessível e um ambiente seguro. Nosso objetivo é combater o estigma e preencher a lacuna entre necessidade
               e recursos para promover a saúde emocional e o bem-estar de todos.</p>
           </div>
           <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg rounded">
-            <p class="p-3 mb-0"><span class="text-uppercase">Aviso legal:</span> Este projeto é estritamente acadêmico,
+            <p class="p-3 mb-0"><span class="text-uppercase text-highlight-white">Aviso legal:</span> Este projeto é
+              estritamente acadêmico,
               sem vínculos com instituições de saúde. Não oferece aconselhamento ou tratamento médico.</p>
           </div>
         </div>
@@ -245,7 +248,7 @@
   <footer class="mt-auto bd-top-r10 bg-light">
     <div class="p-3">
       <p class="text-center m-0">
-        <a href="./">
+        <a href="./" class="primary-link-c">
           SaudávelMente
         </a>
         <br>

@@ -8,6 +8,8 @@
   --clr-black-olive: #1f271b;
   --clr-taupe-gray: #787586;
   --clr-white: #fff;
+
+  --gradient: linear-gradient(to right, var(--clr-international-klein-blue), var(--clr-aquamarine));
 }
 
 * {
@@ -25,6 +27,22 @@ body {
 
 #auth-logout {
   cursor: pointer;
+}
+
+.header-bgc {
+  background-color: var(--clr-aquamarine) !important;
+}
+
+.primary-link-c {
+  color: var(--clr-international-klein-blue) !important;
+}
+
+.btn-primary-bgc {
+  background-color: var(--clr-international-klein-blue) !important;
+}
+
+.btn-primary-bgc:hover {
+  opacity: .9;
 }
 
 .section-divider {
