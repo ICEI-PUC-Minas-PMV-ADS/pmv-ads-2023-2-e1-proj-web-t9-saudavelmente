@@ -132,3 +132,34 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
     </div>
 
 ---
+
+### CT-09: Verificar edição de informações do usuário
+
+**Responsável**: William da Silva Rodrigues
+
+- Ao atualizar suas informações com sucesso, o objeto `user` deverá ser atualizado no localStorage.
+    - Antes:
+        <div>
+            <img src="./img/teste-edit-user-info-1.png" alt="Registro de teste para atualizar informações do usuário" width="70%">
+        </div>
+    - Depois:
+        <div>
+            <img src="./img/teste-edit-user-info-2.png" alt="Registro de teste para atualizar informações do usuário" width="70%">
+        </div>
+
+- Ao atualizar suas informações com sucesso, a tela de perfil com as informações do usuário deverá ser atualizada com as informações novas.
+    - Antes:
+        <div>
+            <img src="./img/teste-edit-user-info-4.png" alt="Registro de teste para atualizar informações do usuário" width="70%">
+        </div>
+    - Depois:
+        <div>
+            <img src="./img/teste-edit-user-info-5.png" alt="Registro de teste para atualizar informações do usuário" width="70%">
+        </div>
+
+- Ao atualizar suas informações com sucesso, uma mensagem deverá ser exibida.
+    <div>
+        <img src="./img/teste-edit-user-info-3.png" alt="Registro de teste para atualizar informações do usuário" width="70%">
+    </div>
+
+---

@@ -302,8 +302,8 @@ function handleLoadUserInfo() {
  */
 function handleLoadUserInfoOnEditForm() {
   const editInfoButton = document.getElementById('edit-info-button');
-  const userInfo = JSON.parse(localStorage.getItem('user'));
   editInfoButton.addEventListener('click', () => {
+    const userInfo = JSON.parse(localStorage.getItem('user'));
     if (userInfo.profissionalSaude) {
       document.getElementById('cpf').value = userInfo.cpf;
       document.getElementById('professional-area').value = userInfo.areaAtuacao;
@@ -312,7 +312,7 @@ function handleLoadUserInfoOnEditForm() {
       document.getElementById('professional-area').parentElement.style.display = 'none';
     }
     document.getElementById('full-name').value = userInfo.name;
-    document.getElementById('photo-url').value = userInfo.urlProfilePhoto;
+    document.getElementById('photo-url').value = userInfo.urlProfilePhoto === './imagens/profile-image-default.webp' ? '' : userInfo.urlProfilePhoto;
     document.getElementById('email').value = userInfo.email;
     document.getElementById('birth-date').value = userInfo.date;
     document.getElementById('cell-phone').value = userInfo.tel;
@@ -334,7 +334,7 @@ function handleEditFormSubmit() {
     currentUserData['email'] = formData.get('email');
     currentUserData['date'] = formData.get('birth-date');
     currentUserData['tel'] = formData.get('cell-phone');
-    currentUserData['urlProfilePhoto'] = formData.get('photo-url');
+    currentUserData['urlProfilePhoto'] = formData.get('photo-url') || './imagens/profile-image-default.webp';
     if (currentUserData.professionalSaude) {
       currentUserData['cpf'] = formData.get('cpf');
       currentUserData['areaAtuacao'] = formData.get('professional-area');

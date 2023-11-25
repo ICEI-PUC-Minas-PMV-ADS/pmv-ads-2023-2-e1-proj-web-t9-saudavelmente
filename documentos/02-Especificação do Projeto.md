@@ -70,7 +70,7 @@
 | --- | --- | --- |
 | RF-01 | A plataforma deve permitir ao usuário cadastrar uma conta. | ALTA | 
 | RF-02 | A plataforma deve permitir ao usuário fazer login na sua conta.  | ALTA |
-| RF-03 |  A plataforma deve fornecer uma lista de profissionais com possibilidade de pesquisa, permitindo que os usuários escolham um profissional alinhado com suas necessidades. | ALTA  |
+| RF-03 | A plataforma deve fornecer uma lista de profissionais com possibilidade de pesquisa, permitindo que os usuários escolham um profissional alinhado com suas necessidades. | ALTA  |
 | RF-04 | A plataforma deve permitir que os usuários tenham suas consultas. | ALTA |
 | RF-05 | Os usuários devem ter acesso a uma seção em sua conta para exibir informações do seu perfil. | ALTA  |
 | RF-06 | A plataforma deve ter uma página inicial com informações claras sobre sua missão, valores e funcionalidades oferecidas. | ALTA |

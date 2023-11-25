@@ -259,3 +259,34 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
         <td>William da Silva Rodrigues</td>
     </tr>
 </table>
+
+<table>
+    <tr>
+        <th>Caso de Teste</th>
+        <th>Requisitos Associados</th>
+        <th>Objetivo do Teste</th>
+        <th>Passos</th>
+        <th>Critérios de êxito</th>
+        <th>Responsável</th>
+    </tr>
+    <tr>
+        <td>CT-09: Verificar edição de informações do usuário</td>
+        <td>
+            <ul>
+                <li>RF-05: Os usuários devem ter acesso a uma seção em sua conta para exibir informações do seu perfil.</li>
+            </ul>
+        </td>
+        <td>Verificar se o usuário consegue atualizar suas informações com sucesso.</td>
+        <td>
+            <ol>
+                <li>Acessar o navegador.</li>
+                <li>Fazer login em sua conta.</li>
+                <li>Acessar seu perfil, clicar em "Editar".</li>
+                <li>Editar as informações.</li>
+                <li>Clicar em salvar alteração.</li>
+            </ol>
+        </td>
+        <td>Ao atualizar suas informações, uma mensagem dizendo que as informações foram atualizadas deverá aparecer, as informações no localStorage deverá ter sido atualizadas e as informações do seu perfil também.</td>
+        <td>William da Silva Rodrigues</td>
+    </tr>
+</table>
