@@ -290,3 +290,61 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
         <td>William da Silva Rodrigues</td>
     </tr>
 </table>
+
+<table>
+    <tr>
+        <th>Caso de Teste</th>
+        <th>Requisitos Associados</th>
+        <th>Objetivo do Teste</th>
+        <th>Passos</th>
+        <th>Critérios de êxito</th>
+        <th>Responsável</th>
+    </tr>
+    <tr>
+        <td>CT-10: Verificar inicio da consulta com o profissional</td>
+        <td>
+            <ul>
+                <li>RF-04: A plataforma deve permitir que os usuários tenham suas consultas.</li>
+            </ul>
+        </td>
+        <td>Verificar se o usuário consegue conversar com o profissional</td>
+        <td>
+            <ol>
+                <li>Acessar o navegador.</li>
+                <li>Fazer login em sua conta.</li>
+                <li>Acessar seu perfil, clicar em "Iniciar Consulta".</li>
+            </ol>
+        </td>
+        <td>Ao iniciar sua consulta, o usuário deverá ser redirecionado para a página de chat e conseguir conversar com o profissional que esta em sua lista de consultas</td>
+        <td>Luan César Souza dos Santos</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>Caso de Teste</th>
+        <th>Requisitos Associados</th>
+        <th>Objetivo do Teste</th>
+        <th>Passos</th>
+        <th>Critérios de êxito</th>
+        <th>Responsável</th>
+    </tr>
+    <tr>
+        <td>CT-11: Verificar se a consulta atual é a mesma ao clicar em Iniciar Consulta</td>
+        <td>
+            <ul>
+                <li>RF-04: A plataforma deve permitir que os usuários tenham suas consultas.</li>
+            </ul>
+        </td>
+        <td>Verificar se a consulta atual é a mesma que iniciou ao clicar em Iniciar Consulta</td>
+        <td>
+            <ol>
+                <li>Acessar o navegador.</li>
+                <li>Fazer login em sua conta.</li>
+                <li>Acessar seu perfil, clicar em "Iniciar Consulta".</li>
+            </ol>
+        </td>
+        <td>Ao iniciar sua consulta, na página do chat, deverá ser a mesma quando clicou em Iniciar Consulta, verificar no localStorage se a imagem e o nome do profissional aparecem no chat corretamente</td>
+        <td>Luan César Souza dos Santos</td>
+    </tr>
+</table>

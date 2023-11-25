@@ -163,3 +163,28 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
     </div>
 
 ---
+
+### CT-10: Verificar inicio da consulta com o profissional
+
+**Responsável**: Luan César Souza dos Santos
+
+- Usuário inicia a sua consulta.
+    <div>
+        <img src="./img/inicio-consulta.png" alt="Inicio da consulta" width="70%">
+    </div>
+
+---
+
+### CT-11: Verificar se a consulta atual é a mesma ao clicar em Iniciar Consulta
+
+**Responsável**: Luan César Souza dos Santos
+
+- Consulta a ser iniciada.
+    <div>
+        <img src="./img/lista-consulta.png" alt="Consulta a ser iniciada" width="70%">
+    </div>
+
+- Verificando no localStorage imagem e nome do profissional
+    <div>
+        <img src="./img/verifica-consulta.png" alt="Consulta verificada" width="70%">
+    </div>
