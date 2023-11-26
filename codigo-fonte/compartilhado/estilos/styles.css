@@ -28,11 +28,9 @@ body {
 #auth-logout {
   cursor: pointer;
 }
-.navbar-brand {
-  color: #fff;
-}
+
 .header-bgc {
-  background: linear-gradient(to right, var(--clr-international-klein-blue), var(--clr-aquamarine) 50%);
+  background-color: var(--clr-aquamarine) !important;
 }
 
 .primary-link-c {
