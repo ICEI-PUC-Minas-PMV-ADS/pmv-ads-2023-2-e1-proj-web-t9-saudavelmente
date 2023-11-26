@@ -37,12 +37,32 @@ body {
   color: var(--clr-international-klein-blue) !important;
 }
 
+.primary-link-c-disabled {
+  color: var(--clr-international-klein-blue) !important;
+  opacity: .8;
+}
+
 .btn-primary-bgc {
   background-color: var(--clr-international-klein-blue) !important;
+  border-color: var(--clr-international-klein-blue) !important;
 }
 
 .btn-primary-bgc:hover {
   opacity: .9;
+}
+
+.btn-primary-outline-bgc {
+  color: var(--clr-international-klein-blue) !important;
+  border-color: var(--clr-international-klein-blue) !important;
+}
+
+.btn-primary-outline-bgc:hover {
+  color: var(--clr-white) !important;
+  background-color: var(--clr-international-klein-blue) !important;
+}
+
+.auth-active {
+  background-color: var(--clr-international-klein-blue) !important;
 }
 
 .section-divider {

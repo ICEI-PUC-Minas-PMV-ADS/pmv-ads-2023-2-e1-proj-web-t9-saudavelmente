@@ -48,7 +48,7 @@ function handleAddProfessional() {
             <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
           `;
           toast.querySelector('.toast-body').innerHTML = `
-            Você adicionou ${professionalName} à sua <a href="../perfil/">lista de
+            Você adicionou ${professionalName} à sua <a href="../perfil/#consultas" class="primary-link-c">lista de
             consultas</a>!
           `;
         }

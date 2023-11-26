@@ -76,7 +76,7 @@ function handleCancelConsultation(event) {
       consultationsPagination.style.display = 'none';
       consultationsWrapper.innerHTML += `
         <div class="alert alert-light" role="alert">
-          Você ainda não possui consultas, você poderá adicionar consultas na <a href="../profissionais/">área dos profissionais</a>!
+          Você ainda não possui consultas, você poderá adicionar consultas na <a href="../profissionais/" class="primary-link-c">área dos profissionais</a>!
         </div>
       `;
     }
@@ -96,7 +96,7 @@ function handleLoadConsultations() {
     consultationsPagination.style.display = 'none';
     consultationsWrapper.innerHTML += `
       <div class="alert alert-light" role="alert">
-        Você ainda não possui consultas, você poderá adicionar consultas na <a href="../profissionais/">área dos profissionais</a>!
+        Você ainda não possui consultas, você poderá adicionar consultas na <a href="../profissionais/" class="primary-link-c">área dos profissionais</a>!
       </div>
     `;
   } else {
@@ -105,7 +105,7 @@ function handleLoadConsultations() {
       consultationsPagination.style.display = 'none';
       consultationsWrapper.innerHTML += `
         <div class="alert alert-light" role="alert">
-          Você ainda não possui consultas, você poderá adicionar consultas na <a href="../profissionais/">área dos profissionais</a>!
+          Você ainda não possui consultas, você poderá adicionar consultas na <a href="../profissionais/" class="primary-link-c">área dos profissionais</a>!
         </div>
       `;
     } else {
@@ -127,10 +127,10 @@ function handleLoadConsultations() {
                   </p>
                   <div
                     class="card-footer d-flex justify-content-center justify-content-sm-evenly gap-2 flex-wrap">
-                    <button type="button" class="btn btn-primary" onclick="handleStartConsultation(event)">
+                    <button type="button" class="btn btn-primary btn-primary-bgc" onclick="handleStartConsultation(event)">
                       Iniciar Consulta <span class="bi bi-box-arrow-up-right"></span>
                     </button>
-                    <button type="button" class="btn btn-outline-primary" onclick="handleCancelConsultation(event)">
+                    <button type="button" class="btn btn-outline-primary btn-primary-outline-bgc" onclick="handleCancelConsultation(event)">
                       Cancelar Consulta <span class="bi bi-x-square-fill"></span>
                     </button>
                   </div>
@@ -307,9 +307,13 @@ function handleLoadUserInfoOnEditForm() {
     if (userInfo.profissionalSaude) {
       document.getElementById('cpf').value = userInfo.cpf;
       document.getElementById('professional-area').value = userInfo.areaAtuacao;
+      document.getElementById('cpf').required = true;
+      document.getElementById('professional-area').required = true;
     } else {
       document.getElementById('cpf').parentElement.style.display = 'none';
       document.getElementById('professional-area').parentElement.style.display = 'none';
+      document.getElementById('cpf').required = false;
+      document.getElementById('professional-area').required = false;
     }
     document.getElementById('full-name').value = userInfo.name;
     document.getElementById('photo-url').value = userInfo.urlProfilePhoto === './imagens/profile-image-default.webp' ? '' : userInfo.urlProfilePhoto;

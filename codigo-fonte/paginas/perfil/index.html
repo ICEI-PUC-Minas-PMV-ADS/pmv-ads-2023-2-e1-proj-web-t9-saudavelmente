@@ -43,7 +43,7 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-md bg-light fixed-top bd-bottom-r10">
+    <nav class="navbar navbar-expand-md bg-light fixed-top bd-bottom-r10 header-bgc">
       <div class="container-fluid">
         <a class="navbar-brand" href="../pagina-inicial/">
           SaudávelMente
@@ -80,7 +80,7 @@
                 data-bs-toggle="dropdown" aria-expanded="false" title="Autenticação">
                 <span class="bi bi-person-circle"></span>
               </a>
-              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbar-dropdown">
+              <ul class="dropdown-menu dropdown-menu-end header-bgc" aria-labelledby="navbar-dropdown">
                 <li>
                   <h6 class="dropdown-header">Autenticação</h6>
                 </li>
@@ -163,7 +163,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-            <button type="submit" class="btn btn-primary" form="edit-form">Salvar Alterações</button>
+            <button type="submit" class="btn btn-primary btn-primary-bgc" form="edit-form">Salvar Alterações</button>
           </div>
         </div>
       </div>
@@ -177,13 +177,14 @@
                 <div id="user-image-firstname">
                 </div>
                 <div class="d-flex justify-content-center mb-2 gap-1 flex-wrap">
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editInfoModal"
-                    id="edit-info-button"><span class="bi bi-pencil-square"></span>
+                  <button type="button" class="btn btn-primary btn-primary-bgc" data-bs-toggle="modal"
+                    data-bs-target="#editInfoModal" id="edit-info-button"><span class="bi bi-pencil-square"></span>
                     Editar</button>
-                  <a href="../profissionais/" class="btn btn-primary"><span class="bi bi-person-check-fill"></span>
+                  <a href="../profissionais/" class="btn btn-primary btn-primary-bgc"><span
+                      class="bi bi-person-check-fill"></span>
                     Profissionais</a>
-                  <button type="button" class="btn btn-outline-primary" id="auth-profile-logout"><span
-                      class="bi bi-box-arrow-left"></span> Sair</button>
+                  <button type="button" class="btn btn-outline-primary btn-primary-outline-bgc"
+                    id="auth-profile-logout"><span class="bi bi-box-arrow-left"></span> Sair</button>
                 </div>
               </div>
             </div>
@@ -193,7 +194,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-8">
+          <div class="col-lg-8" id="consultas">
             <div class="row">
               <div class="col">
                 <div class="card mb-4 mb-md-0">
@@ -204,11 +205,11 @@
                   <nav aria-label="Page navigation example" id="consutations-pagination">
                     <ul class="pagination justify-content-center">
                       <li class="page-item disabled">
-                        <a class="page-link">Previous</a>
+                        <a class="page-link primary-link-c-disabled">Previous</a>
                       </li>
-                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link primary-link-c" href="#">1</a></li>
                       <li class="page-item">
-                        <a class="page-link disabled" href="#">Next</a>
+                        <a class="page-link disabled primary-link-c-disabled" href="#">Next</a>
                       </li>
                     </ul>
                   </nav>
@@ -219,13 +220,14 @@
         </div>
       </div>
     </section>
+    <div class="section-divider"></div>
   </main>
 
   <!-- O footer fica grudado no final da página e anda com o conteúdo. -->
   <footer class="mt-auto bd-top-r10 bg-light">
     <div class="p-3">
       <p class="text-center m-0">
-        <a href="../pagina-inicial/">
+        <a href="../pagina-inicial/" class="primary-link-c">
           SaudávelMente
         </a>
         <br>
