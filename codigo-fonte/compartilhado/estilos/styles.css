@@ -28,18 +28,24 @@ body {
 #auth-logout {
   cursor: pointer;
 }
-
+.navbar-brand {
+  color: #fff;
+}
 .header-bgc {
-  background-color: var(--clr-aquamarine) !important;
+  background: linear-gradient(to right, var(--clr-international-klein-blue), var(--clr-aquamarine) 50%);
 }
 
 .primary-link-c {
-  color: var(--clr-international-klein-blue) !important;
+  color: var(--clr-international-klein-blue);
+  text-decoration: none;
 }
 
 .primary-link-c-disabled {
   color: var(--clr-international-klein-blue) !important;
   opacity: .8;
+}
+.primary-link-c:hover {
+  color: #1f271b;
 }
 
 .btn-primary-bgc {
