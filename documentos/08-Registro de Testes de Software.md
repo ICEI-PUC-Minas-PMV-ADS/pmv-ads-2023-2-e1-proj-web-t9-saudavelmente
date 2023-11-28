@@ -55,17 +55,17 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 
 - Usuário preenche os campos "Senha" e "Confirmaçāo de Senha" com valores diferentes.
     <div>
-        <img src="img/img_senhasnaocorrespondem.png" alt="Imagem da tela de cadastro com valores das senhas diferentes" width="70%">
+        <img src="img/teste-senhas-incompativeis.png" alt="Imagem da tela de cadastro com valores das senhas diferentes" width="70%">
     </div>
 
 - Verificar se o usuário foi cadastrado.
     <div>
-        <img src="img/img_cadastrorealizado.png" alt="Imagem da tela de um cadastro realizado" width="70%">
+        <img src="img/test-cadastro-realizado.png" alt="Imagem da tela de um cadastro realizado" width="70%">
     </div>
 
 - Informações armazenadas no LocalStorage após usuário se cadastrar.
      <div>
-        <img src="img/img_localstorage.png" alt="Imagem das informações do usuário armazenadas no LocalStorage " width="70%">
+        <img src="img/teste-cadastro-localstorage.png" alt="Imagem das informações do usuário armazenadas no LocalStorage " width="70%">
     </div>
 
 ---
@@ -170,7 +170,7 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 
 - Usuário inicia a sua consulta.
     <div>
-        <img src="./img/inicio-consulta.png" alt="Inicio da consulta" width="70%">
+        <img src="./img/teste-chat-inicio-consulta.png" alt="Inicio da consulta" width="70%">
     </div>
 
 ---
@@ -181,10 +181,10 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 
 - Consulta a ser iniciada.
     <div>
-        <img src="./img/lista-consulta.png" alt="Consulta a ser iniciada" width="70%">
+        <img src="./img/teste-perfil-lista-consulta.png" alt="Consulta a ser iniciada" width="70%">
     </div>
 
 - Verificando no localStorage imagem e nome do profissional
     <div>
-        <img src="./img/verifica-consulta.png" alt="Consulta verificada" width="70%">
+        <img src="./img/teste-verifica-consulta-localstorage.png" alt="Consulta verificada" width="70%">
     </div>

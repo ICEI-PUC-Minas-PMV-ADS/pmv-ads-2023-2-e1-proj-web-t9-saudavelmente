@@ -15,14 +15,8 @@ Pré requisitos:
 Responsável: **João Pedro Campos Carvalho dos Santos**
 
 <figure> 
-  <img src="../documentos/img/image-tela-cadastro.png" alt="Funcionalidade na Tela de Cadastro" width="70%">
+  <img src="../documentos/img/funcionalidade-tela-cadastro.png" alt="Funcionalidade nas Tela de Cadastro" width="70%">
   <figcaption>Figura 1 - Funcionalidade na Tela de Cadastro</figcaption>
-</figure>
-
-<figure> 
-  <img src="../documentos/img/image-tela-cadastro-mobile.png" alt="Funcionalidade na Tela Tela de Cadastro Mobile">
-  <img src="../documentos/img/image-tela-cadastro-mobile2.png" alt="Funcionalidade na Tela Tela de Cadastro Mobile">
-  <figcaption>Figura 1.2 - Funcionalidade na Tela de Cadastro Mobile</figcaption>
 </figure>
 
 #### Requisito atendido
@@ -84,13 +78,8 @@ Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade
 Responsável: **William da Silva Rodrigues**
 
 <figure> 
-  <img src="./img/funcionalidade-lista-de-profissionais.png" alt="Funcionalidade na Tela de Lista de Profissionais" width="70%">
+  <img src="./img/funcionalidade-lista-profissionais.png" alt="Funcionalidade na Tela de Lista de Profissionais" width="70%">
   <figcaption>Figura 3 - Funcionalidade na Tela de Lista de Profissionais</figcaption>
-</figure>
-
-<figure> 
-  <img src="./img/funcionalidade-lista-de-profissionais-mobile.png" alt="Funcionalidade na Tela de Lista de Profissionais Mobile">
-  <figcaption>Figura 3.1 - Funcionalidade na Tela de Lista de Profissionais Mobile</figcaption>
 </figure>
 
 #### Requisito atendido
@@ -185,11 +174,6 @@ Responsável: **William da Silva Rodrigues**
   <figcaption>Figura 6 - Funcionalidade na Tela de Página Inicial</figcaption>
 </figure>
 
-<figure> 
-  <img src="./img/funcionalidade-pagina-inicial-valores-mobile.png" alt="Funcionalidade na Tela de Página Inicial Mobile">
-  <figcaption>Figura 6.1 - Funcionalidade na Tela de Página Inicial Mobile</figcaption>
-</figure>
-
 #### Requisito atendido
 
 **RF-06**: A plataforma deve ter uma página inicial com informações claras sobre sua missão, valores e funcionalidades oferecidas.
@@ -216,11 +200,6 @@ Responsável: **William da Silva Rodrigues**
   <figcaption>Figura 7 - Funcionalidade na Tela de Fórum</figcaption>
 </figure>
 
-<figure> 
-  <img src="./img/funcionalidade-pagina-forum-mobile.png" alt="Funcionalidade na Tela de Fórum Mobile">
-  <figcaption>Figura 7.1 - Funcionalidade na Tela de Fórum Mobile</figcaption>
-</figure>
-
 #### Requisito atendido
 
 **RF-07**: A plataforma deve apresentar uma página principal do fórum onde os tópicos são listados. Caso haja muitos tópicos, eles devem ser divididos em páginas para facilitar a navegação
@@ -243,11 +222,11 @@ Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade
 
 ### Funcionalidade na Tela de Fórum (RF-08)
 
-Responsável: **Nome Completo do Aluno**
+Responsável: **Vinicius Simões dos Santos**
 
 <figure> 
-  <img src="#adicionar-link" alt="Print da funcionalidade na Tela de Fórum" width="70%">
-  <figcaption>Figura 7 - Print da funcionalidade na Tela de Fórum</figcaption>
+  <img src="./img/funcionalidade-forum-pesquisa.png" alt="Funcionalidade na Tela de Fórum" width="70%">
+  <figcaption>Figura 7 - Funcionalidade na Tela de Fórum</figcaption>
 </figure>
 
 #### Requisito atendido
@@ -262,12 +241,8 @@ Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade
 - styles.css
 - script.js
 
-#### Estrutura de Dados
-
-[Caso exista estrutura de dados, adicione aqui]
-
 #### Instruções de acesso
 
 1. Abra um navegador de internet (em um computador ou em um celular);
-2. Acesse a [página do fórum](#link-site-hospedado) da aplicação;
+2. Acesse a [página do fórum](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t9-saudavelmente/codigo-fonte/paginas/forum/) da aplicação;
 3. O usuário irá visualizar uma campo de pesquisa, onde o mesmo poderá fazer pesquisas em todo o fórum.
