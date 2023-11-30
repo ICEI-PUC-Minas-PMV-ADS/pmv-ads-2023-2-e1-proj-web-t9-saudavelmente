@@ -90,6 +90,11 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
         <img src="./img/teste-login-2.png" alt="Registro de teste de login mal sucedido" width="70%">
     </div>
 
+- Usuário digita senha ou email incorretamente.
+    <div>
+        <img src="./img/teste-login-3.png" alt="Registro de teste de login mal sucedido" width="70%">
+    </div>
+
 ---
 
 ### CT-07: Verificar adição de profissional na lista de consultas
@@ -150,16 +155,16 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 - Ao atualizar suas informações com sucesso, a tela de perfil com as informações do usuário deverá ser atualizada com as informações novas.
     - Antes:
         <div>
-            <img src="./img/teste-edit-user-info-4.png" alt="Registro de teste para atualizar informações do usuário" width="70%">
+            <img src="./img/teste-edit-user-info-3.png" alt="Registro de teste para atualizar informações do usuário" width="70%">
         </div>
     - Depois:
         <div>
-            <img src="./img/teste-edit-user-info-5.png" alt="Registro de teste para atualizar informações do usuário" width="70%">
+            <img src="./img/teste-edit-user-info-4.png" alt="Registro de teste para atualizar informações do usuário" width="70%">
         </div>
 
 - Ao atualizar suas informações com sucesso, uma mensagem deverá ser exibida.
     <div>
-        <img src="./img/teste-edit-user-info-3.png" alt="Registro de teste para atualizar informações do usuário" width="70%">
+        <img src="./img/teste-edit-user-info-5.png" alt="Registro de teste para atualizar informações do usuário" width="70%">
     </div>
 
 ---
