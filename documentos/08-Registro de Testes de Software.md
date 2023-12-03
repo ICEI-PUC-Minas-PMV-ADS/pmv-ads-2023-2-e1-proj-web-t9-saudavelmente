@@ -12,7 +12,7 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 
 **Responsável**: William da Silva Rodrigues
 
-- Navegação entre as páginas a partir da página inicial, como descrito no [Projeto de Interface](./04-Projeto%20de%20Interface.md):
+- Navegação entre as páginas a partir da página inicial, como descrito no [Projeto de Interface](./04-Projeto%20de%20Interface.md):  
 ![Teste dos links da Página Inicial](./img/teste-pagina-inicial-links.gif)
 
 ---
@@ -55,12 +55,12 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 
 - Usuário preenche os campos "Senha" e "Confirmaçāo de Senha" com valores diferentes.
     <div>
-        <img src="img/teste-senhas-incompativeis.png" alt="Imagem da tela de cadastro com valores das senhas diferentes" width="70%">
+        <img src="img/teste-cadastro-senhas-incompativeis.png" alt="Imagem da tela de cadastro com valores das senhas diferentes" width="70%">
     </div>
 
 - Verificar se o usuário foi cadastrado.
     <div>
-        <img src="img/test-cadastro-realizado.png" alt="Imagem da tela de um cadastro realizado" width="70%">
+        <img src="img/teste-cadastro-realizado.png" alt="Imagem da tela de um cadastro realizado" width="70%">
     </div>
 
 - Informações armazenadas no LocalStorage após usuário se cadastrar.

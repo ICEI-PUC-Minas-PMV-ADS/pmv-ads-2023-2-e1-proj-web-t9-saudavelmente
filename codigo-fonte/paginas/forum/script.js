@@ -211,6 +211,23 @@ function handleCreatePostFormSubmit() {
  * que deem match com o texto pesquisado, pelo título, nome do autor e tags.
  */
 function handleSearchPosts() {
+  const tagsMap = {
+    ansiedade: 'Ansiedade',
+    coping: 'Coping',
+    autoconhecimento: 'Autoconhecimento',
+    'bem-estar': 'Bem-Estar',
+    positividade: 'Positividade',
+    relacionamentos: 'Relacionamentos',
+    transtorno: 'Transtorno',
+    relax: 'Relax',
+    ansiedade: 'Ansiedade',
+    meditação: 'Meditação',
+    relaxamento: 'Relaxamento',
+    mindfulness: 'Mindfulness',
+    autoeestima: 'Autoestima',
+    aceitacao: 'Aceitação',
+    foco: 'Foco',
+  }
   const searchInput = document.getElementById('search-input');
   const postsWrapper = document.getElementById('posts-wrapper');
   const postsPagination = document.getElementById('posts-pagination');
@@ -222,9 +239,8 @@ function handleSearchPosts() {
     const text = event.target.value;
     const filteredPosts = posts.filter((post) => {
       const match = new RegExp(text, 'i');
-      return match.test(post.title) || match.test(post.author) || match.test(post.tags.join(' '));
+      return match.test(post.title) || match.test(post.author) || match.test(post.tags.map((tag) => tagsMap[tag]).join(' '));
     });
-    console.log({ filteredPosts });
     if (filteredPosts.length === 0) {
       postsPagination.style.display = 'none';
       postsWrapper.innerHTML = `
