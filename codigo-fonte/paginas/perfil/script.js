@@ -52,7 +52,6 @@ function handleStartConsultation(event) {
   redirectTo('../chat/');
 }
 
-
 /**
  * Lida com o evento de clicar em cancelar a consulta.
  * 

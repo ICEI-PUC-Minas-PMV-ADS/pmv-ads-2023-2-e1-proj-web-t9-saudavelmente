@@ -70,8 +70,8 @@
                 <span class="bi bi-wechat"></span> Fórum
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-uppercase" id="perfil" href="../perfil/">
+            <li class="nav-item" id="perfil">
+              <a class="nav-link text-uppercase" href="../perfil/">
                 <span class="bi bi-person-fill"></span> Perfil
               </a>
             </li>
@@ -106,6 +106,32 @@
   </header>
 
   <main>
+    <!-- Post content modal -->
+    <div class="modal fade" id="post-content" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="post-content-label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 text-uppercase" id="post-content-label"></h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-primary btn-primary-bgc position-relative" id="like-post-btn"
+              onclick="handleLikePostButton(this)" title="Clique para curtir">
+              Me ajudou! <span class="bi bi-hand-thumbs-up-fill"></span>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                id="post-likes">
+                <span class="visually-hidden">curtidas do post</span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="px-4 pt-5 my-5 text-center border-bottom">
       <h1 class="display-4 fw-bold text-body-emphasis">Trocando Apoio</h1>
       <div class="col-lg-6 mx-auto">
@@ -133,104 +159,74 @@
           aria-describedby="addon-wrapping">
       </div>
 
-      <div class="d-flex flex-column flex-md-row gap-4 py-3 py-sm-3 py-md-5 align-items-center">
-        <div class="list-group w-100">
-          <a href="#posts" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-            <img src="./imagens/forum-post-image.png" alt="twbs" width="40" height="40" class="rounded-3 flex-shrink-0">
-            <div class="d-flex gap-2 w-100 justify-content-between">
-              <div>
-                <h6 class="mb-0">Enfrentando Desafios Diários</h6>
-                <p class="mb-0 opacity-75">
-                  por <span class="fw-bold">Ana Silva</span>
-                </p>
-                <div class="d-flex flex-column flex-sm-row gap-1 align-items-start">
-                  <span class="badge bg-primary rounded-pill badge-bgc">Ansiedade</span>
-                  <span class="badge bg-primary rounded-pill badge-bgc">Coping</span>
-                  <span class="badge bg-primary rounded-pill badge-bgc">Autoconhecimento</span>
+      <div class="pt-2 pt-sm-2 pt-md-4" id="create-post-div">
+        <button class="btn btn-primary btn-primary-bgc" type="button" data-bs-toggle="collapse"
+          data-bs-target="#create-post" aria-expanded="false" aria-controls="collapseExample">
+          Crie seu post
+        </button>
+
+        <div class="collapse pt-1 pt-sm-1 pt-md-3" id="create-post">
+          <div class="card card-body">
+            <div class="form-signin w-100 m-auto">
+              <form id="create-post-form">
+                <div class="form-floating mb-2">
+                  <input type="text" class="form-control form-control-sm" name="post-title"
+                    placeholder="Título do seu post" required>
+                  <label for="post-title">Título</label>
                 </div>
-              </div>
-              <small class="opacity-50 text-nowrap">01/03/2023</small>
-            </div>
-          </a>
-          <a href="#posts" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-            <img src="./imagens/forum-post-image.png" alt="twbs" width="40" height="40" class="rounded-3 flex-shrink-0">
-            <div class="d-flex gap-2 w-100 justify-content-between">
-              <div>
-                <h6 class="mb-0">Expressando Gratidão</h6>
-                <p class="mb-0 opacity-75">
-                  por <span class="fw-bold">Carlos Oliveira</span>
-                </p>
-                <div class="d-flex flex-column flex-sm-row gap-1 align-items-start">
-                  <span class="badge bg-primary rounded-pill badge-bgc">Bem-Estar</span>
-                  <span class="badge bg-primary rounded-pill badge-bgc">Positivadade</span>
-                  <span class="badge bg-primary rounded-pill badge-bgc">Relacionamentos</span>
+                <div class="form-floating mb-2">
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="Conteúdo do seu post" name="post-content"
+                      style="height: 100px" required></textarea>
+                    <label for="post-content">Conteúdo</label>
+                  </div>
                 </div>
-              </div>
-              <small class="opacity-50 text-nowrap">05/03/2023</small>
-            </div>
-          </a>
-          <a href="#posts" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-            <img src="./imagens/forum-post-image.png" alt="twbs" width="40" height="40" class="rounded-3 flex-shrink-0">
-            <div class="d-flex gap-2 w-100 justify-content-between">
-              <div>
-                <h6 class="mb-0">Vivendo com Transtorno Bipolar</h6>
-                <p class="mb-0 opacity-75">
-                  por <span class="fw-bold">Juliana Santos</span>
-                </p>
-                <div class="d-flex flex-column flex-sm-row gap-1 align-items-start">
-                  <span class="badge bg-primary rounded-pill badge-bgc">Transtorno</span>
-                  <span class="badge bg-primary rounded-pill badge-bgc">Relax</span>
-                  <span class="badge bg-primary rounded-pill badge-bgc">Ansiedade</span>
+                <div class="input-group">
+                  <label class="input-group-text" for="post-tags">Tags</label>
+                  <select class="form-select" multiple size="5" aria-label="Selecione tags para o post" id="post-tags"
+                    name="post-tags" aria-describedby="post-tags-block" required>
+                    <option selected>Escolha 3 tags para o seu post:</option>
+                    <option value="ansiedade">Ansiedade</option>
+                    <option value="coping">Coping</option>
+                    <option value="autoconhecimento">Autoconhecimento</option>
+                    <option value="bem-estar">Bem-Estar</option>
+                    <option value="positividade">Positividade</option>
+                    <option value="relacionamentos">Relacionamentos</option>
+                    <option value="transtorno">Transtorno</option>
+                    <option value="relax">Relax</option>
+                    <option value="ansiedade">Ansiedade</option>
+                    <option value="meditação">Meditação</option>
+                    <option value="relaxamento">Relaxamento</option>
+                    <option value="mindfulness">Mindfulness</option>
+                    <option value="autoeestima">Autoestima</option>
+                    <option value="aceitacao">Aceitação</option>
+                    <option value="foco">Foco</option>
+                  </select>
                 </div>
-              </div>
-              <small class="opacity-50 text-nowrap">10/03/2023</small>
-            </div>
-          </a>
-          <a href="#posts" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-            <img src="./imagens/forum-post-image.png" alt="twbs" width="40" height="40" class="rounded-3 flex-shrink-0">
-            <div class="d-flex gap-2 w-100 justify-content-between">
-              <div>
-                <h6 class="mb-0">Meditação para a Paz Interior</h6>
-                <p class="mb-0 opacity-75">
-                  por <span class="fw-bold">Lucas Pereira</span>
-                </p>
-                <div class="d-flex flex-column flex-sm-row gap-1 align-items-start">
-                  <span class="badge bg-primary rounded-pill badge-bgc">Meditação</span>
-                  <span class="badge bg-primary rounded-pill badge-bgc">Relaxamento</span>
-                  <span class="badge bg-primary rounded-pill badge-bgc">Mindfulness</span>
+                <div id="post-tags-block" class="form-text mb-3">
+                  Para marcar mais de uma tag, <strong>clique nas opções segurando o CTRL</strong>.
                 </div>
-              </div>
-              <small class="opacity-50 text-nowrap">15/03/2023</small>
+              </form>
             </div>
-          </a>
-          <a href="#posts" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-            <img src="./imagens/forum-post-image.png" alt="twbs" width="40" height="40" class="rounded-3 flex-shrink-0">
-            <div class="d-flex gap-2 w-100 justify-content-between">
-              <div>
-                <h6 class="mb-0">Jornada Rumo à Autoaceitação</h6>
-                <p class="mb-0 opacity-75">
-                  por <span class="fw-bold">Isabela Rocha</span>
-                </p>
-                <div class="d-flex flex-column flex-sm-row gap-1 align-items-start">
-                  <span class="badge bg-primary rounded-pill badge-bgc">Autoestima</span>
-                  <span class="badge bg-primary rounded-pill badge-bgc">Aceitação</span>
-                  <span class="badge bg-primary rounded-pill badge-bgc">Foco</span>
-                </div>
-              </div>
-              <small class="opacity-50 text-nowrap">20/03/2023</small>
+            <div class="card-footer ps-0">
+              <button type="submit" form="create-post-form" class="btn btn-primary-outline-bgc">Criar</button>
             </div>
-          </a>
+          </div>
         </div>
       </div>
-      <nav aria-label="Page navigation example">
+
+      <div class="d-flex flex-column flex-md-row gap-4 py-3 py-sm-3 py-md-5 align-items-center">
+        <div class="list-group w-100" id="posts-wrapper">
+        </div>
+      </div>
+      <nav aria-label="Page navigation example" id="posts-pagination">
         <ul class="pagination justify-content-center">
           <li class="page-item disabled">
-            <a class="page-link primary-link-c-disabled">Previous</a>
+            <a class="page-link primary-link-c primary-link-c-disabled" href="#" id="prev-btn">Previous</a>
           </li>
-          <li class="page-item"><a class="page-link primary-link-c" href="#posts">1</a></li>
-          <li class="page-item"><a class="page-link primary-link-c" href="#posts">2</a></li>
-          <li class="page-item">
-            <a class="page-link primary-link-c" href="#posts">Next</a>
+          <li class="page-item"><a class="page-link primary-link-c" href="#posts" id="page">1</a></li>
+          <li class="page-item disabled">
+            <a class="page-link primary-link-c primary-link-c-disabled" href="#" id="next-btn">Next</a>
           </li>
         </ul>
       </nav>

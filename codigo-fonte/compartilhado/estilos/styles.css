@@ -38,12 +38,13 @@ body {
   text-decoration: none;
 }
 
+.primary-link-c:hover {
+  color: #1f271b;
+}
+
 .primary-link-c-disabled {
   color: var(--clr-international-klein-blue) !important;
   opacity: .8;
-}
-.primary-link-c:hover {
-  color: #1f271b;
 }
 
 .btn-primary-bgc {
