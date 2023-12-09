@@ -70,6 +70,7 @@ async function sendMessage() {
     try {
       messageInput.disabled = true;
       sendMessageBtn.disabled = true;
+      sendMessageBtn.innerHTML = '<span class="bi bi-three-dots"></span>';
       const response = await getApiResponse(message, professionalArea, professionalName);
       receiveMessage(response);
     } catch (err) {
@@ -79,6 +80,7 @@ async function sendMessage() {
     } finally {
       messageInput.disabled = false;
       sendMessageBtn.disabled = false;
+      sendMessageBtn.innerHTML = 'Enviar';
     }
   }
 }
