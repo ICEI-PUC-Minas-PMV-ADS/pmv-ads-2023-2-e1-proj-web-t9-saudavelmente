@@ -1,3 +1,6 @@
+/**
+ * Alterna a exibição do elemento create post div com base no status de autenticação do usuário.
+ */
 function handleShowHideCreatePostDiv() {
   const createPostDiv = document.getElementById('create-post-div');
   if (!Auth.isLogged()) {
@@ -7,6 +10,12 @@ function handleShowHideCreatePostDiv() {
   }
 }
 
+/**
+ * Gera o código HTML para exibir as tags de um post.
+ *
+ * @param {Array} tags - Um array de tags associadas a um post.
+ * @returns {string} - Código HTML para exibir as tags do post.
+ */
 function loadPostTags(tags) {
   const tagsMap = {
     ansiedade: 'Ansiedade',
@@ -32,6 +41,12 @@ function loadPostTags(tags) {
   return postTagsHtml;
 }
 
+/**
+ * Formata a data de criação de um post no formato de data especificado.
+ *
+ * @param {Date} postCreatedAt - A data de criação do post.
+ * @returns {string} - String de data formatada.
+ */
 function formatPostCreatedAt(postCreatedAt) {
   return new Date(postCreatedAt).toLocaleString('pt-BR', {
     day: '2-digit',
@@ -40,10 +55,28 @@ function formatPostCreatedAt(postCreatedAt) {
   });
 }
 
+/**
+ * Calcula o número total de páginas com base no número de posts e registros por página.
+ *
+ * @param {number} postsLength - O número total de posts.
+ * @param {number} recordsPerPage - O número de registros a serem exibidos por página.
+ * @returns {number} - O número total de páginas.
+ */
 function numPages(postsLength, recordsPerPage) {
   return Math.ceil(postsLength / recordsPerPage);
 }
 
+/**
+ * Exibe um subconjunto de posts em uma página específica e atualiza os controles de paginação.
+ *
+ * @param {Array} posts - Um array de objetos de post.
+ * @param {HTMLElement} postsWrapper - O elemento onde os posts serão exibidos.
+ * @param {HTMLElement} nextButtonLi - O elemento do botão da próxima página.
+ * @param {HTMLElement} prevButtonLi - O elemento do botão da página anterior.
+ * @param {HTMLElement} currentPageLink - O elemento que exibe o número da página atual.
+ * @param {number} currentPage - O número da página atual.
+ * @param {number} recordsPerPage - O número de registros a serem exibidos por página.
+ */
 function changePage(posts, postsWrapper, nextButtonLi, prevButtonLi, currentPageLink, currentPage, recordsPerPage) {
   if (currentPage < 1) {
     currentPage = 1;
@@ -85,6 +118,12 @@ function changePage(posts, postsWrapper, nextButtonLi, prevButtonLi, currentPage
   }
 }
 
+/**
+ * Inicializa a paginação para os posts exibidos.
+ *
+ * @param {HTMLElement} postsWrapper - O elemento onde os posts serão exibidos.
+ * @param {Array} posts - Um array de objetos de post a serem paginados.
+ */
 function handlePostsPagination(postsWrapper, posts) {
   const nextButton = document.getElementById('next-btn');
   const nextButtonLi = nextButton.parentElement;
@@ -110,6 +149,9 @@ function handlePostsPagination(postsWrapper, posts) {
   changePage(posts, postsWrapper, nextButtonLi, prevButtonLi, currentPageLink, currentPage, recordsPerPage);
 }
 
+/**
+ * Carrega e exibe posts, lidando com casos em que nenhum post está disponível.
+ */
 function handleLoadPosts() {
   const postsWrapper = document.getElementById('posts-wrapper');
   const postsPagination = document.getElementById('posts-pagination');
@@ -133,16 +175,32 @@ function handleLoadPosts() {
   }
 }
 
+/**
+ * Formata a contagem de likes para exibição.
+ *
+ * @param {number} likesCount - O número de likes para um post.
+ * @returns {string} - String de contagem de likes formatada.
+ */
 function formatLikesCount(likesCount) {
   return likesCount >= 100 ? '99+' : likesCount;
 }
 
+/**
+ * Atualiza a exibição da contagem de likes no modal.
+ *
+ * @param {number} currentLikesCount - O número atual de likes para um post.
+ */
 function loadPostLikesOnModal(currentLikesCount) {
   const postLikesSpan = document.getElementById('post-likes');
   postLikesSpan.title = currentLikesCount;
   postLikesSpan.textContent = formatLikesCount(currentLikesCount);
 }
 
+/**
+ * Manipula o clique no botão "like" para um post.
+ *
+ * @param {HTMLElement} buttonElement - O elemento do botão "like".
+ */
 function handleLikePostButton(buttonElement) {
   const relatedPostId = buttonElement.getAttribute('data-post-id');
   const posts = JSON.parse(localStorage.getItem('posts'));
@@ -154,10 +212,19 @@ function handleLikePostButton(buttonElement) {
   loadPostLikesOnModal(currentPost.likesCount);
 }
 
+/**
+ * Formata o conteúdo do post para exibição no modal.
+ *
+ * @param {string} postContent - O conteúdo de um post.
+ * @returns {string} - Conteúdo do post formatado.
+ */
 function formatPostContent(postContent) {
   return postContent.replaceAll('\n', '<br>');
 }
 
+/**
+ * Manipula o carregamento do conteúdo do post no modal.
+ */
 function handleLoadPostContentOnModal() {
   const postContentModal = document.getElementById('post-content');
   postContentModal.addEventListener('show.bs.modal', (event) => {
@@ -177,6 +244,9 @@ function handleLoadPostContentOnModal() {
   });
 }
 
+/**
+ * Manipula o envio do formulário de criação de post.
+ */
 function handleCreatePostFormSubmit() {
   const createPostForm = document.getElementById('create-post-form');
   createPostForm.addEventListener('submit', (event) => {
