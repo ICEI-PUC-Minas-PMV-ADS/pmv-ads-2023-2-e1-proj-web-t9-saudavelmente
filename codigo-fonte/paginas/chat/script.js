@@ -72,12 +72,13 @@ async function sendMessage() {
       sendMessageBtn.disabled = true;
       const response = await getApiResponse(message, professionalArea, professionalName);
       receiveMessage(response);
-      messageInput.disabled = false;
-      sendMessageBtn.disabled = false;
     } catch (err) {
       setTimeout(() => {
         receiveMessage('Desculpe, não estou apto a responder agora, tente novamente mais tarde!');
       }, 1000);
+    } finally {
+      messageInput.disabled = false;
+      sendMessageBtn.disabled = false;
     }
   }
 }
@@ -99,7 +100,7 @@ async function getApiResponse(userMessage, professionalArea, professionalName) {
   const headers = new Headers({
     'Content-Type': 'application/json',
   });
-  const apiUrl = 'http://localhost:8000';
+  const apiUrl = 'https://openai-chat-api.fly.dev';
   try {
     console.log(`Making request on API ${apiUrl} to get response...`);
     const response = await fetch(`${apiUrl}/chat`, {
