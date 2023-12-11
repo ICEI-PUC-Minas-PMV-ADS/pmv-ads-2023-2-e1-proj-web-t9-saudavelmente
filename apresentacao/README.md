@@ -2,12 +2,12 @@
 
 ## Conjunto de Slides
 
-[Apresentação em PDF - Saudávelmente](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t9-saudavelmente/files/13629279/apresentacao-saudavelmente.pdf)
+[Apresentação em PDF - SaudávelMente](./apresentacoes/apresentacao-saudavelmente.pdf)
 
 
 ## Vídeo de apresentação
 
-Em breve...
+[Apresentação em Vídeo (3 minutos) - SaudávelMente](./apresentacoes/video-apresentacao-saudavelmente.mp4)
 
 
 ## Hospedagem
